@@ -22,6 +22,7 @@ module.exports = {
     "@tanstack/query/exhaustive-deps": "error",
     "@tanstack/query/prefer-query-object-syntax": "error",
     "@tanstack/query/stable-query-client": "error",
+    "react/prop-types": "off",
   },
   overrides: [
     {
