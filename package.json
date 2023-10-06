@@ -6,10 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . ",
+    "lint": "eslint . --fix",
     "preview": "vite preview",
     "prettier:check": "prettier . --check",
-    "prettier:fix": "prettier . --write"
+    "prettier:format": "prettier . --write",
+    "prepare": "husky install .config/husky"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run prettier:format",
+      "npm run lint"
+    ]
   },
   "dependencies": {
     "@tanstack/react-query": "^4.35.7",
@@ -36,9 +43,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-yaml": "^0.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
   }
 }
