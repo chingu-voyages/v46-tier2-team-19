@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
-          node-version: 18
+          version: 8
+      - name: Use Node.js 18.2
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.2
+          cache: "pnpm"
       - name: Install dependencies
-        run: pnpm ci
+        run: pnpm install
       - name: Install Playwright Browsers
         run: pnpm playwright install --with-deps
       - name: Run Playwright tests
