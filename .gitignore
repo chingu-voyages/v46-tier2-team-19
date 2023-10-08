@@ -24,7 +24,6 @@ dist-ssr
 *.sw?
 
 # Ignore lockfiles for PNPM, NPM and YARN
-pnpm-lock.yaml
 package-lock.json
 yarn.lock
 /test-results/
