@@ -77,6 +77,7 @@ defineConfig({
   webServer: {
     command: "npm run start",
     url: "http://127.0.0.1:3000",
+    // eslint-disable-next-line no-undef
     reuseExistingServer: !process.env.CI,
   },
 });
