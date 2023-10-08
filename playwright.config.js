@@ -6,20 +6,20 @@ import { defineConfig, devices } from "@playwright/test";
  * https://github.com/motdotla/dotenv
  */
 // require('dotenv').config();
-import "dotenv/config";
+
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 defineConfig({
-  testDir: "./e2e",
+  testDir: "./tests",
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!import.meta.env.CI,
+  forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: import.meta.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: import.meta.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -73,6 +73,6 @@ defineConfig({
   webServer: {
     command: "npm run start",
     url: "http://127.0.0.1:3000",
-    reuseExistingServer: !import.meta.env.CI,
+    reuseExistingServer: !process.env.CI,
   },
 });
