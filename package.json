@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --fix",
+    "test": "npx playwright test",
     "preview": "vite preview",
     "prettier:check": "prettier . --check",
     "prettier:format": "prettier . --write",
@@ -15,7 +16,8 @@
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npm run prettier:format",
-      "npm run lint"
+      "npm run lint",
+      "npm run test"
     ]
   },
   "dependencies": {
