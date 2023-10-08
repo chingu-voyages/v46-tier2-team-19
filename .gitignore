@@ -23,9 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore lockfiles for PNPM, NPM and YARN
-package-lock.json
-yarn.lock
 /test-results/
 /playwright-report/
 /playwright/.cache/
