@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Posts, PostDetail, About } from "../pages";
-import { Header } from "../features/ui";
+import { Home, Posts, PostDetail, About, Recipes } from "@/pages";
+import { Header } from "@/features/ui";
 
 export default function Nav() {
   return (
@@ -11,6 +11,7 @@ export default function Nav() {
         <Route path="/posts" element={<Posts />} />
         <Route path="/about" element={<About />} />
         <Route path="/posts/:postId" element={<PostDetail />} />
+        <Route path="/recipes" element={<Recipes />} />
       </Routes>
     </BrowserRouter>
   );

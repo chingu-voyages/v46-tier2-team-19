@@ -1,7 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-const PostCard = () => {
-  return <div>PostCard</div>;
+export const PostCard = ({ post }) => {
+  return (
+    <li className="px-8 py-2 ml-4 border rounded-lg w-fit hover:bg-gray-600 hover:text-gray-100">
+      <Link to={`/posts/${post.id}`}>{post.title}</Link>
+    </li>
+  );
 };
-
-export default PostCard;

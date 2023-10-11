@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { UsePosts } from "../../api";
+import { PostCard } from "../post-card";
 export const PostList = () => {
   const { data, isLoading, isError, error } = UsePosts();
 
@@ -17,13 +16,11 @@ export const PostList = () => {
   return (
     <>
       <div>PostList</div>
-      {data.map((post) => (
-        <p key={post.id}>
-          <Link onClick={() => setPostId(post.id)} to={`/posts/${post.id}`}>
-            {post.title}
-          </Link>
-        </p>
-      ))}
+      <ul className="flex flex-col gap-4">
+        {data.map((post) => (
+          <PostCard key={post.id} post={post} />
+        ))}
+      </ul>
     </>
   );
 };

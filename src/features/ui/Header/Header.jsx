@@ -1,5 +1,4 @@
-import React from "react";
-import { navLinks } from "../../../constants";
+import { navLinks } from "@/constants";
 import { Link } from "react-router-dom";
 
 export const Header = () => {

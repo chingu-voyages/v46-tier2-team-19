@@ -13,4 +13,9 @@ export const navLinks = [
     title: "Posts",
     href: "/Posts",
   },
+  {
+    id: "recipes",
+    title: "Recipes",
+    href: "/Recipes",
+  },
 ];

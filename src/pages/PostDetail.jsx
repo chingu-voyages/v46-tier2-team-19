@@ -1,6 +1,5 @@
-import { GetPostById } from "../features/posts/api/get-posts";
+import { GetPostById } from "@/features/posts";
 import { useParams } from "react-router-dom";
-// import { GetPost } from "../api/posts";
 
 const PostDetail = () => {
   const { postId } = useParams();

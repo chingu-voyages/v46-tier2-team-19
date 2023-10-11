@@ -1,4 +1,4 @@
-import { PostList } from "../features/posts";
+import { PostList } from "@/features/posts";
 
 function Posts() {
   return (
