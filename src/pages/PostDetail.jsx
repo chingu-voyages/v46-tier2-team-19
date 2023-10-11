@@ -1,21 +1,19 @@
-import React from "react";
 import { useParams } from "react-router-dom";
-import { useQueryClient } from "@tanstack/react-query";
-import { getPost } from "../api/posts";
+import { GetPost } from "../api/posts";
+
 const PostDetail = () => {
-  const params = useParams();
-  const { postId } = params;
-  const { status, data, error, isLoading } = getPost(postId);
+  const { postId } = useParams();
+  const { data, isLoading } = GetPost(postId);
 
   return (
     <>
-      {isLoading === "loading" ? (
+      {isLoading ? (
         <h1>Loading...</h1>
       ) : (
         <div>
           <h2>post details</h2>
-          <p>{data.title}</p>
-          <p>{data.body}</p>
+          <p>{data?.title}</p>
+          <p>{data?.body}</p>
         </div>
       )}
     </>

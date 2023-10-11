@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-export function usePosts() {
+export function UsePosts() {
   return useQuery({
     queryKey: ["posts"],
     queryFn: async () => {
@@ -12,7 +12,7 @@ export function usePosts() {
   });
 }
 
-export function getPost(postId) {
+export function GetPost(postId) {
   console.log({ postId });
   return useQuery({
     queryKey: ["posts", postId],

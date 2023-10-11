@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "commit": "commit",
+    "cz": "cz",
     "build": "vite build",
     "lint": "eslint . --fix",
     "test": "npx playwright test",
@@ -32,6 +32,9 @@
     "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.7.2",
+    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/prompt-cli": "^17.7.2",
     "@playwright/test": "^1.38.1",
     "@tanstack/eslint-plugin-query": "^4.36.0",
     "@types/node": "^20.8.2",
@@ -39,6 +42,7 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-html": "7.1.0",
@@ -47,11 +51,16 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-yaml": "^0.5.0",
-    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "husky": "^8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
-import { usePosts } from "../api/posts";
+import { UsePosts } from "../api/posts";
 
 function Posts() {
   const queryClient = useQueryClient();
   const [postId, setPostId] = useState(-1);
-  const { status, data, error, isFetching } = usePosts();
+  const { status, data, error, isFetching } = UsePosts();
 
   return (
     <div>
