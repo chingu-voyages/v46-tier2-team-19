@@ -34,6 +34,7 @@ module.exports = {
         "@tanstack/query/stable-query-client": "error",
         "react/prop-types": "off",
         "linebreak-style": "off",
+        "no-unused-vars": "off",
       },
     },
   ],

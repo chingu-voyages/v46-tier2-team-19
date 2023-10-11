@@ -1,19 +1,15 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "../pages/Home";
-import Posts from "../pages/Posts";
-import PostDetail from "../pages/PostDetail";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Posts, PostDetail, About } from "../pages";
+import { Header } from "../features/ui";
+
 export default function Nav() {
   return (
     <BrowserRouter>
-      <header>
-        <nav>
-          <Link to="/Posts">Posts</Link>
-          <Link to="/">Home</Link>
-        </nav>
-      </header>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
+        <Route path="/about" element={<About />} />
         <Route path="/posts/:postId" element={<PostDetail />} />
       </Routes>
     </BrowserRouter>

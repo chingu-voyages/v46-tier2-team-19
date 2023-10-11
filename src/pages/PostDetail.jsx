@@ -1,9 +1,10 @@
+import { GetPostById } from "../features/posts/api/get-posts";
 import { useParams } from "react-router-dom";
-import { GetPost } from "../api/posts";
+// import { GetPost } from "../api/posts";
 
 const PostDetail = () => {
   const { postId } = useParams();
-  const { data, isLoading } = GetPost(postId);
+  const { data, isLoading } = GetPostById(postId);
 
   return (
     <>
