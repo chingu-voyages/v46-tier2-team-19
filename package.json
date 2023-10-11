@@ -59,6 +59,7 @@
     "eslint-plugin-yaml": "^0.5.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
+    "miragejs": "^0.1.47",
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "standard-version": "^9.5.0",
