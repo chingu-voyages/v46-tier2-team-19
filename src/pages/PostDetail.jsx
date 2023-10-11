@@ -14,8 +14,8 @@ const PostDetail = () => {
       ) : (
         <div>
           <h2>post details</h2>
-          {/* <p>{data.title}</p>
-          <p>{data.body}</p> */}
+          <p>{data.title}</p>
+          <p>{data.body}</p>
         </div>
       )}
     </>
