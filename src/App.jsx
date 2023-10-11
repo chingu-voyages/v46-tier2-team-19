@@ -3,6 +3,16 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { useQueryClient } from "@tanstack/react-query";
 import { usePosts } from "./api/posts";
+import makeServer from "./mirageServer/server";
+
+// Please keep on when possible to avoid using up our Tasty API free quota
+// All api calls will be intercepted and fulfilled by the mirage server.
+const USE_MIRAGE_API = true;
+
+if (USE_MIRAGE_API) {
+  makeServer();
+}
+
 function App() {
   const [count, setCount] = useState(0);
   const [postId, setPostId] = useState(-1);
