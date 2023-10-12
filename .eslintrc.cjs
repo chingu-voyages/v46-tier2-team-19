@@ -25,7 +25,7 @@ module.exports = {
       extends: ["plugin:yaml/recommended"],
       rules: {
         "import/no-unresolved": "off",
-
+        "react/prop-types": "off",
         "react-refresh/only-export-components": [
           "warn",
           { allowConstantExport: true },
