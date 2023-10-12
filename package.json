@@ -1,36 +1,47 @@
 {
   "name": "recipe-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "cz": "cz",
     "build": "vite build",
     "lint": "eslint . --fix",
     "test": "npx playwright test",
     "preview": "vite preview",
     "prettier:check": "prettier . --check",
     "prettier:format": "prettier . --write",
-    "prepare": "husky install .config/husky"
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npm run prettier:format",
       "npm run lint",
-      "npm run test"
+      "npm run test",
+      "npm run cz"
     ]
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.35.7",
-    "@tanstack/react-query-devtools": "^4.35.7",
+    "@headlessui/react": "^1.7.17",
+    "@tanstack/react-query": "^4.36.1",
+    "@tanstack/react-query-devtools": "^4.36.1",
     "axios": "^1.5.1",
     "dotenv": "^16.3.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.4.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.7.2",
+    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/prompt-cli": "^17.7.2",
     "@playwright/test": "^1.38.1",
     "@tanstack/eslint-plugin-query": "^4.36.0",
     "@types/node": "^20.8.2",
@@ -38,20 +49,32 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "9.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-html": "7.1.0",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-yaml": "^0.5.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
     "miragejs": "^0.1.47",
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
+    "standard-version": "^9.5.0",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "tailwindcss-vite-plugin": "^0.0.7",
+    "vite": "^4.4.5",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
