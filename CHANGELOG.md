@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.3...v0.0.4) (2023-10-12)
+
+
+### Bug Fixes
+
+* **postcard.jsx:** adds validation to the post ([04c23b5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/04c23b57dfdfdb7908ebb423dd5544a0935a9d14))
+* **public:** add necessary files for netlify ([c986a0d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c986a0d5f5c53dfa01b2c0a9bba24cf60ccf733b))
+
 ### [0.0.3](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.2...v0.0.3) (2023-10-12)
 
 ### [0.0.2](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.1...v0.0.2) (2023-10-11)
