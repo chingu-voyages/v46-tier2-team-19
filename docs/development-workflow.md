@@ -1,7 +1,7 @@
 # Development workflow
 
 1. **Ticket/Issue**
-   - Take a note of the issue number of the ticket you will word on.
+   - Take a note of the issue number of the ticket you will word on in Jira.
    - If no ticket exists then create a new ticket and take a note
 2. **Create a new branch** from development branch
 
@@ -30,11 +30,15 @@
 
 3. **Track changes:** Try to do only the work required in the feature branch.
    After you saved your work file(s):
-   - Use `git add .` or `git add <file name>` to add the new version of your
-     work file(s) to the staging area on your local directory.
+   - Use `git add .` or `git add <file name>` to add the new version of your work file(s) to the staging area on your local directory.
    - Then use `git commit -am <message>` to commit your work.
+
+  or
+
+   - use `npm run cz` to commitLint to help you write your commits.
+   - when you have committed your work to github, use `npm run release:patch` to update the changelog.
    - When you are ready to push your work to Github, use `git push`.
-4. **Pull Request(PR):** When you have finished your work (issue/ticket), in
+1. **Pull Request(PR):** When you have finished your work (issue/ticket), in
    Github:
 
    - Select the `Pull Requests` tab and select the `New pull request button`.
@@ -42,19 +46,19 @@
      development branch.
      > **All PRs must be to the development branch**
 
-5. **Add comment:** Inside your PR in the description section type
+2. **Add comment:** Inside your PR in the description section type
    `closes #<issue-number>` for example `closed #42`. Select the issue number
    that you are working on from the dropdown. This will link the PR to the
    ticket.
-6. **Code review:** In the PR you create select someone from the team to review
+3. **Code review:** In the PR you create select someone from the team to review
    the PR. The PR will be reviewed by that person. They may request changes to
    the code or they may approve for the PR to be merged.
    > If changes are requested, refer to step 3 above.
    >
    > Please try to make the requested changes within 24 hours of the request
-7. **Merged to development branch:** If approved either you or the reviewer may
+4. **Merged to development branch:** If approved either you or the reviewer may
    merge the PR.
-8. Once merged you can work on another ticket.
+5. Once merged you can work on another ticket.
 
 > ### A couple of things to always ask yourself
 >
