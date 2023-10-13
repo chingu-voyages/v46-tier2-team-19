@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.4...v0.0.5) (2023-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **vite.config.js:** the netlify git hooks fail
+
+### Features
+
+* **global.css:** create reusable css variables ([a70c052](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a70c05288ebb6ce956f19b29b2a21ea610b61571))
+
+
+### Bug Fixes
+
+* **package-lock.json:** reinstalled node_modules and package-lock.json ([21fd936](https://github.com/chingu-voyages/v46-tier2-team-19/commit/21fd93648bcbf381feb723a1b44b7c10e15162db))
+* **vite.config.js:** a bug has occured when netlify's building site ([57e0fd4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/57e0fd4ba8fd490b3d01eebfd1b7a604b5b889bd))
+* **vite.config.js:** removed exlint as a plugin in vite.config.js ([025b62e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/025b62eab007028b7fe2b34469cb9083b743a6b9))
+
 ### [0.0.4](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.3...v0.0.4) (2023-10-12)
 
 
