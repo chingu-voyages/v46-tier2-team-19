@@ -2,6 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    /**************************
+      DEFINITIVE COLOR NAMING 
+    **************************/
+    /* Blues */
+    --cname-blue-green: 0, 145, 204; /* #0091cc */
+    --cname-sky-blue: 109, 209, 227; /* #6dd1e3 */
+    --cname-light-cyan: 216, 243, 248; /* #d8f3f8 */
+
+    /* Greens */
+    --cname-forest-green: 1, 144, 25; /* #019019 */
+    --cname-lime-green: 104, 208, 10; /* #68d00a */
+
+    /* Oranges */
+    --cname-tomato: 250, 115, 84; /* #fa7354 */
+    --cname-safety-orange: 255, 125, 22; /* #ff7d16 */
+    --cname-sandy-brown: 255, 170, 102; /*#ffaa66 */
+
+    /* Reds */
+    --cname-cardinal: 180, 61, 63; /* #b43d3f */
+
+    /* Yellows */
+    --cname-sun-glow: 255, 201, 69; /* #ffc945 */
+    --cname-jasmine: 255, 218, 128; /* #ffda80 */
+    --cname-vanilla: 255, 242, 188; /* #fff2bc */
+    --cname-cosmic-latte: 254, 248, 230; /* #fef8e6 */
+    --cname-floral-white: 255, 252, 245; /* #fffcf5 */
+
+    /* Neutrals */
+    --cname-black: 0, 0, 0; /* #000000 */
+    --cname-raisin-black: 38, 31, 34; /* #261f22 */
+    --cname-white: 255, 255, 255; /* #ffffff */
+
+    /************************
+      SEMANTIC COLOR NAMING 
+    ************************/
+    /* example: --color-danger: var(--cname-tomato); */
+
+    /**************************
+      CONTEXTUAL COLOR NAMING
+    **************************/
+    /* example: --color-text-error: var(--color-danger); */
+
+    /*********
+      THEMES
+    *********/
+    /* TODO: come up with practical names and assign real colors */
+
+    /* Base theme */
+    --color-text-base: var(--cname-black);
+    --color-text-muted: var(--cname-black);
+    --color-text-inverted: var(--cname-black);
+    --color-fill: var(--cname-black);
+    --color-button-accent: var(--cname-black);
+    --color-button-accent-hover: var(--cname-black);
+    --color-button-muted: var(--cname-black);
+  }
+
+  /* Dark theme */
+  .theme-dark {
+    /* TODO: come up with practical names and assigned colors */
+    --color-text-base: var(--cname-white);
+    --color-text-muted: var(--cname-white);
+    --color-text-inverted: var(--cname-white);
+    --color-fill: var(--cname-white);
+    --color-button-accent: var(--cname-white);
+    --color-button-accent-hover: var(--cname-white);
+    --color-button-muted: var(--cname-white);
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
