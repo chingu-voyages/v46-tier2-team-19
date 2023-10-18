@@ -1,29 +1,14 @@
-import { RecipeList } from "@/features/recipes";
 import { useState } from "react";
+import { RecipeList } from "@/features/recipes";
+import { SearchBox } from "@/features/ui";
 const RecipesPage = () => {
-  const [searchValue, setSearchValue] = useState("");
-
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    console.log(searchValue);
-  };
-
+  const [search, setSearch] = useState("");
   return (
-    <div className="w-full bg-yellow-400">
+    <div className="flex flex-col items-center w-full bg-yellow-400">
       <h1>RecipesPage</h1>
-      <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          id="q"
-          name="q"
-          placeholder="Enter a ingredient..."
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <SearchBox onSearch={(term) => setSearch(term)} />
       <div className="">
-        <RecipeList />
+        <RecipeList searchTerm={search} />
       </div>
     </div>
   );

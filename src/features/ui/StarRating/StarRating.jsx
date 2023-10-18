@@ -10,6 +10,5 @@ export function StarRating({ count_negative, count_positive, score }) {
       rating += "☆";
     }
   }
-  console.log(rating);
   return rating;
 }

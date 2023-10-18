@@ -1,25 +1,28 @@
-import { UseRecipes } from "../../api";
+import PropTypes from "prop-types";
 import { RecipeCard } from "../recipe-card";
-
-export const RecipeList = () => {
-  const { data, isLoading, isError, error } = UseRecipes();
+import { FetchRecipes } from "../../api";
+export const RecipeList = ({ searchTerm }) => {
+  console.log({ searchTerm });
+  const { data, isLoading, isError, error } = FetchRecipes(searchTerm);
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
   if (isError) {
-    console.error(error);
-
-    return <p>{error.message}</p>;
+    return <div>Error: {error.message}</div>;
   }
-
+  const results = data?.results || [];
   return (
     <div className="flex justify-center">
       <div className="grid grid-cols-1 mx-auto mt-10 mb-4 gap-7 lg:grid-cols-3">
-        {data.results.map((recipe) => (
+        {results.map((recipe) => (
           <RecipeCard key={recipe.id} {...recipe} />
         ))}
       </div>
     </div>
   );
+};
+
+RecipeList.propTypes = {
+  searchTerm: PropTypes.string.isRequired,
 };
