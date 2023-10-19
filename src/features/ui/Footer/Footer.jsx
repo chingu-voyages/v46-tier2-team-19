@@ -5,12 +5,18 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { creamLogo as Logo } from "@/assets";
 import { github } from "@/assets";
 
 export const Footer = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <footer className="bottom-0 w-full p-4 bg-[#2d2d2d] rounded-b-2xl, items-center text-[#F8F7F6]">
+      <aside className="w-40 xl:w-52 mx-auto my-4">
+        <Link to="/">
+          <img src={Logo} alt={name} />
+        </Link>
+      </aside>
       <nav className="text-center mb-4">
         <div className="hidden space-x-4 lg:block">
           {navLinks.map((navLink, index) => (
