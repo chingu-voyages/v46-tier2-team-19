@@ -1,4 +1,4 @@
-import Nav from "./routes";
+import Spa from "./routes";
 import makeServer from "./mirageServer/server";
 import { Routes, Route } from "react-router-dom";
 import {
@@ -20,7 +20,7 @@ if (USE_MIRAGE_API) {
 function App() {
   return (
     <Routes>
-      <Route element={<Nav />}>
+      <Route element={<Spa />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Posts />} />
