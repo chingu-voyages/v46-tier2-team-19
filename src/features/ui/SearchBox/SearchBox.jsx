@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { search } from "@/assets";
 import debounce from "lodash/debounce";
 import PropTypes from "prop-types";
 export const SearchBox = ({ onSearch }) => {
@@ -13,6 +14,7 @@ export const SearchBox = ({ onSearch }) => {
 
   const handleSearch = () => {
     onSearch(localTerm);
+    setLocalTerm("");
   };
   const handleInputChange = (e) => {
     setLocalTerm(e.target.value);
@@ -22,21 +24,23 @@ export const SearchBox = ({ onSearch }) => {
     e.preventDefault();
   };
   return (
-    <form className="flex w-1/2" onSubmit={handleFormSubmit}>
-      <input
-        type="search"
-        value={localTerm}
-        onChange={handleInputChange}
-        placeholder="Enter a ingredient..."
-        className="w-full p-2 bg-gray-600 rounded-l-md focus:outline-none placeholder:text-gray-500 text-gray-50 focus:ring-none"
-      />
-      <button
-        className="px-4 bg-orange-200 hover:bg-orange-600 hover:text-white rounded-r-md"
-        onClick={() => handleSearch()}
-      >
-        Search
-      </button>
-    </form>
+    <div className="bg-tangerine-400 p-[1px] rounded-full flex items-center max-w-xl">
+      <form className="flex w-full" onSubmit={handleFormSubmit}>
+        <input
+          type="search"
+          value={localTerm}
+          onChange={handleInputChange}
+          placeholder="Enter an Ingredient..."
+          className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
+        />
+        <button
+          className="px-4 rounded-r-full bg-tangerine-400 hover:bg-tangerine-600"
+          onClick={() => handleSearch()}
+        >
+          <img src={search} alt="search icon" />
+        </button>
+      </form>
+    </div>
   );
 };
 
