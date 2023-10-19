@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="sticky top-0 z-40 flex items-center justify-between h-16 px-4 bg-[#FEF8E6] shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8">
+    <header className="site-header top-0 z-40 flex items-center justify-between h-16 px-4 bg-white shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
       <Link to="/">
         <aside>
           <p className="text-[#C7522B] font-semibold">{name}</p>
