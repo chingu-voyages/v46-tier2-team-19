@@ -10,7 +10,7 @@ import { colorLogo as Logo } from "@/assets";
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="site-header top-0 z-40 flex items-center justify-between px-4 py-3 bg-white shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
+    <header className="top-0 z-40 flex items-center justify-between px-4 py-3 bg-white shadow-md shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
       <aside className="w-40 lg:w-52">
         <Link to="/">
           <img src={Logo} alt={name} />
@@ -19,7 +19,11 @@ export const Header = () => {
       <nav>
         <div className="hidden space-x-4 lg:block">
           {navLinks.map((navLink, index) => (
-            <Link key={index} to={navLink.href}>
+            <Link
+              key={index}
+              to={navLink.href}
+              className="uppercase font-kalam"
+            >
               {navLink.title}
             </Link>
           ))}
