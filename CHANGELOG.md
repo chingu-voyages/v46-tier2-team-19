@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.4...v0.0.6) (2023-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **searchbox.jsx:** when the mirage server is turned off, the data return is undefined bc of too many
+requests to tasty
+
+CH-12
+* **vite.config.js:** the netlify git hooks fail
+
+### Features
+
+* **app.jsx:** add components page and components route ([22d422d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/22d422dd3191ff8b307a03e4a493d9262931fe9d))
+* **button component:** create Button component ([a58491c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a58491c31d879b1a53ded5bd32fb24a296244e03))
+* **components.jsx:** create Components page ([f212844](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f21284438428dc7374a8598be22ba2d1c8ac7511))
+* **featureoftheday.jsx:** create a simple react component for the recipe results page ([42b631b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/42b631b5970573fd23529edef099ced7a2423741))
+* **global.css:** add color gradients CSS variables ([fa9e55a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fa9e55ad63de7e049b06a266cb058bcfbd71466f))
+* **global.css:** add display & body font CSS variables ([58e7ff3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/58e7ff39022a3b4b4e75004c705a6f9c10237db1))
+* **global.css:** update typography rules ([2222fd6](https://github.com/chingu-voyages/v46-tier2-team-19/commit/2222fd6cc913300cd2d245ff3f2daa25cf568946))
+* **heading component:** create Heading component ([aad2ce9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/aad2ce9239ef01ad8dc7ad1a60eb5dedb63bd92e))
+* **layout components & related:** implement responsive styling ([7bf833a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7bf833a805c3bc7239c2e7c20362cc73d108c980))
+* **layout components:** add fonts, logos & more responsive styling ([a020a18](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a020a18dbc79691c0a6017c66ef721301cc0fc87))
+* **layout:** add fonts, logos & more responsive styling ([1e82c70](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1e82c705f013344a262b1d646fece8748a637550))
+* **pages/index.js:** import & export Components page ([6e07377](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6e07377de6aa9ff9b73d0495952c9e067629910c))
+* **public:** add Vite logo SVG file ([5ae88a0](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5ae88a092bb4792e4d402fcd2ce50f70209b8fbf))
+* **recipes-search:** created a Recipes page along with api calls and new components ([fbc37a6](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fbc37a666b8ca658b33b502e1efbd62714d4a363))
+* **searchbox.jsx:** add search functionality to recipe list ([108d9fc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/108d9fc080f310232012627977262e7a5c3a499c))
+* **tailwind.config.js:** add custom color gradients to tailwind theme ([09de3de](https://github.com/chingu-voyages/v46-tier2-team-19/commit/09de3de29817b20b26729080da3f410c7d92f6f2))
+* **tailwind.config.js:** add custom scale property to tailwind theme ([184929e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/184929e0710250f76f841a32bb6e3e7059b49a7d))
+* **tailwind.config.js:** add custom solid colors to Tailwind ([da4b2be](https://github.com/chingu-voyages/v46-tier2-team-19/commit/da4b2be7e212c8d18c54bdca3a39d35fade45171))
+
+
+### Bug Fixes
+
+* **package-lock.json:** reinstalled node_modules and package-lock.json ([21fd936](https://github.com/chingu-voyages/v46-tier2-team-19/commit/21fd93648bcbf381feb723a1b44b7c10e15162db))
+* **package.json:** revert package to 0.0.4 patch number ([5ae3d72](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5ae3d723a0e47f8f109d8df0e058260304fa56d5))
+* **tailwind.config.js:** fix font family typo ([fb03682](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fb036821f95fd4410be19713895096c522e3ac1c))
+* **vite.config.js:** a bug has occured when netlify's building site ([57e0fd4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/57e0fd4ba8fd490b3d01eebfd1b7a604b5b889bd))
+* **vite.config.js:** removed exlint as a plugin in vite.config.js ([025b62e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/025b62eab007028b7fe2b34469cb9083b743a6b9))
+
 ### [0.0.5](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.4...v0.0.5) (2023-10-21)
 
 
