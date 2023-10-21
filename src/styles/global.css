@@ -40,25 +40,26 @@
 
 body,
 input {
-  font-family: var(--font-rasa);
+  font-family: var(--font-body);
   font-size: 20px;
 }
 
+/* NOTE: Use the Heading component which overwrights these hX rules */
 h1,
 h2,
-h3 {
-  font-family: var(--font-kalam);
-  line-height: 1.25;
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.5;
 }
-
 h1 {
   font-size: 60px;
 }
-
 h2 {
   font-size: 48px;
 }
-
 h3 {
   font-size: 36px;
 }
