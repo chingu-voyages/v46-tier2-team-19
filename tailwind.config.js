@@ -106,6 +106,11 @@ export default {
     fontFamily: {
       kalam: ["Kalam"],
       rasa: ["Rasa"],
+      display: ["Kalam"],
+      body: ["Rasa"],
+    },
+    scale: {
+      175: "1.75",
     },
   },
   plugins: [],
