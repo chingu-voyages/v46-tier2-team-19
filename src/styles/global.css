@@ -11,8 +11,12 @@
 
   --color-light-cream: rgb(254 248 230);
 
+  /* Typography */
   --font-kalam: "Kalam", cursive;
   --font-rasa: "Rasa", serif;
+  --font-display: var(--font-kalam);
+  --font-body: var(--font-rasa);
+
 }
 
 body,
