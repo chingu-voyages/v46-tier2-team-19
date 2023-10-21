@@ -104,7 +104,7 @@ export default {
       },
     },
     fontFamily: {
-      kalam: ["Kalem"],
+      kalam: ["Kalam"],
       rasa: ["Rasa"],
     },
   },
