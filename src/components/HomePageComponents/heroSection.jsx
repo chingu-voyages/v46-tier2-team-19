@@ -13,10 +13,10 @@ export const HeroSection = () => {
     <section className="hero-section select-none relative ">
       <div className="hero-wrapper w-full flex flex-col lg:flex-row justify-between ">
         <div className="hero-content  xl:px-32 xl:pt-32  md:px-12 md:pt-[66px] pt-24 px-4">
-          <h1 className=" text-[72px]   md:text-[128px]   text-transparent bg-clip-text bg-gradient-to-r from-[#6DC5E3] to-[#009ACC] ">
+          <h1 className=" text-[72px]   md:text-[128px]  text-transparent  bg-clip-text bg-gradient-sky-diagonal ">
             Hungry?{" "}
           </h1>
-          <h2 className="  text-transparent   text-4xl md:text-[64px] leading-normal  bg-clip-text bg-gradient-to-r from-[#04C023] to-[#018F18]  ">
+          <h2 className="  text-transparent   text-4xl md:text-[64px] leading-normal  bg-clip-text bg-gradient-watermelon-diagonal  ">
             YumYumYes!
           </h2>
 
@@ -26,7 +26,7 @@ export const HeroSection = () => {
             }
           </p>
 
-          <button className="flex md:text-[28px] items-center justify-evenly text-white xl:mt-12 md:h-[76px] md:w-[300px] text-[22px] font-bold mb-7 w-64 h-[65px]  bg-gradient-to-r from-[#FE7D1A] to-[#DB5100] rounded-[100px]">
+          <button className="flex md:text-[28px] items-center justify-evenly text-white xl:mt-12 md:h-[76px] md:w-[300px] text-[22px] font-bold mb-7 w-64 h-[65px]  bg-gradient-tangerine-diagonal rounded-[100px]">
             Start Exploring <BiRightArrowAlt className="text-4xl" />
           </button>
         </div>
