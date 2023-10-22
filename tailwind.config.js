@@ -104,8 +104,21 @@ export default {
       },
     },
     fontFamily: {
-      kalam: ["Kalem"],
+      kalam: ["Kalam"],
       rasa: ["Rasa"],
+      display: ["Kalam"],
+      body: ["Rasa"],
+    },
+    backgroundImage: {
+      "gradient-tangerine-diagonal": "var(--gradient-tangerine-diagonal)",
+      "gradient-lilypad-diagonal": "var(--gradient-lilypad-diagonal)",
+      "gradient-gray-diagonal": "var(--gradient-gray-diagonal)",
+      "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
+      "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
+      "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+    },
+    scale: {
+      175: "1.75",
     },
   },
   plugins: [],

@@ -11,31 +11,55 @@
 
   --color-light-cream: rgb(254 248 230);
 
+  /* Typography */
   --font-kalam: "Kalam", cursive;
   --font-rasa: "Rasa", serif;
+  --font-display: var(--font-kalam);
+  --font-body: var(--font-rasa);
+
+  /* Gradients */
+  --gradient-tangerine-diagonal: linear-gradient(
+    90deg,
+    #fe7d1a 0.09%,
+    #db5100 102.1%
+  );
+  --gradient-lilypad-diagonal: linear-gradient(90deg, #009acc 0%, #0bd99c 100%);
+  --gradient-gray-diagonal: linear-gradient(
+    90deg,
+    #76949d 0%,
+    #76949d 100%
+  ); /* Just a solid gray background image */
+  --gradient-sky-diagonal: linear-gradient(90deg, #5dc5e3 0%, #009acc 100%);
+  --gradient-watermelon-diagonal: linear-gradient(
+    90deg,
+    #04c023 0%,
+    #018f18 100%
+  );
+  --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
 }
 
 body,
 input {
-  font-family: var(--font-rasa);
+  font-family: var(--font-body);
   font-size: 20px;
 }
 
+/* NOTE: Use the Heading component which overwrights these hX rules */
 h1,
 h2,
-h3 {
-  font-family: var(--font-kalam);
-  line-height: 1.25;
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.5;
 }
-
 h1 {
   font-size: 60px;
 }
-
 h2 {
   font-size: 48px;
 }
-
 h3 {
   font-size: 36px;
 }

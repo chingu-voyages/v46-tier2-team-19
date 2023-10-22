@@ -4,7 +4,8 @@ import PostDetail from "./PostDetail";
 import RecipesPage from "./Recipes";
 import RecipeDetailsPage from "./RecipesDetail";
 import About from "./About";
-import IconsDevPage from "./dev/Icons";
+import Components from "./Components";
+
 
 export {
   Home,
@@ -13,5 +14,5 @@ export {
   About,
   RecipesPage,
   RecipeDetailsPage,
-  IconsDevPage,
+  Components,
 };
