@@ -1,16 +1,15 @@
-import { menuIcon, close } from "@/assets";
+import { colorLogo as Logo } from "@/assets";
+import { Icon } from "@/features/ui";
 import { navLinks, name } from "@/constants";
 
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { colorLogo as Logo } from "@/assets";
-
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="site-header top-0 z-40 flex items-center justify-between px-4 py-3 bg-white shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
+    <header className="top-0 z-40 flex items-center justify-between px-4 py-3 bg-white shadow-md shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
       <aside className="w-40 lg:w-52">
         <Link to="/">
           <img src={Logo} alt={name} />
@@ -19,7 +18,11 @@ export const Header = () => {
       <nav>
         <div className="hidden space-x-4 lg:block">
           {navLinks.map((navLink, index) => (
-            <Link key={index} to={navLink.href}>
+            <Link
+              key={index}
+              to={navLink.href}
+              className="uppercase font-kalam"
+            >
               {navLink.title}
             </Link>
           ))}
@@ -27,10 +30,9 @@ export const Header = () => {
         <div className="block lg:hidden">
           <Menu>
             <Menu.Button className="-m-1.5 flex items-center p-1.5">
-              <img
-                src={toggle ? close : menuIcon}
-                alt="menu"
-                className="h-9 w-9 cursor-pointer object-contain text-[#6DD1E3]"
+              <Icon
+                name={toggle ? "close" : "hamburger"}
+                className="w-9 text-[#6DD1E3]"
                 onClick={() => setToggle(!toggle)}
               />
             </Menu.Button>
