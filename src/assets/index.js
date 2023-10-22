@@ -18,3 +18,4 @@ export {
   search,
   downArrow,
 };
+export * from "./icons";

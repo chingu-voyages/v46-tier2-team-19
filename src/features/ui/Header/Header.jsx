@@ -1,11 +1,10 @@
-import { menuIcon, close } from "@/assets";
+import { colorLogo as Logo } from "@/assets";
+import { Icon } from "@/features/ui";
 import { navLinks, name } from "@/constants";
 
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-
-import { colorLogo as Logo } from "@/assets";
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -31,10 +30,9 @@ export const Header = () => {
         <div className="block lg:hidden">
           <Menu>
             <Menu.Button className="-m-1.5 flex items-center p-1.5">
-              <img
-                src={toggle ? close : menuIcon}
-                alt="menu"
-                className="h-9 w-9 cursor-pointer object-contain text-[#6DD1E3]"
+              <Icon
+                name={toggle ? "close" : "hamburger"}
+                className="w-9 text-[#6DD1E3]"
                 onClick={() => setToggle(!toggle)}
               />
             </Menu.Button>
