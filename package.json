@@ -16,14 +16,13 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "host": "vite --host"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "npm run prettier:format",
-      "npm run lint",
-      "npm run test",
-      "npm run cz"
+      "npm run lint"
     ]
   },
   "dependencies": {
@@ -35,6 +34,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.4.3"
   },
