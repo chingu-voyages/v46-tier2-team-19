@@ -2,45 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --border-radius-s: 0.5rem;
+  --border-radius-m: 1rem;
+  --border-radius-l: 2rem;
+
+  --box-shadow: 0 0 0.25rem #2d2d2d;
+
+  --color-light-cream: rgb(254 248 230);
+
+  /* Typography */
+  --font-kalam: "Kalam", cursive;
+  --font-rasa: "Rasa", serif;
+  --font-display: var(--font-kalam);
+  --font-body: var(--font-rasa);
+
+  /* Gradients */
+  --gradient-tangerine-diagonal: linear-gradient(
+    90deg,
+    #fe7d1a 0.09%,
+    #db5100 102.1%
+  );
+  --gradient-lilypad-diagonal: linear-gradient(90deg, #009acc 0%, #0bd99c 100%);
+  --gradient-gray-diagonal: linear-gradient(
+    90deg,
+    #76949d 0%,
+    #76949d 100%
+  ); /* Just a solid gray background image */
+  --gradient-sky-diagonal: linear-gradient(90deg, #5dc5e3 0%, #009acc 100%);
+  --gradient-watermelon-diagonal: linear-gradient(
+    90deg,
+    #04c023 0%,
+    #018f18 100%
+  );
+  --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body,
+input {
+  font-family: var(--font-body);
+  font-size: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* NOTE: Use the Heading component which overwrights these hX rules */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 60px;
 }
-
-.card {
-  padding: 2em;
+h2 {
+  font-size: 48px;
 }
-
-.read-the-docs {
-  color: #888;
+h3 {
+  font-size: 36px;
 }
