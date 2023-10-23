@@ -24,7 +24,7 @@ export const SearchBox = ({ onSearch }) => {
     e.preventDefault();
   };
   return (
-    <div className="bg-tangerine-400 p-[1px] rounded-full flex items-center max-w-xl">
+    <div className="bg-gradient-tangerine-diagonal p-[1px] rounded-full flex items-center max-w-xl">
       <form className="flex w-full" onSubmit={handleFormSubmit}>
         <input
           type="search"
@@ -34,7 +34,7 @@ export const SearchBox = ({ onSearch }) => {
           className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
         />
         <button
-          className="px-4 rounded-r-full text-white bg-tangerine-400 hover:bg-tangerine-600 flex flex-col align-middle justify-center text-3xl"
+          className="px-4 rounded-r-full bg-gradient-tangerine-diagonal hover:bg-tangerine-600"
           onClick={() => handleSearch()}
         >
           <Icon name="search" />

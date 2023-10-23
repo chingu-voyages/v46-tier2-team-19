@@ -10,8 +10,8 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="hero-section select-none relative ">
-      <div className="hero-wrapper w-full flex flex-col lg:flex-row justify-between ">
+    <section className="relative select-none hero-section ">
+      <div className="flex flex-col justify-between w-full hero-wrapper lg:flex-row ">
         <div className="hero-content  xl:px-32 xl:pt-32  md:px-12 md:pt-[66px] pt-24 px-4">
           <h1 className=" text-[72px]   md:text-[128px]  text-transparent  bg-clip-text bg-gradient-sky-diagonal ">
             Hungry?{" "}
@@ -32,7 +32,7 @@ export const HeroSection = () => {
         </div>
         {/* /Hero-Content */}
 
-        <div className="hero-yumi flex  xl:justify-start  md:justify-center justify-center    flex-grow items-end">
+        <div className="flex items-end justify-center flex-grow hero-yumi xl:justify-start md:justify-center">
           <img
             src={Yumi}
             alt="Yumi Character"
@@ -44,11 +44,11 @@ export const HeroSection = () => {
       </div>
       {/* Hero-Wrapper */}
 
-      <div className=" relative">
+      <div className="relative ">
         <SvgComponent />
       </div>
 
-      <div className=" bg colored-balls absolute  xl:top-28 md:top-16 top-8 right-0  ">
+      <div className="absolute right-0  bg colored-balls xl:top-28 md:top-16 top-8">
         <div className="w-[30px] h-[30px] xl:w-[44.44px] xl:h-[44.44px] bg-RedBall bg-cover rounded-full relative xl:right-[212px]  md:right-[116px] right-[72px] "></div>
         <div className="w-[38px]  h-[38px]  xl:w-[56.56px] xl:h-[56.56px]  bg-YellowBall bg-cover relative top-[40px] md:top-14 md:right-11 right-6  xl:top-28 xl:right-24 rounded-full"></div>
         <div className="w-[25px] h-[25px] xl:w-[37.23px] xl:h-[37.23px] bg-OrangeBall bg-cover rounded-full relative top-[100px]  right-20  xl:right-28 xl:top-64  "></div>
