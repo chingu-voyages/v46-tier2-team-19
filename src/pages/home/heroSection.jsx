@@ -1,4 +1,4 @@
-import { BiRightArrowAlt } from "react-icons/bi";
+import { Icon } from "@/features/ui/Icon";
 import Yumi from "../../assets/brand/Yumi.png";
 
 import SvgComponent from "./svgWave";
@@ -27,7 +27,7 @@ export const HeroSection = () => {
           </p>
 
           <button className="flex md:text-[28px] items-center justify-evenly text-white xl:mt-12 md:h-[76px] md:w-[300px] text-[22px] font-bold mb-7 w-64 h-[65px]  bg-gradient-tangerine-diagonal rounded-[100px]">
-            Start Exploring <BiRightArrowAlt className="text-4xl" />
+            Start Exploring <Icon name="right-arrow" className="text-4xl" />
           </button>
         </div>
         {/* /Hero-Content */}

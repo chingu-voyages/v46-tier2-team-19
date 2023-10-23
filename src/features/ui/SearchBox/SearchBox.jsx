@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { search } from "@/assets";
 import debounce from "lodash/debounce";
 import PropTypes from "prop-types";
+import { Icon } from "@/features/ui/Icon";
 export const SearchBox = ({ onSearch }) => {
   const [localTerm, setLocalTerm] = useState("");
   const debouncedSearch = debounce(onSearch, 1500);
@@ -37,7 +37,7 @@ export const SearchBox = ({ onSearch }) => {
           className="px-4 rounded-r-full bg-gradient-tangerine-diagonal hover:bg-tangerine-600"
           onClick={() => handleSearch()}
         >
-          <img src={search} alt="search icon" />
+          <Icon name="search" />
         </button>
       </form>
     </div>
