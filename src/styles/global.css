@@ -38,6 +38,42 @@
   --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
 }
 
+/* Text Gradients */
+.tangerine-text-gradient {
+  background: var(--gradient-tangerine-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lilypad-text-gradient {
+  background: var(--gradient-lilypad-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text-gradient {
+  background: var(--gradient-gray-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sky-text-gradient {
+  background: var(--gradient-sky-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.watermelon-text-gradient {
+  background: var(--gradient-watermelon-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lava-text-gradient {
+  background: var(--gradient-lava-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body,
 input {
   font-family: var(--font-body);
