@@ -1,4 +1,4 @@
-import { Icon } from "@/features/ui";
+import { Icon, Heading } from "@/features/ui";
 
 const Icons = () => {
   const icons = [
@@ -34,7 +34,9 @@ const Icons = () => {
 
   return (
     <div className="p-10">
-      <h1 className="text-center">YumYumYes! Icons</h1>
+      <Heading level="h3" variant="lava" className="text-center text-2xl">
+        Icons
+      </Heading>
       <div>
         <div className=" max-w-xl mx-auto my-8">
           <p className="mb-4">
