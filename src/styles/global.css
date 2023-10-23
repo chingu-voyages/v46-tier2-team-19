@@ -38,6 +38,13 @@
   --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
 }
 
+/* Text Gradients */
+.watermelon-text-gradient {
+  background: var(--gradient-watermelon-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body,
 input {
   font-family: var(--font-body);
