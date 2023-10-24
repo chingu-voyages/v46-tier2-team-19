@@ -8,11 +8,12 @@ export const RecipeCard = ({
   num_servings,
   user_ratings,
   canonical_id,
+  id,
 }) => {
   console.log(canonical_id);
   return (
     <div className="w-full rounded-2xl bg-white sm:w-[311px] shadow-xl">
-      <Link to="#">
+      <Link to={`/recipes/${id}`}>
         <div className="h-[150px] w-full">
           <img
             src={thumbnail_url}
@@ -21,7 +22,9 @@ export const RecipeCard = ({
           />
         </div>
         <div className="flex flex-col w-full gap-12 mb-2 text-left px-7">
-          <h3 className="text-[14px] font-bold text-gray-900">{name}</h3>
+          <h3 className="text-[14px] font-bold text-gray-900">
+            <Link to={`/recipes/${id}`}>{name}</Link>
+          </h3>
           <div className="flex flex-wrap justify-between">
             <p className="text-[12px]">{`${num_servings} serving(s)`}</p>
             <div>
