@@ -1,9 +1,13 @@
-import { Heading } from "@/features/ui/Heading";
+import { Heading } from "@/features/ui";
 
 function Headings() {
   return (
     <section id="headings">
-      <h2>Headings</h2>
+      {/* <h2>Headings</h2> */}
+      <Heading level="h3" variant="lava">
+        Headings
+      </Heading>
+
       <div className="grid gap-9 grid-cols-2">
         <ul className="grid gap-3">
           <li>
