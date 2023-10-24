@@ -22,9 +22,7 @@ export const RecipeCard = ({
           />
         </div>
         <div className="flex flex-col w-full gap-12 mb-2 text-left px-7">
-          <h3 className="text-[14px] font-bold text-gray-900">
-            <Link to={`/recipes/${id}`}>{name}</Link>
-          </h3>
+          <h3 className="text-[14px] font-bold text-gray-900">{name}</h3>
           <div className="flex flex-wrap justify-between">
             <p className="text-[12px]">{`${num_servings} serving(s)`}</p>
             <div>
