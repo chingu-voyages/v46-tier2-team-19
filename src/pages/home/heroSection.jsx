@@ -2,6 +2,7 @@ import { Icon } from "@/features/ui/Icon";
 import Yumi from "../../assets/brand/Yumi.png";
 
 import SvgComponent from "./svgWave";
+import { Heading, Button } from "@/features/ui";
 
 export const HeroSection = () => {
   const handleDragStart = (event) => {
@@ -13,12 +14,18 @@ export const HeroSection = () => {
     <section className="relative select-none hero-section ">
       <div className="flex flex-col justify-between w-full hero-wrapper lg:flex-row ">
         <div className="hero-content  xl:px-32 xl:pt-32  md:px-12 md:pt-[66px] pt-24 px-4">
-          <h1 className=" text-[72px]   md:text-[128px]  text-transparent  bg-clip-text bg-gradient-sky-diagonal ">
+          {/* <h1 className=" text-[72px]   md:text-[128px]  text-transparent  bg-clip-text bg-gradient-sky-diagonal ">
             Hungry?{" "}
-          </h1>
-          <h2 className="  text-transparent   text-4xl md:text-[64px] leading-normal  bg-clip-text bg-gradient-watermelon-diagonal  ">
+          </h1> */}
+          <Heading level="h1" variant="sky">
+            Hungry?
+          </Heading>
+          {/* <h2 className="  text-transparent   text-4xl md:text-[64px] leading-normal  bg-clip-text bg-gradient-watermelon-diagonal  ">
             YumYumYes!
-          </h2>
+          </h2> */}
+          <Heading level="h2" variant="watermelon">
+            YumYumYes!
+          </Heading>
 
           <p className="font-['Rasa'] xl:leading-8 xl:max-w-[507px] md:max-w-[360px] md:text-[26px] my-6 text-black text-xl font-medium">
             {
@@ -26,9 +33,13 @@ export const HeroSection = () => {
             }
           </p>
 
-          <button className="flex md:text-[28px] items-center justify-evenly text-white xl:mt-12 md:h-[76px] md:w-[300px] text-[22px] font-bold mb-7 w-64 h-[65px]  bg-gradient-tangerine-diagonal rounded-[100px]">
+          {/* <button className="flex md:text-[28px] items-center justify-evenly text-white xl:mt-12 md:h-[76px] md:w-[300px] text-[22px] font-bold mb-7 w-64 h-[65px]  bg-gradient-tangerine-diagonal rounded-[100px]">
             Start Exploring <Icon name="right-arrow" className="text-4xl" />
-          </button>
+          </button> */}
+          <Button variant="primary" size="large">
+            Start Exploring
+            <Icon name="right-arrow" className="scale-125" />
+          </Button>
         </div>
         {/* /Hero-Content */}
 

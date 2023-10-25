@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.6...v0.0.7) (2023-10-24)
+
+
+### Features
+
+* **component:** hero Section Added ([a676553](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a676553116ba25e0b3e93f1064730396b5794ede))
+* **global.css:** added multiple text gradients classes for enhanced styling options ([409efc0](https://github.com/chingu-voyages/v46-tier2-team-19/commit/409efc0a694ce79abcc6ba8a6ac8e418e87b8b6a))
+* **hearosection.jsx:** refactor to use Heading and Button components ([9a1495e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9a1495ec2a10b9b9be33bc5f0b6685a30b28f85f))
+* hero Section Added ([b0a45a1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b0a45a13e39a4ff19422ffb7c5d3bb871fe2c3cc))
+* **icon component and dev route:** implement custom icon set, component and page for icon selection ([8666517](https://github.com/chingu-voyages/v46-tier2-team-19/commit/866651771f5fbcb202a59129aa9f9ee56dfc270e))
+* **tailwind.config.js:** add custom fluid text sizing classes for headings ([f802c54](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f802c5425090b2f3b4110d2b8c2c3e24d0c38305))
+
+
+### Bug Fixes
+
+* **components page & minimal refactoring elsewhere:** add icons to compoents page and refactor ([b256bb1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b256bb1f21b51538572db07c0153f7d62751ba32))
+* **component:** tailwind Config file fix ([92e7f97](https://github.com/chingu-voyages/v46-tier2-team-19/commit/92e7f978202b4475e0d99902c09c6c0938742d33))
+* **plastic balls:** plastic Balls added ([ec707c9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ec707c9de958e51eac9f88582d06e2da90919cbc))
+
 ### [0.0.6](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.4...v0.0.6) (2023-10-21)
 
 

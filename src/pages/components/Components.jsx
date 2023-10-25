@@ -7,12 +7,15 @@ import { Heading } from "@/features/ui/Heading";
 function Components() {
   return (
     <section className="p-10">
-      <Heading level="h2" variant="lava" className="mb-6">
+      <Heading level="h1" variant="lava" className="mb-6">
         Components
       </Heading>
-      <Buttons />
-      <Icons />
-      <Headings />
+
+      <div className="grid gap-8">
+        <Buttons />
+        <Icons />
+        <Headings />
+      </div>
     </section>
   );
 }

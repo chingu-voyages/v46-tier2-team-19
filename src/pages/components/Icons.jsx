@@ -33,12 +33,13 @@ const Icons = () => {
   };
 
   return (
-    <div className="p-10">
-      <Heading level="h3" variant="lava" className="text-center text-2xl">
+    <div>
+      <Heading level="h3" variant="lava">
         Icons
       </Heading>
-      <div>
-        <div className=" max-w-xl mx-auto my-8">
+
+      <div className="grid gap-4">
+        <div className="max-w-xl">
           <p className="mb-4">
             Here are the icons available for use in our project. Need another?
             Shoot me a note @joekotvas on Discord.
@@ -49,7 +50,8 @@ const Icons = () => {
             <code className="text-base">text-[#ff0000]</code>.
           </p>
         </div>
-        <div className="grid grid-cols-4 max-w-2xl mx-auto">
+
+        <div className="grid grid-cols-4 max-w-2xl">
           {icons.map((name) => (
             <div
               key={name}

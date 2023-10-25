@@ -1,13 +1,12 @@
-import { Button } from "@/features/ui/Button";
-import { Icon } from "@/features/ui/Icon";
-import { Heading } from "@/features/ui/Heading";
+import { Heading, Button, Icon } from "@/features/ui";
 
 function Buttons() {
   return (
     <section id="buttons">
-      <Heading level="h3" variant="tangerine">
+      <Heading level="h3" variant="lava">
         Buttons
       </Heading>
+
       <div className="grid gap-3 grid-cols-2">
         <ul className="grid gap-3">
           <li>
