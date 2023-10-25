@@ -2,7 +2,7 @@ import Home from "./home/Home";
 import Posts from "./Posts";
 import PostDetail from "./PostDetail";
 import RecipesPage from "./Recipes";
-import RecipeDetailsPage from "./RecipesDetail";
+import RecipeDetailsPage from "./recipes/RecipeDetailsPage";
 import About from "./About";
 import Components from "./components/Components";
 
