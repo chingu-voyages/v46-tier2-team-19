@@ -8,11 +8,12 @@ export const RecipeCard = ({
   num_servings,
   user_ratings,
   canonical_id,
+  id,
 }) => {
   console.log(canonical_id);
   return (
     <div className="w-full rounded-2xl bg-white sm:w-[311px] shadow-xl">
-      <Link to="#">
+      <Link to={`/recipes/${id}`}>
         <div className="h-[150px] w-full">
           <img
             src={thumbnail_url}
