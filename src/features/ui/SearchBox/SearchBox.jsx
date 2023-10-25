@@ -26,13 +26,14 @@ export const SearchBox = ({ searchTerm, onSearch }) => {
           value={localTerm}
           onChange={handleInputChange}
           placeholder="Enter an Ingredient..."
-          className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
+          size="30"
+          className="w-full px-6 text-sm align-middle rounded-l-full lg:text-lg bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-0"
         />
         <Button
           type="submit"
           variant="primary"
           size="large"
-          className="rounded-l-none"
+          className="rounded-l-none focus:ring-0 focus:ring-outline-0"
         >
           <Icon name="search" className="scale-125" />
         </Button>
