@@ -7,10 +7,8 @@ export const RecipeCard = ({
   thumbnail_alt_text,
   num_servings,
   user_ratings,
-  canonical_id,
   id,
 }) => {
-  console.log(canonical_id);
   return (
     <div className="w-full rounded-2xl bg-white sm:w-[311px] shadow-xl">
       <Link to={`/recipes/${id}`}>

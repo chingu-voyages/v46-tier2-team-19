@@ -31,7 +31,10 @@ export async function fetchRecipes(search, from = 0, size = 20) {
         params: { from, size, q: search },
       },
     );
-    console.log(data);
+    localStorage.setItem(
+      `${search}-searchRecipeResults`,
+      JSON.stringify(data.results),
+    );
     return data;
   } catch (error) {
     console.error(error);

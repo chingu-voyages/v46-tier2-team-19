@@ -1,30 +1,21 @@
 import { useState, useEffect } from "react";
-import debounce from "lodash/debounce";
 import PropTypes from "prop-types";
 import { Icon, Button } from "@/features/ui";
-
-export const SearchBox = ({ onSearch }) => {
-  const [localTerm, setLocalTerm] = useState("");
-  const debouncedSearch = debounce(onSearch, 1500);
+export const SearchBox = ({ searchTerm, onSearch }) => {
+  const [localTerm, setLocalTerm] = useState(searchTerm);
 
   useEffect(() => {
-    return () => {
-      debouncedSearch.cancel();
-    };
-  }, [debouncedSearch]);
-
-  const handleSearch = () => {
-    onSearch(localTerm);
-    setLocalTerm("");
-  };
+    setLocalTerm(searchTerm);
+  }, [searchTerm]);
 
   const handleInputChange = (e) => {
-    setLocalTerm(e.target.value);
-    debouncedSearch(e.target.value);
+    const newSearchTerm = e.target.value;
+    setLocalTerm(newSearchTerm);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    onSearch(localTerm);
   };
 
   return (
@@ -35,19 +26,14 @@ export const SearchBox = ({ onSearch }) => {
           value={localTerm}
           onChange={handleInputChange}
           placeholder="Enter an Ingredient..."
-          className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
+          size="30"
+          className="w-full px-6 text-sm align-middle rounded-l-full lg:text-lg bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-0"
         />
-        {/* <button
-          className="px-4 rounded-r-full bg-gradient-tangerine-diagonal hover:bg-tangerine-600"
-          onClick={() => handleSearch()}
-        >
-          <Icon name="search" />
-        </button> */}
         <Button
+          type="submit"
           variant="primary"
           size="large"
-          onClick={() => handleSearch()}
-          className="rounded-l-none"
+          className="rounded-l-none focus:ring-0 focus:ring-outline-0"
         >
           <Icon name="search" className="scale-125" />
         </Button>
@@ -57,5 +43,6 @@ export const SearchBox = ({ onSearch }) => {
 };
 
 SearchBox.propTypes = {
+  searchTerm: PropTypes.string,
   onSearch: PropTypes.func.isRequired,
 };

@@ -1,9 +1,14 @@
-import { useState } from "react";
 import { RecipeList, FeatureOfTheDay } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
-
-const RecipesPage = () => {
-  const [search, setSearch] = useState("");
+import debounce from "lodash/debounce";
+import { useSearchParams } from "react-router-dom";
+const Search = () => {
+  const [search, setSearch] = useSearchParams();
+  const searchTerm = search.get("q") || "";
+  const debouncedSetSearchParams = debounce(setSearch, 300);
+  const handleSearch = (newSearchTerm) => {
+    debouncedSetSearchParams({ q: newSearchTerm });
+  };
 
   return (
     <div className="flex flex-col items-center w-full p-10 bg-earlyDawn-50">
@@ -21,16 +26,16 @@ const RecipesPage = () => {
             Add Ingredients Here and We Will Do Our Magic!
           </p>
           <div className="w-full mx-auto">
-            <SearchBox onSearch={(term) => setSearch(term)} />
+            <SearchBox searchTerm={searchTerm} onSearch={handleSearch} />
           </div>
         </div>
         <div className="w-40 h-40 m-4 rounded-full bg-watermelon-600" />
       </div>
       <div className="">
-        <RecipeList searchTerm={search} />
+        <RecipeList searchTerm={searchTerm} />
       </div>
     </div>
   );
 };
 
-export default RecipesPage;
+export default Search;

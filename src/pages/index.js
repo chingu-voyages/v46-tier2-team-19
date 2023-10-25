@@ -1,8 +1,8 @@
 import Home from "./home/Home";
 import Posts from "./Posts";
 import PostDetail from "./PostDetail";
-import RecipesPage from "./Recipes";
-import RecipeDetailsPage from "./recipes/RecipeDetailsPage";
+import Search from "./Search";
+import RecipeDetailsPage from "./RecipesDetail";
 import About from "./About";
 import Components from "./components/Components";
 
@@ -11,7 +11,7 @@ export {
   Posts,
   PostDetail,
   About,
-  RecipesPage,
+  Search,
   RecipeDetailsPage,
   Components,
 };
