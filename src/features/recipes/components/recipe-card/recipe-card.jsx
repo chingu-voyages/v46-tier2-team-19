@@ -9,10 +9,9 @@ export const RecipeCard = ({
   user_ratings,
   canonical_id,
 }) => {
-  console.log(canonical_id);
   return (
     <div className="w-full rounded-2xl bg-white sm:w-[311px] shadow-xl">
-      <Link to="#">
+      <Link to={`/recipes/${canonical_id.split(":")[1]}`}>
         <div className="h-[150px] w-full">
           <img
             src={thumbnail_url}

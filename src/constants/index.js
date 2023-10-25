@@ -1,6 +1,6 @@
-export const name = "YumYumYes!";
-export const slogan = "";
-export const logoUrl = "";
+const name = "YumYumYes!";
+const slogan = "";
+const logoUrl = "";
 
 export const navLinks = [
   {
@@ -14,8 +14,23 @@ export const navLinks = [
   //   href: "/posts",
   // },
   {
-    id: "recipes",
-    title: "Recipes",
-    href: "/recipes",
+    id: "search",
+    title: "Search",
+    href: "/search",
   },
 ];
+
+const footerLinks = [
+  {
+    id: "about",
+    title: "About",
+    href: "/about",
+  },
+  {
+    id: "search",
+    title: "Search",
+    href: "/search",
+  },
+];
+
+export { name, slogan, logoUrl, footerLinks };

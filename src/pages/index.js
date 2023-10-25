@@ -1,7 +1,7 @@
 import Home from "./Home";
 import Posts from "./Posts";
 import PostDetail from "./PostDetail";
-import RecipesPage from "./Recipes";
+import Search from "./Search";
 import RecipeDetailsPage from "./RecipesDetail";
 import About from "./About";
 import Components from "./Components";
@@ -11,7 +11,7 @@ export {
   Posts,
   PostDetail,
   About,
-  RecipesPage,
+  Search,
   RecipeDetailsPage,
   Components,
 };

@@ -28,10 +28,13 @@ export async function fetchRecipes(search) {
           "X-RapidAPI-Key": import.meta.env.VITE_TASTY_API_KEY,
           "X-RapidAPI-Host": "tasty.p.rapidapi.com",
         },
-        params: { from: "0", size: "8", q: search },
+        params: { from: "0", size: "9", q: search },
       },
     );
-    console.log(data);
+    localStorage.setItem(
+      `${search}-searchRecipeResults`,
+      JSON.stringify(data.results),
+    );
     return data;
   } catch (error) {
     console.error(error);

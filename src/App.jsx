@@ -6,7 +6,7 @@ import {
   Posts,
   PostDetail,
   About,
-  RecipesPage,
+  Search,
   RecipeDetailsPage,
   Components,
 } from "@/pages";
@@ -26,8 +26,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/posts/:postId" element={<PostDetail />} />
-        <Route path="/recipes" element={<RecipesPage />} />
-        <Route path="/recipes/:recipesId" element={<RecipeDetailsPage />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/recipes">
+          <Route path=":recipeId" element={<RecipeDetailsPage />} />
+        </Route>
         <Route path="/components" element={<Components />} />
       </Route>
     </Routes>

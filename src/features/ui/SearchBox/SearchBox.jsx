@@ -1,27 +1,21 @@
 import { useState, useEffect } from "react";
-import { search } from "@/assets";
-import debounce from "lodash/debounce";
+
 import PropTypes from "prop-types";
-export const SearchBox = ({ onSearch }) => {
-  const [localTerm, setLocalTerm] = useState("");
-  const debouncedSearch = debounce(onSearch, 1500);
+import { Icon } from "@/features/ui/Icon";
+export const SearchBox = ({ searchTerm, onSearch }) => {
+  const [localTerm, setLocalTerm] = useState(searchTerm);
 
   useEffect(() => {
-    return () => {
-      debouncedSearch.cancel();
-    };
-  }, [debouncedSearch]);
+    setLocalTerm(searchTerm);
+  }, [searchTerm]);
 
-  const handleSearch = () => {
-    onSearch(localTerm);
-    setLocalTerm("");
-  };
   const handleInputChange = (e) => {
-    setLocalTerm(e.target.value);
-    debouncedSearch(e.target.value);
+    const newSearchTerm = e.target.value;
+    setLocalTerm(newSearchTerm);
   };
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    onSearch(localTerm);
   };
   return (
     <div className="bg-gradient-tangerine-diagonal p-[1px] rounded-full flex items-center max-w-xl">
@@ -34,10 +28,10 @@ export const SearchBox = ({ onSearch }) => {
           className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
         />
         <button
-          className="px-4 rounded-r-full bg-gradient-tangerine-diagonal hover:bg-tangerine-600"
-          onClick={() => handleSearch()}
+          type="submit"
+          className="flex items-center px-4 rounded-r-full bg-gradient-tangerine-diagonal hover:bg-tangerine-600"
         >
-          <img src={search} alt="search icon" />
+          <Icon name="search" className="w-6 h-6 text-white" />
         </button>
       </form>
     </div>
@@ -45,5 +39,6 @@ export const SearchBox = ({ onSearch }) => {
 };
 
 SearchBox.propTypes = {
+  searchTerm: PropTypes.string,
   onSearch: PropTypes.func.isRequired,
 };
