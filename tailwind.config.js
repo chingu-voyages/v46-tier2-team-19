@@ -116,11 +116,14 @@ export default {
       "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
       "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
       "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+      "gradient-Top-recipes": "var(---gradient-Top-recipes)",
 
-      RedBall: "url('/src/assets/RedPlasticBall.png')",
-      YellowBall: "url('/src/assets/YellowPlasticBall.png')",
-      OrangeBall: "url('/src/assets/OrangePlasticBall.png')",
+      RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
+      YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
+      OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+      GreenBall: "url('/src/assets/HomePage/GreenPlasticBall.png')",
     },
+
     scale: {
       175: "1.75",
     },

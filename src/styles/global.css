@@ -36,7 +36,11 @@
     #018f18 100%
   );
   --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
+
+  ---gradient-Top-recipes: linear-gradient(180deg, rgba(109,209,227,1) 30%, rgba(248,247,246,1) 100%);
+
 }
+
 
 body,
 input {

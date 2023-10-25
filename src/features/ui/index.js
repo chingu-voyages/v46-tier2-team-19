@@ -3,3 +3,4 @@ export * from "./StarRating";
 export * from "./SearchBox";
 export * from "./Footer";
 export * from "./Icon";
+export * from "../HomePage";
