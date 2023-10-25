@@ -39,8 +39,37 @@
 }
 
 /* Text Gradients */
+.tangerine-text-gradient {
+  background: var(--gradient-tangerine-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lilypad-text-gradient {
+  background: var(--gradient-lilypad-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text-gradient {
+  background: var(--gradient-gray-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sky-text-gradient {
+  background: var(--gradient-sky-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .watermelon-text-gradient {
   background: var(--gradient-watermelon-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lava-text-gradient {
+  background: var(--gradient-lava-diagonal);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -61,7 +90,7 @@ h6 {
   font-family: var(--font-display);
   line-height: 1.5;
 }
-h1 {
+/* h1 {
   font-size: 60px;
 }
 h2 {
@@ -69,4 +98,4 @@ h2 {
 }
 h3 {
   font-size: 36px;
-}
+} */

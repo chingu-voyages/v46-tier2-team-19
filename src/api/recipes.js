@@ -18,7 +18,7 @@ export async function getRecipes() {
   }
 }
 
-export async function fetchRecipes(search) {
+export async function fetchRecipes(search, from = 0, size = 20) {
   console.log(`Fetching ${search}`);
   try {
     const { data } = await axios.get(
@@ -28,7 +28,7 @@ export async function fetchRecipes(search) {
           "X-RapidAPI-Key": import.meta.env.VITE_TASTY_API_KEY,
           "X-RapidAPI-Host": "tasty.p.rapidapi.com",
         },
-        params: { from: "0", size: "9", q: search },
+        params: { from, size, q: search },
       },
     );
     localStorage.setItem(

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSessionStorage } from "@/features/recipes/hooks";
+import { Heading } from "@/features/ui";
 
 const RecipesDetailPage = () => {
   let { recipeId } = useParams();
@@ -13,7 +14,10 @@ const RecipesDetailPage = () => {
 
   return (
     <div className="p-10">
-      <h1 className="text-center">{recipe.name}</h1>
+      {/* <h1 className="text-center">Recipes Detail Page</h1> */}
+      <Heading level="h1" variant="lava">
+        {recipe.name}
+      </Heading>
     </div>
   );
 };
