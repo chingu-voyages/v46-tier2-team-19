@@ -10,9 +10,10 @@ export const HeroSection = () => {
   };
 
   return (
+    // Comment
     <section className="hero-section select-none relative w-full ">
       <div className="hero-wrapper w-full flex flex-col lg:flex-row justify-between ">
-        <div className="hero-content  xl:px-32 xl:pt-32  md:px-12 md:pt-[66px] pt-24 px-4">
+        <div className="hero-content   xl:px-32 xl:pt-32  md:px-12 md:pt-[66px] pt-24 px-4">
           <h1 className=" text-[72px]   md:text-[128px]  text-transparent  bg-clip-text bg-gradient-sky-diagonal ">
             Hungry?{" "}
           </h1>
