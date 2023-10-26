@@ -1,7 +1,7 @@
 import SvgComponent from "../../../../assets/HomePage/svgWave";
 import { BsSearch } from "react-icons/bs";
 
-import { BellPepers } from "@/assets";
+import { BellPeppers } from "@/assets";
 
 export const SearchSection = () => {
   return (
@@ -39,7 +39,7 @@ export const SearchSection = () => {
 
           <div className="flex justify-end md:w-1/2 p-2">
             <img
-              src={BellPepers}
+              src={BellPeppers}
               className="w-40 md:w-[310px] 2xl:w-[400px] "
               alt="Balls Peppers"
             />

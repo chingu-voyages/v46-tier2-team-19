@@ -1,4 +1,4 @@
-import { bannaLabel } from "@/assets";
+import { bananaLabel } from "@/assets";
 import { ChickenLabel } from "@/assets";
 import { FruitLabel } from "@/assets";
 import { littleYumi } from "@/assets";
@@ -16,7 +16,7 @@ export const TopRecipes = () => {
         className="col-start-1 col-end-4 md:col-start-1 md:col-end-4  lg:col-start-1 lg:col-end-2 lg:row-start-4  "
       />
       <img
-        src={bannaLabel}
+        src={bananaLabel}
         alt=""
         className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4 "
       />
