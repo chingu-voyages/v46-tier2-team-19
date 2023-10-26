@@ -6,12 +6,12 @@ import search from "./Search.svg";
 import downArrow from "./down-arrow.svg";
 import colorLogo from "./brand/yumyumyes-logo-m.png";
 import creamLogo from "./brand/yumyumyes-logo-lightcream.svg";
-import bannaLabel from "./HomePage/bananaLabel.png";
+import bananaLabel from "./HomePage/bananaLabel.png";
 import ChickenLabel from "./HomePage/ChickenLabel.png";
 import FruitLabel from "./HomePage/FruitLabel.png";
 import littleYumi from "./HomePage/LittleYumi.png";
 import Yumi from "./brand/Yumi.png";
-import BellPepers from "./HomePage/BellPeppers.png";
+import BellPeppers from "./HomePage/BellPeppers.png";
 import github from "./github.png";
 export {
   react,
@@ -23,11 +23,11 @@ export {
   creamLogo,
   search,
   downArrow,
-  bannaLabel,
+  bananaLabel,
   ChickenLabel,
   FruitLabel,
   littleYumi,
   Yumi,
-  BellPepers,
+  BellPeppers,
 };
 export * from "./icons";
