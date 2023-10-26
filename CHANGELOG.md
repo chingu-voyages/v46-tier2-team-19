@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.7...v0.0.8) (2023-10-26)
+
+
+### Features
+
+* **assets:** add three high def Yumi art assets in multiple sizes  psd, png &  webp ([96dae79](https://github.com/chingu-voyages/v46-tier2-team-19/commit/96dae79f2fce65793cefdc7bd11febce36557221))
+* **homepage:** homePage, hero-section, Search-section and top recipes section added ([4fef22b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4fef22ba51a07e0be9d798f17fd97ee4b521b450))
+* **recipe card:** add link to detail page ([49b7cd9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/49b7cd9a359a239c43f8b964bd99877d2b6584c5))
+* **recipe detail page & dynamic mirage server:** make the Mirage API dynamic & add recipe detail pg ([965d78d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/965d78dd3d197c0008f33a1c70ef057a4a592fcd))
+* **recipes/hooks:** add useSessionStorage hook for managing sessionStorage ([cdc6729](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cdc6729cc45c6fc8dd69f3e4424f9346aee5aec5))
+* search Section and top recipes section added ([08cd5c8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/08cd5c89a818e99b6b995c210cdabcd0cd1303ae))
+
+
+### Bug Fixes
+
+* **.husky/pre-commit:** make pre-commit executable locally ([30f5016](https://github.com/chingu-voyages/v46-tier2-team-19/commit/30f50160be868a0a0950c148d05dd2ab30351984))
+* bannaLabel import and Bellpeppers in components ([8841794](https://github.com/chingu-voyages/v46-tier2-team-19/commit/88417945bccf0961ccbdab6018274e459e7fbec0))
+* index Assets banana and Bellpeppers name fix it ([17eb366](https://github.com/chingu-voyages/v46-tier2-team-19/commit/17eb366af1c25b0b9716d27db355fbb3cee232e0))
+* test ([ccb9308](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ccb930899cb0b8a997d346d68cad7a56095a3bef))
+
 ### [0.0.7](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.6...v0.0.7) (2023-10-24)
 
 
