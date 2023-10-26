@@ -1,5 +1,6 @@
 const name = "YumYumYes!";
-const slogan = "";
+const welcome =
+  "Welcome to YumYumYes, your gateway to delicious recipes and culinary inspiration! Let's embark on a flavorful journey together! ";
 const logoUrl = "";
 
 export const navLinks = [
@@ -33,4 +34,4 @@ const footerLinks = [
   },
 ];
 
-export { name, slogan, logoUrl, footerLinks };
+export { name, welcome, logoUrl, footerLinks };

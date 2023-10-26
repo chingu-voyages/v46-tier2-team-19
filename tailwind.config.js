@@ -102,9 +102,6 @@ export default {
           950: "hsl(0, 0%, 0%)",
         },
       },
-      scale: {
-        175: "1.75",
-      },
       fontFamily: {
         kalam: ["Kalam"],
         rasa: ["Rasa"],
@@ -130,12 +127,15 @@ export default {
         "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
         "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
         "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
-
-        RedBall: "url('/src/assets/RedPlasticBall.png')",
-        YellowBall: "url('/src/assets/YellowPlasticBall.png')",
-        OrangeBall: "url('/src/assets/OrangePlasticBall.png')",
+        "gradient-Top-recipes": "var(---gradient-Top-recipes)",
+        RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
+        YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
+        OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+      },
+      scale: {
+        175: "1.75",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
