@@ -13,21 +13,25 @@ export const TopRecipes = () => {
       <img
         src={FruitLabel}
         alt=""
-        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4  lg:col-start-1 lg:col-end-2 lg:row-start-4  "
+        loading="lazy"
+        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-1 lg:col-end-2 lg:row-start-4 "
       />
       <img
         src={bananaLabel}
         alt=""
+        loading="lazy"
         className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4 "
       />
       <img
         src={ChickenLabel}
         alt=""
-        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-3  lg:row-start-4"
+        loading="lazy"
+        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-3 lg:row-start-4"
       />
 
       <img
         src={littleYumi}
+        loading="lazy"
         className="w-[272px] col-start-1 col-end-4 md:col-start-4 row-start- md:col-end-5 md:row-[3/5]  "
         alt=""
       />

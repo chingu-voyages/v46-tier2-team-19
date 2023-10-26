@@ -12,7 +12,7 @@ export const Header = () => {
     <header className="top-0 z-40 flex items-center justify-between px-4 py-3 bg-white shadow-md shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
       <aside className="w-40 lg:w-52">
         <Link to="/">
-          <img src={Logo} alt={name} />
+          <img src={Logo} alt={name} loading="lazy" />
         </Link>
       </aside>
       <nav>

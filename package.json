@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "cz": "cz",
-    "build": "vite build",
+    "build": "vite build --mode production",
     "lint": "eslint . --fix",
     "test": "npx playwright test",
     "preview": "vite preview",
@@ -31,7 +31,7 @@
     "@tanstack/react-query-devtools": "^4.36.1",
     "axios": "^1.5.1",
     "dotenv": "^16.3.1",
-    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -72,10 +72,5 @@
     "tailwindcss-vite-plugin": "^0.0.7",
     "vite": "^4.4.5",
     "vite-plugin-eslint": "^1.8.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }

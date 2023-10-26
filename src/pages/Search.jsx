@@ -1,6 +1,6 @@
 import { RecipeList, FeatureOfTheDay } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
-import debounce from "lodash/debounce";
+import debounce from "lodash-es/debounce";
 import { useSearchParams } from "react-router-dom";
 const Search = () => {
   const [search, setSearch] = useSearchParams();

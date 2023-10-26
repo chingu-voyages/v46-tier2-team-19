@@ -1,5 +1,5 @@
 import Spa from "./routes";
-import makeServer from "./mirageServer/server";
+import makeServer from "../mirageServer/server";
 import { Routes, Route } from "react-router-dom";
 import {
   Home,

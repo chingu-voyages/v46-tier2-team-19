@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="bottom-0 w-full p-4 bg-[#2d2d2d] rounded-b-2xl items-center text-[#F8F7F6]">
       <aside className="w-40 mx-auto my-4 xl:w-52">
         <Link to="/">
-          <img src={Logo} alt={name} />
+          <img src={Logo} alt={name} loading="lazy" />
         </Link>
       </aside>
       <nav className="mb-4 text-center">
@@ -34,7 +34,7 @@ export const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={github} alt="github" className="w-12 h-12" />
+          <img src={github} alt="github" className="w-12 h-12" loading="lazy" />
         </a>
       </div>
     </footer>

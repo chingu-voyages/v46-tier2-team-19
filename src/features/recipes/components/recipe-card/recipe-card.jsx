@@ -16,6 +16,7 @@ export const RecipeCard = ({
           <img
             src={thumbnail_url}
             alt={thumbnail_alt_text}
+            loading="lazy"
             className="object-cover w-full h-full rounded-t-2xl"
           />
         </div>
