@@ -1,25 +1,50 @@
 import { useParams } from "react-router-dom";
 import { useSessionStorage } from "@/features/recipes/hooks";
-import { Heading } from "@/features/ui";
+import { Heading, LoadingState } from "@/features/ui";
+import { FetchRecipeById } from "@/features/recipes/api";
+import RecipeDetails from "@/features/recipes/components/recipe-details/RecipeDetails";
 
 const RecipesDetailPage = () => {
   let { recipeId } = useParams();
-  console.log(recipeId);
-  const [recipes] = useSessionStorage("recipes", []);
-  console.log(recipes);
 
-  const recipe = recipes.results?.find(
-    (recipe) => recipe.canonical_id === `recipe:${recipeId}`,
+  const [cachedRecipesList] = useSessionStorage("recipes", []);
+  console.log(cachedRecipesList);
+
+  // Attempt to retrieve recipe from session storage.
+  const cachedRecipe = cachedRecipesList.results?.find(
+    (recipe) => recipe.id === recipeId,
   );
 
-  return (
-    <div className="p-10">
-      {/* <h1 className="text-center">Recipes Detail Page</h1> */}
-      <Heading level="h1" variant="lava">
-        {recipe.name}
-      </Heading>
-    </div>
-  );
+  let recipe = {};
+  let query = null;
+
+  if (cachedRecipe) recipe = cachedRecipe;
+  else query = `id:${recipeId}`;
+
+  const { data, isLoading, isError, error } = FetchRecipeById(query);
+
+  if (data) recipe = data.results[0];
+
+  // Quit gracefully if no id is available
+  if (!recipeId) {
+    return (
+      <div className="p-10">
+        <Heading level="h1" variant="tangerine">
+          No id provided.
+        </Heading>
+      </div>
+    );
+  }
+
+  if (isLoading) {
+    return <LoadingState />;
+  }
+
+  if (isError) {
+    return <div>Error: {error}</div>;
+  }
+
+  return <RecipeDetails recipe={recipe} />;
 };
 
 export default RecipesDetailPage;
