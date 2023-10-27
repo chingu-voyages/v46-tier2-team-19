@@ -102,9 +102,6 @@ export default {
           950: "hsl(0, 0%, 0%)",
         },
       },
-      scale: {
-        175: "1.75",
-      },
       fontFamily: {
         kalam: ["Kalam"],
         rasa: ["Rasa"],
@@ -123,18 +120,30 @@ export default {
         "clamp-h5":
           "clamp(1.375rem, 1.3309795673076923rem + 0.18780048076923075vw, 1.5rem)",
       },
-      backgroundImage: {
-        "gradient-tangerine-diagonal": "var(--gradient-tangerine-diagonal)",
-        "gradient-lilypad-diagonal": "var(--gradient-lilypad-diagonal)",
-        "gradient-gray-diagonal": "var(--gradient-gray-diagonal)",
-        "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
-        "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
-        "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+    },
+    fontFamily: {
+      kalam: ["Kalam"],
+      rasa: ["Rasa"],
+      display: ["Kalam"],
+      body: ["Rasa"],
+    },
+    backgroundImage: {
+      "gradient-tangerine-diagonal": "var(--gradient-tangerine-diagonal)",
+      "gradient-lilypad-diagonal": "var(--gradient-lilypad-diagonal)",
+      "gradient-gray-diagonal": "var(--gradient-gray-diagonal)",
+      "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
+      "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
+      "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+      "gradient-Top-recipes": "var(---gradient-Top-recipes)",
 
-        RedBall: "url('/src/assets/RedPlasticBall.png')",
-        YellowBall: "url('/src/assets/YellowPlasticBall.png')",
-        OrangeBall: "url('/src/assets/OrangePlasticBall.png')",
-      },
+      RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
+      YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
+      OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+      GreenBall: "url('/src/assets/HomePage/GreenPlasticBall.png')",
+    },
+
+    scale: {
+      175: "1.75",
     },
   },
   plugins: [],

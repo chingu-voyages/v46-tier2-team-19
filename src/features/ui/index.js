@@ -5,3 +5,4 @@ export * from "./Footer";
 export * from "./Icon";
 export * from "./Heading";
 export * from "./Button";
+export * from "../HomePage";
