@@ -1,6 +1,5 @@
 import SvgComponent from "@/assets/HomePage/svgWave";
 import { Icon } from "@/features/ui/Icon";
-
 import { BellPeppers } from "@/assets";
 
 export const SearchSection = () => {
