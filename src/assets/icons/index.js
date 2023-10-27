@@ -4,6 +4,7 @@ import Flame from "./Flame";
 import GreenDot from "./GreenDot";
 import Hamburger from "./Hamburger";
 import LeftArrow from "./LeftArrow";
+import Loading from "./Loading";
 import OrangeDot from "./OrangeDot";
 import Oven from "./Oven";
 import OvenMitt from "./OvenMitt";
@@ -24,6 +25,7 @@ export const icons = {
   GreenDot,
   Hamburger,
   LeftArrow,
+  Loading,
   OrangeDot,
   Oven,
   OvenMitt,
