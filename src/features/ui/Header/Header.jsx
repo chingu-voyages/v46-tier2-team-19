@@ -21,7 +21,7 @@ export const Header = () => {
             <Link
               key={index}
               to={navLink.href}
-              className="font-body font-bold uppercase hover:text-sky-600 duration-200"
+              className="font-bold uppercase hover:text-sky-600 duration-200"
             >
               {navLink.title}
             </Link>
