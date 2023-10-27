@@ -6,7 +6,7 @@ import search from "./Search.svg";
 import downArrow from "./down-arrow.svg";
 import colorLogo from "./brand/yumyumyes-logo-m.png";
 import creamLogo from "./brand/yumyumyes-logo-lightcream.svg";
-import bananaLabel from "./HomePage/BananaLabel.png";
+import BananaLabel from "./HomePage/BananaLabel.png";
 import ChickenLabel from "./HomePage/ChickenLabel.png";
 import FruitLabel from "./HomePage/FruitLabel.png";
 import littleYumi from "./HomePage/LittleYumi.png";
@@ -23,7 +23,7 @@ export {
   creamLogo,
   search,
   downArrow,
-  bananaLabel,
+  BananaLabel,
   ChickenLabel,
   FruitLabel,
   littleYumi,
