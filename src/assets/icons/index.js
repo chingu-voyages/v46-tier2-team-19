@@ -16,6 +16,7 @@ import Stir from "./Stir";
 import Thermometer from "./Thermometer";
 import UpArrow from "./UpArrow";
 import YellowDot from "./YellowDot";
+import Loading from "./Loading";
 
 export const icons = {
   Close,
@@ -36,4 +37,5 @@ export const icons = {
   Thermometer,
   UpArrow,
   YellowDot,
+  Loading,
 };
