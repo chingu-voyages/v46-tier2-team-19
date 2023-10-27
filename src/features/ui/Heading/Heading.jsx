@@ -21,10 +21,6 @@ export const Heading = (props) => {
       // textSizes = "text-[2rem] md:text-[2.5rem] xl:text-[3rem]";
       textSizes = "text-clamp-h4";
       break;
-    case "h5":
-      // textSizes = "text-[1.375rem] md:text-[1.5rem] xl:text-[1.5rem]";
-      textSizes = "text-clamp-h5";
-      break;
     default:
       break;
   }
