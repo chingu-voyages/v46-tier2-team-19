@@ -1,5 +1,5 @@
-import SvgComponent from "../../../../assets/HomePage/svgWave";
-import { BsSearch } from "react-icons/bs";
+import SvgComponent from "@/assets/HomePage/svgWave";
+import { Icon } from "@/features/ui/Icon";
 
 import { BellPeppers } from "@/assets";
 
@@ -24,7 +24,7 @@ export const SearchSection = () => {
                 className="w-full p-2 pl-6  rounded-l-full text-base md:text-xl bg-[#F8F7F6] focus:outline-none h-full placeholder:text-[#666666] text-lava-950 focus:ring-none"
               />
               <button className="px-4 rounded-full w-[88px] bg-gradient-tangerine-diagonal md:h-full  md:w-[121px] flex justify-center items-center ">
-                <BsSearch className="text-white text-xl" />
+                <Icon name="search" className="text-white md:text-3xl" />
               </button>
             </form>
           </div>
