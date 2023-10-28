@@ -132,6 +132,7 @@ export default {
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
       },
+
       scale: {
         175: "1.75",
       },
