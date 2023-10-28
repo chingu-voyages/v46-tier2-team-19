@@ -17,8 +17,6 @@ export const RecipeList = ({ searchTerm }) => {
     !Array.isArray(recipes.results) ||
     recipes.results.length === 0
   ) {
-    console.log(!recipes);
-    console.log(Array.isArray(recipes.results));
     return <div>No recipes found</div>;
   }
 

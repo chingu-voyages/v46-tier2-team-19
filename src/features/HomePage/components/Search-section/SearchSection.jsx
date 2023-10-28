@@ -6,16 +6,16 @@ import { BellPeppers } from "@/assets";
 export const SearchSection = () => {
   return (
     <section className="Search-Section mt-[-3px] relative   w-full md:bg-[#6DD1E3] md:pb-16 z-10">
-      <SvgComponent className="rotate-180 relative bottom-1" />
+      <SvgComponent className="relative rotate-180 bottom-1" />
 
-      <div className="flex flex-col xl:p-32 p-8 gap-6  xl:gap-12  ">
+      <div className="flex flex-col gap-6 p-8 xl:p-32 xl:gap-12 ">
         {/* Search bar and text */}
         <div className="min-w-[279px] flex flex-col justify-center items-center">
           <h2 className="font-kalam font-bold text-2xl xl:text-6xl xl:w-[900px] md:w-[464px] md:text-4xl md:m-8  text-center leading-8  mb-6">
             {"Tell Us Your Ingredients, We'll Show You Magic!"}
           </h2>
 
-          <div className=" flex flex-row  xl:justify-center ">
+          <div className="flex flex-row  xl:justify-center">
             <form className="flex w-full md:h-16 rounded-full md:w-[576px] xl:w-[720px] bg-[#F8F7F6]  z-10">
               <input
                 type="search"
@@ -37,7 +37,7 @@ export const SearchSection = () => {
             }
           </p>
 
-          <div className="flex justify-end md:w-1/2 p-2">
+          <div className="flex justify-end p-2 md:w-1/2">
             <img
               src={BellPeppers}
               className="w-40 md:w-[310px] 2xl:w-[400px] "
@@ -47,7 +47,7 @@ export const SearchSection = () => {
         </div>
       </div>
 
-      <div className=" bg-colored-balls-top absolute  xl:top-28 md:top-16 top-8 right-0 w-full h-full z-0  ">
+      <div className="absolute right-0 z-0 w-full h-full  bg-colored-balls-top xl:top-28 md:top-16 top-8">
         <div className="w-[12px] h-[12px] md:w-[32px] md:h-[32px] xl:w-[44.44px] xl:h-[44.44px] bg-GreenBall bg-cover rounded-full relative left-[8%] top-[1%]  "></div>
         <div className="w-[12px] h-[12px] md:w-[40px] md:h-[40px] xl:w-[44.44px] xl:h-[44.44px] bg-GreenBall bg-cover rounded-full relative left-[75%] bottom-[3%]   "></div>
 
@@ -55,7 +55,7 @@ export const SearchSection = () => {
         <div className="w-[16px] h-[16px] md:w-[33px] md:h-[33px] xl:w-[37.23px] xl:h-[37.23px] bg-OrangeBall bg-cover rounded-full relative left-[92%] top-[8%]  "></div>
       </div>
 
-      <div className=" bg-colored-balls-bottom absolute h-full    bottom-10  0 w-full z ">
+      <div className="absolute w-full h-full  bg-colored-balls-bottom bottom-10 0 z">
         {/* Green Ball */}
         <div className="w-[12px] h-[12px] md:w-[34.09px] md:h-[34.09px]  xl:w-[44.44px] xl:h-[44.44px]  md:top-[101%] md:left-[20%] 2xl:left-[35%]  bg-GreenBall bg-cover rounded-full relative left-[20%]  top-[85%]   "></div>
 

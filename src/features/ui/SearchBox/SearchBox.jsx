@@ -19,26 +19,27 @@ export const SearchBox = ({ searchTerm, onSearch }) => {
   };
 
   return (
-    <div className="bg-gradient-tangerine-diagonal p-[1px] rounded-full flex items-center max-w-xl">
-      <form className="flex w-full" onSubmit={handleFormSubmit}>
-        <input
-          type="search"
-          value={localTerm}
-          onChange={handleInputChange}
-          placeholder="Enter an Ingredient..."
-          size="30"
-          className="w-full px-6 text-sm align-middle rounded-l-full lg:text-lg bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-0"
-        />
-        <Button
-          type="submit"
-          variant="primary"
-          size="large"
-          className="rounded-l-none focus:ring-0 focus:ring-outline-0"
-        >
-          <Icon name="search" className="scale-125" />
-        </Button>
-      </form>
-    </div>
+    <form
+      className="flex items-center w-full bg-white rounded-full shadow-md"
+      onSubmit={handleFormSubmit}
+    >
+      <input
+        type="search"
+        value={localTerm}
+        onChange={handleInputChange}
+        placeholder="Onion, salt, eggs..."
+        size="30"
+        className="flex-grow h-12 px-6 text-xl tracking-wider bg-white rounded-l-full focus:outline-none placeholder:text-lava-400 placeholder:"
+      />
+      <Button
+        type="submit"
+        variant="primary"
+        size="large"
+        className="h-12 rounded-full focus:ring-0 focus:ring-outline-0"
+      >
+        <Icon name="search" className="scale-125" />
+      </Button>
+    </form>
   );
 };
 
