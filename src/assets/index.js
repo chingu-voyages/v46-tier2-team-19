@@ -12,6 +12,7 @@ import FruitLabel from "./HomePage/FruitLabel.png";
 import littleYumi from "./HomePage/LittleYumi.png";
 import Yumi from "./brand/Yumi.png";
 import BellPeppers from "./HomePage/BellPeppers.png";
+import FeatureRecipe from "./Recipe Photo.png";
 import github from "./github.png";
 export {
   react,
@@ -26,6 +27,7 @@ export {
   BananaLabel,
   ChickenLabel,
   FruitLabel,
+  FeatureRecipe,
   littleYumi,
   Yumi,
   BellPeppers,
