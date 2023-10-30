@@ -29,15 +29,15 @@ export const SearchBox = ({ searchTerm, onSearch }) => {
         onChange={handleInputChange}
         placeholder="Onion, salt, eggs..."
         size="30"
-        className="flex-grow h-12 px-6 text-xl tracking-wider bg-white rounded-l-full focus:outline-none placeholder:text-lava-400 placeholder:"
+        className="w-full h-12 pl-4 text-lg tracking-wider rounded-l-full md:pl-6 md:text-xl focus:outline-none placeholder:text-lava-400"
       />
       <Button
         type="submit"
         variant="primary"
         size="large"
-        className="h-12 rounded-full focus:ring-0 focus:ring-outline-0"
+        className="inline-flex w-20 h-12 rounded-full focus:ring-0 focus:ring-outline-0"
       >
-        <Icon name="search" className="scale-125" />
+        <Icon name="search" className="w-6 scale-125" />
       </Button>
     </form>
   );
