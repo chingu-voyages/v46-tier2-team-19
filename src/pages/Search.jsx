@@ -1,4 +1,5 @@
-import { Yumi, BellPeppers } from "@/assets";
+import YumiWithSpoon from "@/assets/brand/yumi-with-spoon/YumiWithSpoon.jsx";
+import BellPeppers from "@/assets/brand/bell-peppers/BellPeppers";
 import SvgComponent from "@/assets/HomePage/svgWave";
 import { RecipeList, FeatureOfTheDay } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
@@ -30,26 +31,25 @@ const Search = () => {
         >
           YumYum Time!!
         </Heading>
-        <div className="flex flex-wrap items-center justify-center mx-auto md:gap-x-5 lg:justify-between lg:gap-x-5">
-          <img
-            src={BellPeppers}
-            alt="Balls Peppers"
-            className="flex-shrink-0 h-32 max-w-xs lg:h-72"
-          />
+        <div className="flex flex-wrap items-center justify-center mx-auto my-10 gap-x-2 lg:justify-between">
+          <div className="flex items-center justify-center w-1/3 lg:w-1/4 lg:justify-start">
+            <BellPeppers resolution="360" alt="bell-peppers" />
+          </div>
           <div className="flex flex-col items-center justify-center order-last lg:order-1 lg:justify-between">
             <p className="max-w-xs text-2xl font-bold tracking-tight text-center break-words font-kalam lava-text-gradient">
               Add Ingredients Here and We Will Do Our Magic!
             </p>
-            <div className="w-full max-w-xs mx-auto my-4 ">
+            <div className="w-full max-w-xs mx-auto my-4">
               <SearchBox searchTerm={searchTerm} onSearch={handleSearch} />
             </div>
           </div>
-          <img
-            src={Yumi}
-            alt="Yumi Character"
-            className="flex-shrink-0 order-2 h-32 max-w-sm md:order-last lg:order-last lg:h-96"
-            onDragStart={handleDragStart}
-          />
+          <div className="flex items-center justify-center w-1/3 lg:w-1/4 hero-yumi lg:order-last lg:justify-start">
+            <YumiWithSpoon
+              resolution="480"
+              alt="Yumi Character"
+              onDragStart={handleDragStart}
+            />
+          </div>
         </div>
 
         <div className="">
