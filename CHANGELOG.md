@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.10) (2023-10-30)
+
+
+### Features
+
+* **about.jsx:** added background color, wave image, read more button, and additional styling ([8d2abbd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/8d2abbdae0cf0d0d108b8bb748789d343e270cfb))
+
 ### [0.0.9](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.9) (2023-10-30)
 
 
