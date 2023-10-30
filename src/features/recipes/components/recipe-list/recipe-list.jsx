@@ -17,12 +17,14 @@ export const RecipeList = ({ searchTerm }) => {
     !Array.isArray(recipes.results) ||
     recipes.results.length === 0
   ) {
+    console.log(!recipes);
+    console.log(Array.isArray(recipes.results));
     return <div>No recipes found</div>;
   }
 
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 mx-auto mt-10 mb-4 gap-7 lg:grid-cols-3">
+    <div className="flex justify-center px-4 lg:px-20">
+      <div className="grid grid-cols-1 grid-cols-2 gap-10 mb-12 auto-rows-fr md: lg:grid-cols-3">
         {recipes.results.map((recipe) => (
           <RecipeCard key={recipe.id} {...recipe} />
         ))}
