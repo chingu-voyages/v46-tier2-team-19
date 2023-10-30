@@ -1,7 +1,7 @@
-import SvgComponent from "../../../../assets/HomePage/svgWave";
+import SvgComponent from "@/assets/HomePage/svgWave";
 import { Icon } from "@/features/ui";
 
-import { BellPeppers } from "@/assets";
+import BellPeppers from "@/assets/brand/bell-peppers/BellPeppers.jsx";
 
 export const SearchSection = () => {
   return (
@@ -37,17 +37,13 @@ export const SearchSection = () => {
             }
           </p>
 
-          <div className="flex justify-end md:w-1/2 p-2">
-            <img
-              src={BellPeppers}
-              className="w-40 md:w-[310px] 2xl:w-[400px] "
-              alt="Balls Peppers"
-            />
+          <div className="flex justify-center md:justify-end md:w-1/2 p-2">
+            <BellPeppers resolution="360" className="w-[22.5rem]" />
           </div>
         </div>
       </div>
 
-      <div className=" bg-colored-balls-top absolute  xl:top-28 md:top-16 top-8 right-0 w-full h-full z-0  ">
+      <div className=" bg-colored-balls-top absolute pointer-events-none xl:top-28 md:top-16 top-8 right-0 w-full h-full z-0  ">
         <div className="w-[12px] h-[12px] md:w-[32px] md:h-[32px] xl:w-[44.44px] xl:h-[44.44px] bg-GreenBall bg-cover rounded-full relative left-[8%] top-[1%]  "></div>
         <div className="w-[12px] h-[12px] md:w-[40px] md:h-[40px] xl:w-[44.44px] xl:h-[44.44px] bg-GreenBall bg-cover rounded-full relative left-[75%] bottom-[3%]   "></div>
 
@@ -55,7 +51,7 @@ export const SearchSection = () => {
         <div className="w-[16px] h-[16px] md:w-[33px] md:h-[33px] xl:w-[37.23px] xl:h-[37.23px] bg-OrangeBall bg-cover rounded-full relative left-[92%] top-[8%]  "></div>
       </div>
 
-      <div className=" bg-colored-balls-bottom absolute h-full    bottom-10  0 w-full z ">
+      <div className=" bg-colored-balls-bottom pointer-events-none absolute h-full    bottom-10  0 w-full z ">
         {/* Green Ball */}
         <div className="w-[12px] h-[12px] md:w-[34.09px] md:h-[34.09px]  xl:w-[44.44px] xl:h-[44.44px]  md:top-[101%] md:left-[20%] 2xl:left-[35%]  bg-GreenBall bg-cover rounded-full relative left-[20%]  top-[85%]   "></div>
 
