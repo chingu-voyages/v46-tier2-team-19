@@ -1,4 +1,5 @@
-import { BananaLabel, ChickenLabel, FruitLabel, littleYumi } from "@/assets";
+import { BananaLabel, ChickenLabel, FruitLabel } from "@/assets";
+import YumiWithspatula from "@/assets/brand/yumi-with-spatula/YumiWithSpatula";
 
 export const TopRecipes = () => {
   return (
@@ -9,24 +10,24 @@ export const TopRecipes = () => {
 
       <img
         src={FruitLabel}
-        alt=""
-        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4  lg:col-start-1 lg:col-end-2 lg:row-start-4  "
+        alt="Fruit Kabobs"
+        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4  lg:col-start-1 lg:col-end-2 lg:row-start-4 mx-auto"
       />
       <img
         src={BananaLabel}
-        alt=""
-        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4 "
+        alt="Banana Pancakes"
+        className="col-start-1 col-end-4 mx-auto md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4"
       />
       <img
         src={ChickenLabel}
-        alt=""
-        className="col-start-1 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-3  lg:row-start-4"
+        alt="Chicken Nuggets"
+        className="col-start-1 col-end-4 mx-auto md:col-start-1 md:col-end-4  lg:col-start-3 lg:row-start-4"
       />
 
-      <img
-        src={littleYumi}
-        className="w-[272px] col-start-1 col-end-4 md:col-start-4 row-start- md:col-end-5 md:row-[3/5]  "
-        alt=""
+      <YumiWithspatula
+        resolution="272"
+        className="col-start-1 col-end-4 mx-auto w-[272px] md:col-start-4 md:col-end-5 md:row-[3/5]"
+        alt="Yumi holding a spatula surrounded by fruits"
       />
     </section>
   );
