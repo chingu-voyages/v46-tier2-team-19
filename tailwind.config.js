@@ -109,15 +109,15 @@ export default {
         body: ["Rasa"],
       },
       fontSize: {
+        // "clamp-h1":
+        //   "clamp(4.5rem, 3.267427884615385rem + 5.258413461538461vw, 8rem)",
         "clamp-h1":
-          "clamp(4.5rem, 3.267427884615385rem + 5.258413461538461vw, 8rem)",
-        "clamp-h2":
           "clamp(3rem, 2.295673076923077rem + 3.004807692307692vw, 5rem)",
-        "clamp-h3":
+        "clamp-h2":
           "clamp(2.5rem, 1.9717548076923077rem + 2.2536057692307687vw, 4rem)",
-        "clamp-h4":
+        "clamp-h3":
           "clamp(2rem, 1.6478365384615385rem + 1.502403846153846vw, 3rem)",
-        "clamp-h5":
+        "clamp-h4":
           "clamp(1.375rem, 1.3309795673076923rem + 0.18780048076923075vw, 1.5rem)",
       },
       backgroundImage: {

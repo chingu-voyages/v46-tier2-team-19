@@ -2,6 +2,48 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.10) (2023-10-30)
+
+
+### Features
+
+* **about.jsx:** added background color, wave image, read more button, and additional styling ([8d2abbd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/8d2abbdae0cf0d0d108b8bb748789d343e270cfb))
+
+### [0.0.9](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.9) (2023-10-30)
+
+
+### Bug Fixes
+
+* **header.jsx:** apply 'open' prop to Menu ([cf07c5a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cf07c5a4f366cc6e6614e091e34443750e7b12b8))
+
+### [0.0.8](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.7...v0.0.8) (2023-10-28)
+
+
+### Features
+
+* **about.jsx:** create starting layout of About page ([e8604e9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e8604e95b641af21d8b1129fbc8f30249e9ed29e))
+* **assets:** add three high def Yumi art assets in multiple sizes  psd, png &  webp ([96dae79](https://github.com/chingu-voyages/v46-tier2-team-19/commit/96dae79f2fce65793cefdc7bd11febce36557221))
+* **constants/index.js:** add array of team member objects ([25e390d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/25e390d46c730345fdf9750b904ebc28fcf51f9d))
+* **header.jsx:** add preliminary styling to desktop and mobile nav menu ([9fbf7a3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9fbf7a3d5b5aba98c05878dc80f721b94482a588))
+* **homepage.png:** add homepage image for About page ([0663cdd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0663cddc348fbc2d8e4326be046d0916fe783c8a))
+* **homepage:** homePage, hero-section, Search-section and top recipes section added ([4fef22b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4fef22ba51a07e0be9d798f17fd97ee4b521b450))
+* **recipe card:** add link to detail page ([49b7cd9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/49b7cd9a359a239c43f8b964bd99877d2b6584c5))
+* **recipe detail page & dynamic mirage server:** make the Mirage API dynamic & add recipe detail pg ([965d78d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/965d78dd3d197c0008f33a1c70ef057a4a592fcd))
+* **recipedetails:** enable recipe details page to query the api when no cache is available ([e9d7034](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e9d70343bc921ac73bc75ea419429f390e26c764))
+* **recipes/hooks:** add useSessionStorage hook for managing sessionStorage ([cdc6729](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cdc6729cc45c6fc8dd69f3e4424f9346aee5aec5))
+* search Section and top recipes section added ([08cd5c8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/08cd5c89a818e99b6b995c210cdabcd0cd1303ae))
+
+
+### Bug Fixes
+
+* **.husky/pre-commit:** make pre-commit executable locally ([30f5016](https://github.com/chingu-voyages/v46-tier2-team-19/commit/30f50160be868a0a0950c148d05dd2ab30351984))
+* **assets/index.js:** change bananaLabel to BananaLabel ([97bd3f4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/97bd3f4e1e1332ba095a92bf6070f81085e23add))
+* bannaLabel import and Bellpeppers in components ([8841794](https://github.com/chingu-voyages/v46-tier2-team-19/commit/88417945bccf0961ccbdab6018274e459e7fbec0))
+* **heading.jsx:** update Heading component to properly switch to correct hX level font size ([f6e5d7f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f6e5d7f0dbcfce491fd7844849d83ba76b1371db))
+* **heading.jsx:** update Heading component to reflect proper font sizes for each hX level ([3e9d077](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3e9d0774b0c55c3d452e5034f24773e541b484d7))
+* index Assets banana and Bellpeppers name fix it ([17eb366](https://github.com/chingu-voyages/v46-tier2-team-19/commit/17eb366af1c25b0b9716d27db355fbb3cee232e0))
+* test ([ccb9308](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ccb930899cb0b8a997d346d68cad7a56095a3bef))
+
 ### [0.0.7](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.6...v0.0.7) (2023-10-24)
 
 
