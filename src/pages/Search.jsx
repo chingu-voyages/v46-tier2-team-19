@@ -1,8 +1,10 @@
 import { Yumi, BellPeppers } from "@/assets";
+import SvgComponent from "@/assets/HomePage/svgWave";
 import { RecipeList, FeatureOfTheDay } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
 import debounce from "lodash/debounce";
 import { useSearchParams } from "react-router-dom";
+
 const Search = () => {
   const [search, setSearch] = useSearchParams();
   const searchTerm = search.get("q") || "";
@@ -17,37 +19,39 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full bg-earlyDawn-50">
+    <div className="flex flex-col items-center w-full bg-[#FFF2BC] flex-shrink-0">
       <FeatureOfTheDay />
-      <div className="flex flex-col w-full bg-gradient-Top-recipes">
-        <div className="lg:relative ">
-          <div className="flex justify-between px-4 py-6">
-            <img
-              src={BellPeppers}
-              className="w-40 md:w-[310px] 2xl:w-[400px] "
-              alt="Balls Peppers"
-            />
-            <img
-              src={Yumi}
-              alt="Yumi Character"
-              className="w-40 md:w-96  xl:w-[496px]"
-              onDragStart={handleDragStart}
-            />
-          </div>
-          <div className="flex flex-col items-center gap-y-8 lg:absolute inset-1/3 top-12 justify-evenly">
-            <Heading
-              level="h2"
-              variant="watermelon"
-              className="font-bold text-center text-shadow"
-            >
-              YumYum Time!!
-            </Heading>
-            <p className="max-w-sm px-4 text-2xl font-bold tracking-tight text-center break-words max-h-28 font-kalam lava-text-gradient">
+      <SvgComponent className="fill-sky-300" />
+      <div className="flex flex-col flex-shrink-0 w-full lg:relative bg-gradient-Search">
+        <Heading
+          level="h2"
+          variant="watermelon"
+          className="font-bold text-center lg:absolute lg:inset-x-5"
+        >
+          YumYum Time!!
+        </Heading>
+        <div className="flex flex-wrap items-center justify-center mx-auto md:gap-x-5 lg:justify-between lg:gap-x-5">
+          <img
+            src={BellPeppers}
+            alt="Balls Peppers"
+            className="flex-shrink-0 h-32 max-w-xs lg:h-72"
+          />
+          <div className="flex flex-col items-center justify-center order-last lg:order-1 lg:justify-between">
+            <p className="max-w-xs text-2xl font-bold tracking-tight text-center break-words font-kalam lava-text-gradient">
               Add Ingredients Here and We Will Do Our Magic!
             </p>
-            <SearchBox searchTerm={searchTerm} onSearch={handleSearch} />
+            <div className="w-full max-w-xs mx-auto my-4 ">
+              <SearchBox searchTerm={searchTerm} onSearch={handleSearch} />
+            </div>
           </div>
+          <img
+            src={Yumi}
+            alt="Yumi Character"
+            className="flex-shrink-0 order-2 h-32 max-w-sm md:order-last lg:order-last lg:h-96"
+            onDragStart={handleDragStart}
+          />
         </div>
+
         <div className="">
           <RecipeList searchTerm={searchTerm} />
         </div>
