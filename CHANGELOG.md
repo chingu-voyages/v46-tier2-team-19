@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.9) (2023-10-29)
+
+
+### Bug Fixes
+
+* **header.jsx:** apply 'open' prop to Menu ([cf07c5a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cf07c5a4f366cc6e6614e091e34443750e7b12b8))
+
 ### [0.0.8](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.7...v0.0.8) (2023-10-28)
 
 
