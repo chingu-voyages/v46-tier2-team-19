@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.10...v0.0.11) (2023-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* **about.jsx:** y
+
+CH-74
+
+### Features
+
+* **picture component & front page styling:** add responsive picture component & tune front page ([3f6ed49](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3f6ed498179fd5b7f835ea1e43de8ac7db030b2d))
+
+
+### Bug Fixes
+
+* **about.jsx:** fix wave image and general page responsiveness ([f3ad0a1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f3ad0a18f42ba57e5871db37cef141727336a422))
+
+### [0.0.9](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.9) (2023-10-29)
+
+
+### Bug Fixes
+
+* **header.jsx:** apply 'open' prop to Menu ([cf07c5a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cf07c5a4f366cc6e6614e091e34443750e7b12b8))
+
 ### [0.0.10](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.8...v0.0.10) (2023-10-30)
 
 
