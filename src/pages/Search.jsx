@@ -20,10 +20,10 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full bg-[#FFF2BC] flex-shrink-0">
+    <div className="flex flex-col items-center flex-shrink-0 w-full">
       <FeatureOfTheDay />
       <SvgComponent className="fill-sky-300" />
-      <div className="flex flex-col flex-shrink-0 w-full lg:relative bg-gradient-Search">
+      <div className="flex flex-col flex-shrink-0 w-full px-10 pt-10 lg:relative bg-gradient-Search">
         <Heading
           level="h2"
           variant="watermelon"
