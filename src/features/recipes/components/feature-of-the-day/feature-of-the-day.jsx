@@ -3,7 +3,7 @@ import { Heading, Button, Icon } from "@/features/ui";
 import { FeatureRecipe } from "@/assets";
 export const FeatureOfTheDay = () => {
   return (
-    <div className="w-full mx-auto h-1/2">
+    <div className="w-full pt-10 mx-auto h-1/2">
       <Heading
         level="h1"
         variant="watermelon"
