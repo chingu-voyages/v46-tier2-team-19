@@ -23,12 +23,10 @@ export const RecipeList = ({ searchTerm }) => {
   }
 
   return (
-    <div className="flex justify-center px-4 lg:px-20">
-      <div className="grid grid-cols-1 grid-cols-2 gap-10 mb-12 auto-rows-fr md: lg:grid-cols-3">
-        {recipes.results.map((recipe) => (
-          <RecipeCard key={recipe.id} {...recipe} />
-        ))}
-      </div>
+    <div className="grid justify-center grid-cols-1 mx-auto mt-5 mb-10 gap-x-10 gap-y-12 justify-items-center md:grid-cols-2 w-fit auto-rows-fr lg:grid-cols-3">
+      {recipes.results.map((recipe) => (
+        <RecipeCard key={recipe.id} {...recipe} />
+      ))}
     </div>
   );
 };
