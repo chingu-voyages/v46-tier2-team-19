@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.11...v0.0.12) (2023-11-01)
+
+
+### Features
+
+* **assets/index.js:** add FeatureRecipe to exported assets ([fe6db35](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fe6db351246e00d830bdc1ce8bda06cff6f7c954))
+* **assets:** add new FeatureRecipe image and export it in index.js ([5ecb49c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5ecb49c432d108dae392722464fcdb4d36665fbb))
+* **assets:** add new Sweet Peppers brand assets in PNG, PSD, and WEBP formats ([5ac6469](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5ac646999bfb8007df2fb7f5e497df17349f0c75))
+* **jsconfig.json:** add path alias for assets directory ([634f3c4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/634f3c4ab8bfcfb1a52f8a6cf0a01a9259b8586a))
+* **search.jsx:** add drag prevention for Yumi character and redesign page layout ([ad09212](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ad092127db5b01cc25516b06a1f335b86d3499d7))
+* **search.jsx:** redesign search page layout and add new SVG component ([527299f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/527299f9e586ea6ad286dff09b9515d517bd8787))
+* **tailwind.config.js:** add gradient-Search to tailwind configuration ([d30805f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d30805ff8f6bcb1c81163fa5cbacadad8c56c50d))
+* **top recipes section:** recipe Link card added with links to some recipes ([9663103](https://github.com/chingu-voyages/v46-tier2-team-19/commit/966310307db59b8c065a322ca54e53e08000d74d))
+
+
+### Bug Fixes
+
+* **about.jsx:** add tailwind color fill class to SvgWave components ([83d272f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/83d272f863f2583a9ef3ae2cdd00cea19ac79712))
+* Add missing closing parenthesis and semicolon ([bfd22d2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/bfd22d2246bacdd125449fc9efdf55f1bfd6a945))
+* **assets/index.js:** orrect import path for FeatureRecipe and removed unused sweet-peppers assets ([85ffaa8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/85ffaa81eea3082499fcae82f08b4b6f8e7aa2a5))
+* **home page:** tune home page responsive styles ([300f35a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/300f35a46db5ae3d37a803c18db7b226d962f417))
+* **svgwave.jsx:** add fallback color to SVG fill property ([f51a5e7](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f51a5e768699e986c1dea976fb6de863ed026875)), closes [#FFC945](https://github.com/chingu-voyages/v46-tier2-team-19/issues/FFC945)
+* **top recipe cards:** ensure font size is small enough to fit on two lines ([6ab7fa2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6ab7fa2d91dc6c0b2217f1a1ff42637266117135))
+
 ### [0.0.11](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.10...v0.0.11) (2023-10-31)
 
 
