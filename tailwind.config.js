@@ -132,6 +132,8 @@ export default {
         RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+        "title-cutout":
+          "url('/src/assets/brand/swooshes/title-background-cutout.svg')",
       },
       scale: {
         175: "1.75",
