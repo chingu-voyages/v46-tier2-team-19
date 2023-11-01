@@ -25,7 +25,7 @@ export const Heading = (props) => {
       break;
   }
 
-  const baseClasses = "font-display font-bold text-transparent bg-clip-text";
+  const baseClasses = "text-transparent bg-clip-text";
 
   const variantsLookup = {
     sky: "bg-gradient-sky-diagonal",
