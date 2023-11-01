@@ -8,7 +8,6 @@ import SvgComponent from "@/assets/HomePage/svgWave";
 const About = () => {
   return (
     <div>
-      {/* <h1 className="text-center">About</h1> */}
       <Heading level="h1" variant="tangerine" className="px-10 pt-10">
         About
       </Heading>
