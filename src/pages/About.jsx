@@ -50,7 +50,8 @@ const About = () => {
           </>
         </div>
 
-        <SvgComponent className="absolute -bottom-1 left-0" />
+        {/* Display top of wave between sections */}
+        <SvgComponent className="absolute -bottom-1 left-0 fill-[#FFC945]" />
       </section>
       {/* END Project section */}
 
@@ -110,34 +111,27 @@ const About = () => {
                 <p className="z-10">{summary}</p>
               </div>
 
-              {/* {index !== 0 && (
-                <>
-                  {index % 2 !== 0 ? (
-                    <>
-                      <SvgComponent className="absolute top-0 left-0 rotate-180 -scale-x-100 md:hidden" />
-                      <SvgComponent className="absolute -top-8 left-0 -scale-x-100 md:hidden" />
-                    </>
-                  ) : (
-                    <>
-                      <SvgComponent className="absolute top-0 left-0 rotate-180 md:hidden" />
-                      <SvgComponent className="absolute -top-8 left-0 md:hidden" />
-                    </>
-                  )}
-                </>
-              )} */}
-              {index !== team.length - 1 && (
-                <SvgComponent className="absolute -bottom-1 left-0 md:hidden" />
-              )}
-              {index !== 0 && (
-                <SvgComponent className="absolute -top-1 left-0 rotate-180 md:hidden" />
-              )}
+              {
+                // Display top of wave
+                // but don't display top of wave after last team member
+                index !== team.length - 1 && (
+                  <SvgComponent className="absolute -bottom-1 left-0 md:hidden fill-[#FFC945]" />
+                )
+              }
+
+              {
+                // Display bottom of wave
+                // but don't display bottom of wave before first team member
+                index !== 0 && (
+                  <SvgComponent className="absolute -top-1 left-0 rotate-180 md:hidden fill-[#FFC945]" />
+                )
+              }
             </article>
           ))}
         </div>
 
-        {/* <SvgComponent className="absolute -top-8 left-0" />
-          <SvgComponent className="absolute top-0 left-0 rotate-180" /> */}
-        <SvgComponent className="absolute -top-1 left-0 rotate-180" />
+        {/* Display bottom of wave in between sections */}
+        <SvgComponent className="absolute -top-1 left-0 rotate-180 fill-[#FFC945]" />
       </section>
       {/* END Team section */}
     </div>
