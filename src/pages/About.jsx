@@ -18,35 +18,23 @@ const About = () => {
           This Project
         </Heading>
 
-        <div className="pb-10">
+        <div className="grid md:grid-cols-2 pb-10">
+          <p className="mb-4">
+            YumYumYes! is a unique web app designed with a distinctive brand and
+            whimsical animated visuals, featuring mascots Yumi and Chef Carrots
+            to create a fun recipe browsing experience. It offers users the
+            ability to search for recipes by ingredient, apply filters based on
+            tags like difficulty and occasion, and save recipes to their
+            favorites list for convenient access. This fully responsive web app
+            is compatible with modern web browsers on both mobile and desktop
+            devices, designed with user-friendliness and accessibility in mind,
+            catering to a diverse range of users.
+          </p>
           <img
             src={homepage}
             alt="YumYumYes! hompage"
-            className="float-right rounded-lg w-1/2 ml-4 mb-2 max-w-sm"
+            className="rounded-lg md:mx-6 lg:max-w-sm"
           />
-          <p className="mb-4">
-            We developed a unique web app with a distinctive brand and a
-            whimsical, animated design. YumYumYes! is intended to make recipe
-            browsing fun! Colorful mascots Yumi and Chef Carrots welcome
-            visitors to our pages, and delightful visual motifs including text
-            gradients, 3d colored balls, dashed lines and gentle curves are
-            intended to make the app feel more alive and engaging.
-          </p>
-
-          <>
-            <p className="mb-4">
-              YumYumYes! allows users to search for recipes by ingredient and
-              filter by useful tags such as difficulty, occasion, etc. The app
-              also allows users to save recipes to their favorites list, and to
-              view their favorites list at any time.
-            </p>
-            <p className="mb-4">
-              The app is built as a fully responsive web app compatible with all
-              modern web browsers, both mobile and desktop. We&apos;ve taken
-              care to make it intuitive for all users, and accessible to users
-              with different abilities.
-            </p>
-          </>
         </div>
 
         <SvgComponent className="absolute -bottom-1 left-0" />
