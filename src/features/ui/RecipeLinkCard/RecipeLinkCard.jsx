@@ -39,11 +39,8 @@ export const RecipeLinkCard = ({
       <div
         className={`${bgGradient} absolute right-0 top-4 flex h-24 w-52 items-center justify-center rounded-br-full rounded-tr-full`}
       >
-        <Heading
-          level="h4"
-          className="w-40 p-4 text-center text-[1.25rem] text-white font-['Open_Sans']"
-        >
-          {text}
+        <Heading level="h4" className="w-40 p-4 text-center">
+          <span className="text-xl text-white font-['Open_Sans']">{text}</span>
         </Heading>
       </div>
     </Link>
