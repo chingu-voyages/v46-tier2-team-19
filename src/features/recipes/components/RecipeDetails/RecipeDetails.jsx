@@ -5,29 +5,6 @@ import { Button } from "@/features/ui";
 import Icon from "@/assets/icons/Icon";
 
 export const RecipeDetails = ({ recipe }) => {
-  const RecipeObject = ({ recipe }) => {
-    const details = Object.keys(recipe)
-      .sort()
-      .map((key) => {
-        let value = recipe[key];
-        if (typeof value === "string" || typeof value === "number") {
-          return (
-            <div key={key} className="w-full">
-              <strong>{key}: </strong>
-              {value}
-            </div>
-          );
-        }
-        return (
-          <div key={key} className="w-full">
-            <strong>{key}: </strong>
-            {JSON.stringify(value).slice(0, 80)}
-          </div>
-        );
-      });
-    return details;
-  };
-
   const Card = ({ children, className }) => {
     return (
       <div
@@ -49,9 +26,7 @@ export const RecipeDetails = ({ recipe }) => {
         <h2 className="text-clamp-h2 not-italic">{title}</h2>
         <p>{body}</p>
       </div>
-    ) : (
-      "No description available."
-    );
+    ) : null;
   };
 
   const Topics = ({ topics }) => {
@@ -109,7 +84,7 @@ export const RecipeDetails = ({ recipe }) => {
   };
 
   const RecipeVideo = ({ videoUrl, renditions }) => {
-    if (!videoUrl) return "No URL provided.";
+    if (!videoUrl) return null;
     const sources = Object.values(renditions).map((src, index) => {
       return <source key={index} type={src.content_type} src={src.url} />;
     });
@@ -226,9 +201,6 @@ export const RecipeDetails = ({ recipe }) => {
         />
         <Card className="ingredients-card">
           <IngredientSections sections={recipe.sections} />
-        </Card>
-        <Card className="details-card">
-          <RecipeObject recipe={recipe} />
         </Card>
       </div>
     </div>
