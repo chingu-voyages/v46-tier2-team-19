@@ -12,8 +12,8 @@ export const HeroSection = () => {
 
   return (
     // Comment
-    <section className="hero-section select-none relative w-full ">
-      <div className="hero-wrapper w-full flex flex-col md:flex-row justify-between ">
+    <section className="relative w-full select-none hero-section ">
+      <div className="flex flex-col justify-between w-full hero-wrapper md:flex-row ">
         <div className="hero-content px-4 pt-24 md:px-12  md:pt-[66px] md:w-[60%] lg:w-[50%] xl:px-16 lg:pt-32">
           <Heading
             level="h1"
@@ -53,11 +53,11 @@ export const HeroSection = () => {
       </div>
       {/* Hero-Wrapper */}
 
-      <div className=" relative">
-        <SvgComponent />
+      <div className="relative ">
+        <SvgComponent className="fill-[#FFC945]" />
       </div>
 
-      <div className=" bg colored-balls absolute pointer-events-none right-0 top-8 h-full w-full  md:top-16 xl:top-28  ">
+      <div className="absolute right-0 w-full h-full pointer-events-none  bg colored-balls top-8 md:top-16 xl:top-28">
         <div className="w-[30px] h-[30px] xl:w-[44.44px] xl:h-[44.44px] bg-RedBall bg-cover rounded-full relative left-[73%] top-[1%] md:left-[80%] md:top-[-3%]   "></div>
         <div className="w-[38px]  h-[38px]  xl:w-[56.56px] xl:h-[56.56px]  bg-YellowBall bg-cover relative rounded-full left-[87%] top-[6%] 2xl:top-[12%] "></div>
         <div className="w-[25px] h-[25px] xl:w-[37.23px] xl:h-[37.23px] bg-OrangeBall bg-cover rounded-full relative left-[80%] top-[12%] md:top-[16%] 2xl:top-[37%] 2xl:left-[87%]  "></div>
