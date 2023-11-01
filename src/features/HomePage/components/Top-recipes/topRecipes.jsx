@@ -13,15 +13,17 @@ export const TopRecipes = () => {
       </h3>
 
       <RecipeLinkCard
-        text="ChocoPB Chip"
+        text="Choco PB Chip Banana Muffins"
         src={ChocoPBChip}
         bgColor="bg-[#FFC945]"
+        bgGradient="bg-gradient-banana-Top-Recipes"
         position="col-start-1 col-end-4 md:col-start-1 md:col-end-4  lg:col-start-1 lg:col-end-2 lg:row-start-4 mx-auto"
         link="/recipes/5813"
       />
 
       <RecipeLinkCard
-        bgColor="bg-[#68D00A]"
+        bgColor="bg-[#04c023]"
+        bgGradient="bg-gradient-watermelon-diagonal"
         position="col-start-1 col-end-4 mx-auto md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4"
         text="Spicy Chicken Pizza"
         src={SpicyChickenPizza}
@@ -31,7 +33,8 @@ export const TopRecipes = () => {
       <RecipeLinkCard
         text="Chicken Wings"
         src={ChickenWings}
-        bgColor="bg-[#FF7D16]"
+        bgColor="bg-[#fe7d1a]"
+        bgGradient="bg-gradient-tangerine-diagonal"
         position="col-start-1 col-end-4 mx-auto md:col-start-1 md:col-end-4  lg:col-start-3 lg:row-start-4"
         link="/recipes/5232"
       />
