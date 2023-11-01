@@ -129,14 +129,12 @@ export default {
         "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
         "gradient-site-background": "var(--gradient-site-background)",
         "gradient-Top-recipes": "var(--gradient-top-recipes)",
-        "gradient-Search": "var(---gradient-Search)",
         RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
         "title-cutout":
           "url('/src/assets/brand/swooshes/title-background-cutout.svg')",
       },
-
       scale: {
         175: "1.75",
       },

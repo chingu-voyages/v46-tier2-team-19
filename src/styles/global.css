@@ -44,11 +44,7 @@
     rgba(109, 209, 227, 1) 30%,
     rgba(248, 247, 246, 1) 100%
   );
-  ---gradient-Search: linear-gradient(
-    180deg,
-    hsla(189, 68%, 66%, 1) 65%,
-    hsla(30, 12%, 97%, 1) 100%
-  );
+
   --gradient-site-background: linear-gradient(
     80deg,
     #cee5bf 0%,
@@ -92,10 +88,6 @@
   background: var(--gradient-lava-diagonal);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.text-shadow {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 body,
