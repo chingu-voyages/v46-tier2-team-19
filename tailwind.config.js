@@ -129,10 +129,13 @@ export default {
         "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
         "gradient-Top-recipes": "var(---gradient-Top-recipes)",
         "gradient-banana-Top-Recipes": "var(---gradient-banana-Top-recipes)",
+        "gradient-Search": "var(---gradient-Search)",
+
         RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
       },
+
       scale: {
         175: "1.75",
       },

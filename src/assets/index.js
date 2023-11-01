@@ -4,6 +4,7 @@ import BellPeppers from "./brand/bell-peppers/BellPeppers";
 import SpicyChickenPizza from "./HomePage/SpicyChickenPizza.png";
 import ChickenWings from "./HomePage/ChickenWingsfood.png";
 import ChocoPBChip from "./HomePage/ChocolateChipPB.png";
+import FeatureRecipe from "./RecipePhoto.png";
 import github from "./github.png";
 
 export {
@@ -14,6 +15,7 @@ export {
   ChickenWings,
   ChocoPBChip,
   BellPeppers,
+  FeatureRecipe,
 };
 
 export * from "./icons";
