@@ -1,19 +1,21 @@
 import colorLogo from "./brand/yumyumyes-logo-m.png";
 import creamLogo from "./brand/yumyumyes-logo-lightcream.svg";
-import BananaLabel from "./HomePage/BananaLabel.png";
-import ChickenLabel from "./HomePage/ChickenLabel.png";
-import FruitLabel from "./HomePage/FruitLabel.png";
 import BellPeppers from "./brand/bell-peppers/BellPeppers";
+import SpicyChickenPizza from "./HomePage/SpicyChickenPizza.png";
+import ChickenWings from "./HomePage/ChickenWingsfood.png";
+import ChocoPBChip from "./HomePage/ChocolateChipPB.png";
 import FeatureRecipe from "./RecipePhoto.png";
 import github from "./github.png";
+
 export {
   github,
   colorLogo,
   creamLogo,
-  BananaLabel,
-  ChickenLabel,
-  FruitLabel,
+  SpicyChickenPizza,
+  ChickenWings,
+  ChocoPBChip,
   BellPeppers,
   FeatureRecipe,
 };
+
 export * from "./icons";
