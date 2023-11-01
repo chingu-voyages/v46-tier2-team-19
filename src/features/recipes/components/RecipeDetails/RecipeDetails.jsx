@@ -183,7 +183,7 @@ export const RecipeDetails = ({ recipe }) => {
           <Heading level="h4" variant="lava">
             Filed Under
           </Heading>
-          <Topics topics={recipe.topics} />
+         { recipe.topics && <Topics topics={recipe.topics} />}
           <Tags tags={recipe.tags} />
           <Heading level="h4" variant="lava" className="pt-4">
             Quick Links
