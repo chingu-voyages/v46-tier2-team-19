@@ -127,13 +127,16 @@ export default {
         "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
         "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
         "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
-        "gradient-Top-recipes": "var(---gradient-Top-recipes)",
+        "gradient-site-background": "var(--gradient-site-background)",
+        "gradient-Top-recipes": "var(--gradient-top-recipes)",
         "gradient-banana-Top-Recipes": "var(---gradient-banana-Top-recipes)",
         "gradient-Search": "var(---gradient-Search)",
 
         RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+        "title-cutout":
+          "url('/src/assets/brand/swooshes/title-background-cutout.svg')",
       },
 
       scale: {
