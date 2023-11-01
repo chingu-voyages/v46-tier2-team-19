@@ -7,31 +7,41 @@ export const RecipeLinkCard = ({
   alt,
   bgColor,
   bgGradient,
-  position,
   link,
   text,
+  variant,
 }) => {
+  switch (variant) {
+    case "tangerine":
+      bgColor = "bg-[#fe7d1a]";
+      bgGradient = "bg-gradient-tangerine-diagonal";
+      break;
+    case "banana":
+      bgColor = "bg-[#FFC945]";
+      bgGradient = "bg-gradient-banana-Top-Recipes";
+      break;
+    default: // "watermelon"
+      bgColor = "bg-[#04c023]";
+      bgGradient = "bg-gradient-watermelon-diagonal";
+      break;
+  }
+
   return (
-    <Link
-      to={link}
-      className={`flex  ${position} w-[300px]   relative drop-shadow-2xl`}
-    >
+    <Link to={link} className={`relative flex w-[300px] drop-shadow-2xl`}>
       <div
-        className={`w-32 h-32  rounded-full ${bgColor} flex justify-center items-center z-10 `}
+        className={`${bgColor} z-10 flex h-32 w-32 items-center justify-center rounded-full`}
       >
-        <div className="white-circle w-24 h-24 bg-white rounded-full flex justify-center items-center ">
-          {" "}
-          <img src={src} alt={alt} className="w-20" />{" "}
+        <div className="white-circle flex h-24 w-24 items-center justify-center rounded-full bg-white">
+          <img src={src} alt={alt} className="w-20" />
         </div>
       </div>
 
       <div
-        className={`absolute ${bgGradient} h-24 w-52 top-4 right-0 rounded-tr-full rounded-br-full flex justify-center items-center  `}
+        className={`${bgGradient} absolute right-0 top-4 flex h-24 w-52 items-center justify-center rounded-br-full rounded-tr-full`}
       >
         <Heading
           level="h4"
-          variant="lava"
-          className="text-[17px] text-center p-4 w-40 "
+          className="w-40 p-4 text-center text-[1.25rem] text-white font-['Open_Sans']"
         >
           {text}
         </Heading>
@@ -45,7 +55,7 @@ RecipeLinkCard.propTypes = {
   alt: PropTypes.string,
   link: PropTypes.string,
   bgColor: PropTypes.string,
-  position: PropTypes.string,
   text: PropTypes.string,
+  variant: PropTypes.string,
   bgGradient: PropTypes,
 };

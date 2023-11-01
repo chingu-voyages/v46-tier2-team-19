@@ -5,7 +5,7 @@ import BellPeppers from "@/assets/brand/bell-peppers/BellPeppers.jsx";
 
 export const SearchSection = () => {
   return (
-    <section className="Search-Section mt-[-3px] relative   w-full md:bg-[#6DD1E3] md:pb-16 z-10">
+    <section className="Search-Section mt-[-3px] relative   w-full bg-[#6DD1E3] md:pb-16 z-10">
       <SvgComponent className="relative rotate-180 bottom-1 fill-[#FFC945]" />
       <div className="flex flex-col gap-6 p-8 xl:p-32 xl:gap-12 ">
         {/* Search bar and text */}
@@ -34,14 +34,14 @@ export const SearchSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row ">
-          <p className="text-xl md:text-[32px] md:w-1/2 xl:mt-7 lg:leading-10">
+        <div className="flex flex-row flex-wrap">
+          <p className="text-xl md:text-[32px] w-full sm:w-1/2 xl:mt-7 lg:leading-10">
             {
               "Your ingredients, our creativity. Share what's in your kitchen, and we'll conjure a delectable recipe just for you. Let's cook up some magic together!"
             }
           </p>
 
-          <div className="flex justify-center p-2 md:justify-end md:w-1/2">
+          <div className="flex p-2 md:justify-end w-1/2 ml-auto">
             <BellPeppers resolution="360" className="w-[22.5rem]" />
           </div>
         </div>
