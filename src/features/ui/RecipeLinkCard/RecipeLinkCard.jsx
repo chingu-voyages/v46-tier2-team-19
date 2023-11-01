@@ -31,7 +31,7 @@ export const RecipeLinkCard = ({
         <Heading
           level="h4"
           variant="lava"
-          className="text-[18px] text-center p-4 w-40 "
+          className="text-[17px] text-center p-4 w-40 "
         >
           {text}
         </Heading>
