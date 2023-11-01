@@ -47,12 +47,11 @@
     94deg,
     rgba(255, 201, 69, 1) 38%,
     rgba(208, 164, 55, 1) 100%
-);
+  );
   ---gradient-Search: linear-gradient(
     180deg,
     hsla(189, 68%, 66%, 1) 65%,
     hsla(30, 12%, 97%, 1) 100%
-
   );
 }
 
