@@ -5,15 +5,9 @@ import { Heading, Button, Icon } from "@/features/ui";
 import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
-  const handleDragStart = (event) => {
-    event.preventDefault();
-    return false;
-  };
-
   return (
-    // Comment
-    <section className="relative w-full select-none hero-section ">
-      <div className="flex flex-col justify-between w-full hero-wrapper md:flex-row ">
+    <section className="hero-section relative w-full">
+      <div className="hero-wrapper w-full flex flex-col md:flex-row justify-between">
         <div className="hero-content px-4 pt-24 md:px-12  md:pt-[66px] md:w-[60%] lg:w-[50%] xl:px-16 lg:pt-32">
           <Heading
             level="h1"
@@ -45,8 +39,7 @@ export const HeroSection = () => {
           <YumiWithSpoon
             resolution="480"
             alt="Yumi Character"
-            className="mb-[-40px] sm:mb-[-50px] w-72 md:mb-[-60px] md:w-72 xl:mb-[-90px] 2xl:mb-[-120px] lg:w-[396px] 2xl:w-[496px]"
-            onDragStart={handleDragStart}
+            className="pointer-events-none mb-[-40px] w-72 select-none sm:mb-[-50px] md:mb-[-60px] md:w-72 lg:w-[396px] xl:mb-[-90px] 2xl:mb-[-120px] 2xl:w-[496px]"
           />
         </div>
         {/* Hero-Yumi */}

@@ -7,14 +7,18 @@ export const FeatureOfTheDay = () => {
       <Heading
         level="h1"
         variant="watermelon"
-        className="text-center underline decoration-dashed decoration-tangerine-400 underline-offset-[18px]"
+        className="text-center underline decoration-dashed decoration-tangerine-400 underline-offset-[18px] text-shadow text-stoke"
       >
         Recipe of the day
       </Heading>
       <div className="flex flex-col items-center justify-center px-4 py-6 space-x-6 lg:flex-row">
         <img src={FeatureRecipe} className="w-64" />
         <div className="flex flex-col max-w-lg text-left">
-          <Heading level="h3" variant="tangerine" className="tracking-tight">
+          <Heading
+            level="h3"
+            variant="tangerine"
+            className="tracking-tight text-shadow text-stoke"
+          >
             Roasted Chicken Recipe
           </Heading>
           <p className="tracking-tight font-rasa">
