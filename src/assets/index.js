@@ -4,6 +4,7 @@ import BananaLabel from "./HomePage/BananaLabel.png";
 import ChickenLabel from "./HomePage/ChickenLabel.png";
 import FruitLabel from "./HomePage/FruitLabel.png";
 import BellPeppers from "./brand/bell-peppers/BellPeppers";
+import FeatureRecipe from "./RecipePhoto.png";
 import github from "./github.png";
 export {
   github,
@@ -13,5 +14,6 @@ export {
   ChickenLabel,
   FruitLabel,
   BellPeppers,
+  FeatureRecipe,
 };
 export * from "./icons";

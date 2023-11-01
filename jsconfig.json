@@ -6,7 +6,8 @@
       "@/api": ["src/api"],
       "@/pages/*": ["src/pages/*"],
       "@/features/*": ["src/features/*"],
-      "@/constants": ["src/constants"]
+      "@/constants": ["src/constants"],
+      "@/assets/*": ["src/assets/*"]
     }
   }
 }
