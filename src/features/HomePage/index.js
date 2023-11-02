@@ -1,4 +1,3 @@
-export * from "./components/Hero-section";
-export * from "./components/Search-section";
-export * from "./components/Top-recipes";
-export * from "../HomePage/components/Hero-section";
+export * from "./components/hero-section2";
+export * from "./components/search-section2";
+export * from "./components/top-recipes2";
