@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useSessionStorage } from "@/features/recipes/hooks";
 import { Heading, LoadingState } from "@/features/ui";
 import { FetchRecipeById } from "@/features/recipes/api";
-import RecipeDetails from "@/features/recipes/components/RecipeDetails/RecipeDetails";
+import RecipeDetails from "@/features/recipes/components/recipe-details/RecipeDetails";
 
 const RecipesDetailPage = () => {
   let { recipeId } = useParams();

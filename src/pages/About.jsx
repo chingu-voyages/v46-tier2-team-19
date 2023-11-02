@@ -1,9 +1,9 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { Heading } from "@/features/ui";
-import homepage from "../assets/about/homepage.png";
+import homepage from "@/assets/about/homepage.png";
+import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
-import SvgComponent from "@/assets/HomePage/svgWave";
 
 const About = () => {
   return (

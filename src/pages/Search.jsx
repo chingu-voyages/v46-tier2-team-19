@@ -1,6 +1,6 @@
 import YumiWithSpoon from "@/assets/brand/yumi-with-spoon/YumiWithSpoon.jsx";
 import BellPeppers from "@/assets/brand/bell-peppers/BellPeppers";
-import SvgComponent from "@/assets/HomePage/svgWave";
+import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { RecipeList } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
 import debounce from "lodash/debounce";

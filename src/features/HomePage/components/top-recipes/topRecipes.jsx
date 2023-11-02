@@ -1,9 +1,12 @@
-// import { BananaLabel, ChickenLabel, FruitLabel } from "@/assets";
-import { ChocoPBChip, SpicyChickenPizza, ChickenWings } from "@/assets";
+import {
+  chickenWings,
+  chocoPBChips,
+  spicyChickenPizza,
+  YumiWithSpatula,
+} from "@/assets";
 
-import { Heading, RecipeLinkCard } from "@/features/ui";
-
-import YumiWithspatula from "@/assets/brand/yumi-with-spatula/YumiWithSpatula";
+import { Heading } from "@/features/ui";
+import { RecipeLinkCard } from "@/features/recipes";
 
 export const TopRecipes = () => {
   return (
@@ -15,27 +18,27 @@ export const TopRecipes = () => {
         <div className="recipe-link-cards-wrapper flex flex-wrap justify-around xl:content-end gap-x-2 gap-y-6 w-[300px] md:w-[50%] lg:w-[63%] xl:w-[75%]">
           <RecipeLinkCard
             text="Choco PB Chip Banana Muffins"
-            src={ChocoPBChip}
+            src={chocoPBChips}
             variant="banana"
             link="/recipes/5813"
           />
 
           <RecipeLinkCard
             text="Spicy Chicken Pizza"
-            src={SpicyChickenPizza}
+            src={spicyChickenPizza}
             variant="watermelon"
             link="/recipes/5149"
           />
 
           <RecipeLinkCard
             text="Chicken Wings"
-            src={ChickenWings}
+            src={chickenWings}
             variant="tangerine"
             link="/recipes/5232"
           />
         </div>
 
-        <YumiWithspatula
+        <YumiWithSpatula
           resolution="272"
           className="w-[272px] self-center xl:-mt-24 xl:max-w-[22%]"
           alt="Yumi holding a spatula surrounded by fruits"
