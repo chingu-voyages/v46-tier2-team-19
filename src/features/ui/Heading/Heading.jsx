@@ -19,7 +19,7 @@ export const Heading = (props) => {
       break;
     case "h4":
       // textSizes = "text-[2rem] md:text-[2.5rem] xl:text-[3rem]";
-      textSizes = "text-clamp-h4 text-shadow-sm";
+      textSizes = "text-clamp-h4 text-shadow-sm text-stroke-sm";
       break;
     default:
       break;
