@@ -7,26 +7,25 @@ export const Heading = (props) => {
   switch (level) {
     case "h1":
       // textSizes = "text-[5.5rem] md:text-[8rem] xl:text-[8rem]";
-      textSizes = "text-clamp-h1";
+      textSizes = "text-clamp-h1 text-shadow text-stroke";
       break;
     case "h2":
       // textSizes = "text-[3rem] md:text-[4rem] xl:text-[5rem]";
-      textSizes = "text-clamp-h2";
+      textSizes = "text-clamp-h2 text-shadow text-stroke";
       break;
     case "h3":
       // textSizes = "text-[2.5rem] md:text-[3rem] xl:text-[4rem]";
-      textSizes = "text-clamp-h3";
+      textSizes = "text-clamp-h3 text-shadow text-stroke";
       break;
     case "h4":
       // textSizes = "text-[2rem] md:text-[2.5rem] xl:text-[3rem]";
-      textSizes = "text-clamp-h4";
+      textSizes = "text-clamp-h4 text-shadow-sm";
       break;
     default:
       break;
   }
 
-  const baseClasses =
-    "font-display font-bold text-transparent bg-clip-text text-shadow text-stroke";
+  const baseClasses = "font-display font-bold text-transparent bg-clip-text";
 
   const variantsLookup = {
     sky: "bg-gradient-sky-diagonal",
