@@ -4,6 +4,7 @@ import Flame from "./Flame";
 import GreenDot from "./GreenDot";
 import Hamburger from "./Hamburger";
 import LeftArrow from "./LeftArrow";
+import Loading from "./Loading";
 import OrangeDot from "./OrangeDot";
 import Oven from "./Oven";
 import OvenMitt from "./OvenMitt";
@@ -16,6 +17,7 @@ import Stir from "./Stir";
 import Thermometer from "./Thermometer";
 import UpArrow from "./UpArrow";
 import YellowDot from "./YellowDot";
+import github from "./github.png";
 
 export const icons = {
   Close,
@@ -24,6 +26,7 @@ export const icons = {
   GreenDot,
   Hamburger,
   LeftArrow,
+  Loading,
   OrangeDot,
   Oven,
   OvenMitt,
@@ -37,3 +40,5 @@ export const icons = {
   UpArrow,
   YellowDot,
 };
+
+export { github };

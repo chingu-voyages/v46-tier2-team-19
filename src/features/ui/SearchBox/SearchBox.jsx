@@ -1,49 +1,49 @@
 import { useState, useEffect } from "react";
-import { search } from "@/assets";
-import debounce from "lodash/debounce";
 import PropTypes from "prop-types";
-export const SearchBox = ({ onSearch }) => {
-  const [localTerm, setLocalTerm] = useState("");
-  const debouncedSearch = debounce(onSearch, 1500);
+import { Icon, Button } from "@/features/ui";
+export const SearchBox = ({ searchTerm, onSearch }) => {
+  const [localTerm, setLocalTerm] = useState(searchTerm);
 
   useEffect(() => {
-    return () => {
-      debouncedSearch.cancel();
-    };
-  }, [debouncedSearch]);
+    setLocalTerm(searchTerm);
+  }, [searchTerm]);
 
-  const handleSearch = () => {
-    onSearch(localTerm);
-    setLocalTerm("");
-  };
   const handleInputChange = (e) => {
-    setLocalTerm(e.target.value);
-    debouncedSearch(e.target.value);
+    const newSearchTerm = e.target.value;
+    setLocalTerm(newSearchTerm);
   };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    onSearch(localTerm);
   };
+
   return (
-    <div className="bg-tangerine-400 p-[1px] rounded-full flex items-center max-w-xl">
-      <form className="flex w-full" onSubmit={handleFormSubmit}>
-        <input
-          type="search"
-          value={localTerm}
-          onChange={handleInputChange}
-          placeholder="Enter an Ingredient..."
-          className="w-full p-2 pl-6 text-sm rounded-l-full lg:text-base bg-earlyDawn-100 focus:outline-none placeholder:text-lava-300 text-lava-950 focus:ring-none"
-        />
-        <button
-          className="px-4 rounded-r-full bg-tangerine-400 hover:bg-tangerine-600"
-          onClick={() => handleSearch()}
-        >
-          <img src={search} alt="search icon" />
-        </button>
-      </form>
-    </div>
+    <form
+      className="flex items-center w-full bg-white rounded-full shadow-md"
+      onSubmit={handleFormSubmit}
+    >
+      <input
+        type="search"
+        value={localTerm}
+        onChange={handleInputChange}
+        placeholder="Onion, salt, eggs..."
+        size="30"
+        className="w-full h-12 pl-4 text-lg tracking-wider rounded-l-full md:pl-6 md:text-xl focus:outline-none placeholder:text-lava-400"
+      />
+      <Button
+        type="submit"
+        variant="primary"
+        size="large"
+        className="inline-flex w-20 h-12 rounded-full focus:ring-0 focus:ring-outline-0"
+      >
+        <Icon name="search" className="w-6 scale-125" />
+      </Button>
+    </form>
   );
 };
 
 SearchBox.propTypes = {
+  searchTerm: PropTypes.string,
   onSearch: PropTypes.func.isRequired,
 };

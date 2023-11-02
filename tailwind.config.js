@@ -102,28 +102,47 @@ export default {
           950: "hsl(0, 0%, 0%)",
         },
       },
-    },
-    fontFamily: {
-      kalam: ["Kalam"],
-      rasa: ["Rasa"],
-      display: ["Kalam"],
-      body: ["Rasa"],
-    },
-    backgroundImage: {
-      "gradient-tangerine-diagonal": "var(--gradient-tangerine-diagonal)",
-      "gradient-lilypad-diagonal": "var(--gradient-lilypad-diagonal)",
-      "gradient-gray-diagonal": "var(--gradient-gray-diagonal)",
-      "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
-      "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
-      "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+      fontFamily: {
+        kalam: ["Kalam"],
+        rasa: ["Rasa"],
+        display: ["Kalam"],
+        body: ["Rasa"],
+      },
+      fontSize: {
+        // "clamp-h1":
+        //   "clamp(4.5rem, 3.267427884615385rem + 5.258413461538461vw, 8rem)",
+        "clamp-h1":
+          "clamp(3rem, 2.295673076923077rem + 3.004807692307692vw, 5rem)",
+        "clamp-h2":
+          "clamp(2.5rem, 1.9717548076923077rem + 2.2536057692307687vw, 4rem)",
+        "clamp-h3":
+          "clamp(2rem, 1.6478365384615385rem + 1.502403846153846vw, 3rem)",
+        "clamp-h4":
+          "clamp(1.375rem, 1.3309795673076923rem + 0.18780048076923075vw, 1.5rem)",
+      },
+      backgroundImage: {
+        "gradient-tangerine-diagonal": "var(--gradient-tangerine-diagonal)",
+        "gradient-lilypad-diagonal": "var(--gradient-lilypad-diagonal)",
+        "gradient-gray-diagonal": "var(--gradient-gray-diagonal)",
+        "gradient-sky-diagonal": "var(--gradient-sky-diagonal)",
+        "gradient-watermelon-diagonal": "var(--gradient-watermelon-diagonal)",
+        "gradient-lava-diagonal": "var(--gradient-lava-diagonal)",
+        "gradient-site-background": "var(--gradient-site-background)",
+        "gradient-Top-recipes": "var(--gradient-top-recipes)",
+        "gradient-banana-Top-Recipes": "var(---gradient-banana-Top-recipes)",
+        "gradient-Search": "var(---gradient-Search)",
 
-      RedBall: "url('/src/assets/RedPlasticBall.png')",
-      YellowBall: "url('/src/assets/YellowPlasticBall.png')",
-      OrangeBall: "url('/src/assets/OrangePlasticBall.png')",
+        RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
+        YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
+        OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+        "title-cutout":
+          "url('/src/assets/brand/swooshes/title-background-cutout.svg')",
+      },
+
+      scale: {
+        175: "1.75",
+      },
     },
-    scale: {
-      175: "1.75",
-    },
+    plugins: [],
   },
-  plugins: [],
 };

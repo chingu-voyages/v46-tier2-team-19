@@ -14,7 +14,9 @@
   /* Typography */
   --font-kalam: "Kalam", cursive;
   --font-rasa: "Rasa", serif;
+  --font-open-sans: "Open Sans", sans;
   --font-display: var(--font-kalam);
+  --font-subheading: var(var(--font-open-sans));
   --font-body: var(--font-rasa);
 
   /* Gradients */
@@ -36,6 +38,81 @@
     #018f18 100%
   );
   --gradient-lava-diagonal: linear-gradient(90deg, #333333 0%, #1c1c1c 100%);
+
+  --gradient-top-recipes: linear-gradient(
+    180deg,
+    rgba(109, 209, 227, 1) 30%,
+    rgba(248, 247, 246, 1) 100%
+  );
+
+  --gradient-site-background: linear-gradient(
+    80deg,
+    #cee5bf 0%,
+    #bfe2c4 22%,
+    #bfe2c4 90%,
+    #acdacf 100%
+  );
+
+  ---gradient-banana-Top-recipes: linear-gradient(
+    94deg,
+    rgba(255, 201, 69, 1) 38%,
+    rgba(208, 164, 55, 1) 100%
+  );
+
+  ---gradient-Search: linear-gradient(
+    180deg,
+    hsla(189, 68%, 66%, 1) 65%,
+    hsla(30, 12%, 97%, 1) 100%
+  );
+}
+
+/* Text Gradients */
+.tangerine-text-gradient {
+  background: var(--gradient-tangerine-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lilypad-text-gradient {
+  background: var(--gradient-lilypad-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text-gradient {
+  background: var(--gradient-gray-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sky-text-gradient {
+  background: var(--gradient-sky-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.watermelon-text-gradient {
+  background: var(--gradient-watermelon-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lava-text-gradient {
+  background: var(--gradient-lava-diagonal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text-shadow-sm {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.text-stroke {
+  -webkit-text-stroke: 1.5px var(--color-light-cream);
+}
+.text-stroke-sm {
+  -webkit-text-stroke: 0.75px var(--color-light-cream);
 }
 
 body,
@@ -47,19 +124,16 @@ input {
 /* NOTE: Use the Heading component which overwrights these hX rules */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--font-display);
   line-height: 1.5;
 }
-h1 {
-  font-size: 60px;
-}
-h2 {
-  font-size: 48px;
-}
-h3 {
-  font-size: 36px;
+
+h4,
+h4.font-display,
+h5,
+h5.font-display,
+h6,
+h6.font-display {
+  font-family: var(--font-open-sans);
 }

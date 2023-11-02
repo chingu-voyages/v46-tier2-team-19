@@ -1,21 +1,8 @@
-import react from "./react.svg";
-import vite from "./vite.svg";
-import menuIcon from "./Menu.svg";
-import close from "./close.svg";
-import github from "./github.png";
-import search from "./Search.svg";
-import downArrow from "./down-arrow.svg";
-import colorLogo from "./brand/yumyumyes-logo-m.png";
-import creamLogo from "./brand/yumyumyes-logo-lightcream.svg";
-export {
-  react,
-  vite,
-  menuIcon,
-  close,
-  github,
-  colorLogo,
-  creamLogo,
-  search,
-  downArrow,
-};
+import FeatureRecipe from "./RecipePhoto.png";
+
+export { FeatureRecipe };
+
+export * from "./brand";
+export * from "./brand/food";
+export * from "./brand/logo";
 export * from "./icons";

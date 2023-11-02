@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 import { icons } from "@/assets/icons/index";
 
-export const Icon = ({ name, className, color, ...props }) => {
+export const Icon = ({
+  name,
+  containerClassName,
+  className,
+  color,
+  ...props
+}) => {
   name = name[0].toUpperCase() + name.slice(1);
   name = name.replace(/-[A-Za-z]/g, (m) => m[1].toUpperCase());
   if (!icons[name]) return null;
   if (!className || className.indexOf("w-") === -1) className += " w-[.8em]";
   return (
-    <span className={`inline-block ${className}`}>
+    <span className={`inline-block ${containerClassName}`}>
       <svg
         width="100%"
         height="100%"

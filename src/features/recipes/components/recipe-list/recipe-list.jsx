@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
+
 export const RecipeList = ({ searchTerm }) => {
-  console.log({ searchTerm });
-  const { data, isLoading, isError, error } = FetchRecipes(searchTerm);
+  const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -11,14 +11,22 @@ export const RecipeList = ({ searchTerm }) => {
   if (isError) {
     return <div>Error: {error.message}</div>;
   }
-  const results = data?.results || [];
+
+  if (
+    !recipes ||
+    !Array.isArray(recipes.results) ||
+    recipes.results.length === 0
+  ) {
+    console.log(!recipes);
+    console.log(Array.isArray(recipes.results));
+    return <div>No recipes found</div>;
+  }
+
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 mx-auto mt-10 mb-4 gap-7 lg:grid-cols-3">
-        {results.map((recipe) => (
-          <RecipeCard key={recipe.id} {...recipe} />
-        ))}
-      </div>
+    <div className="grid justify-center grid-cols-1 mx-auto mt-5 mb-10 gap-x-10 gap-y-12 justify-items-center md:grid-cols-2 w-fit auto-rows-fr lg:grid-cols-3">
+      {recipes.results.map((recipe) => (
+        <RecipeCard key={recipe.id} {...recipe} />
+      ))}
     </div>
   );
 };

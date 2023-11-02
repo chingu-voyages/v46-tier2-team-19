@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 
 export const Button = (props) => {
-  const { variant, size, children, ...attributes } = props;
+  const { variant, size, className, children, ...attributes } = props;
 
   const baseClasses =
     "flex items-center gap-3 rounded-full px-6 font-body font-bold shadow-lg transition-all duration-200 ease-in-out active:opacity-70 focus:outline-none disabled:bg-gradient-gray-diagonal disabled:active:opacity-100";
@@ -22,7 +22,7 @@ export const Button = (props) => {
   return (
     <button
       {...attributes}
-      className={`${baseClasses} ${variantsLookup[variant]} ${sizesLookup[size]}`}
+      className={`${baseClasses} ${variantsLookup[variant]} ${sizesLookup[size]} ${className}`}
     >
       {children}
     </button>
@@ -32,4 +32,11 @@ export const Button = (props) => {
 Button.defaultProps = {
   variant: "primary",
   size: "medium",
+};
+
+Button.propTypes = {
+  variant: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
