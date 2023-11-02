@@ -1,4 +1,4 @@
-<img src="src/assets/brand/yumyumyes-logo-m.png" style="max-width:300px;" />
+<img src="src/assets/brand/logo/yumyumyes-logo-m.png" style="max-width:300px;" />
 
 # YumYumYes.com - Recipe Search Web App
 
