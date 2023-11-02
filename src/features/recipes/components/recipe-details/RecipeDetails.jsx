@@ -8,7 +8,7 @@ export const RecipeDetails = ({ recipe }) => {
   const Card = ({ children, className }) => {
     return (
       <div
-        className={`${className} card bg-earlyDawn-50 p-9 rounded-2xl text-xl my-6 shadow-lg`}
+        className={`${className} card my-6 md:my-10 rounded-2xl bg-earlyDawn-50 p-6 text-xl shadow-lg md:p-9`}
       >
         {children}
       </div>
@@ -18,21 +18,61 @@ export const RecipeDetails = ({ recipe }) => {
   const Description = ({ description }) => {
     const words = recipe.description.split(" ");
 
-    const title = `${words[0]} ${words[1]}...`;
-    const body = words.slice(2).join(" ");
+    // Be smart about title cutoff...
+    let titleLength = 2;
 
+    const inflectionWords = [
+      "is",
+      "are",
+      "was",
+      "were",
+      "has",
+      "can",
+      "at",
+      "to",
+      "for",
+      "so",
+      "tastes",
+    ];
+
+    let indexOfInflectionWord = words
+      .slice(0, 6)
+      .findIndex((w) => inflectionWords.includes(w));
+    if (indexOfInflectionWord !== -1) {
+      titleLength = indexOfInflectionWord;
+    }
+
+    const title = `${words.slice(0, titleLength).join(" ")}`;
+    const body = words.slice(titleLength).join(" ");
+    console.log("body length:", body.length);
     return description ? (
       <div className="description">
-        <Heading level="h2" variant="lava">
-          {title}
+        <Heading level="h2" variant="lava" className="leading-none">
+          <span className={title.length > 10 ? "text-clamp-h3" : ""}>
+            {title}
+          </span>
         </Heading>
-        <p>{body}</p>
+        <p className={`${body.length > 100 ? "" : "text-2xl"} italic`}>
+          {body}
+        </p>
       </div>
     ) : null;
   };
 
+  const RecipeImage = ({ src, alt }) => {
+    return (
+      <div>
+        <div className="picture-wrapper -mt-6 mb-4 box-content flex justify-center overflow-visible border-b-[.3rem] border-dashed border-tangerine-500 pb-6 md:-mr-20 md:-mt-16 md:h-[17rem] md:w-[17rem] md:rotate-12 md:rounded-full md:border-[.5rem] md:p-3 xl:h-[25rem] xl:w-[25rem]">
+          <picture className="-mx-6 block overflow-clip rounded-t-xl object-cover md:shadow-2xl md:h-[17rem] md:w-[17rem] md:rounded-full xl:h-[25rem] xl:w-[25rem]">
+            <img src={src} alt={alt} className="w-full h-full object-cover" />
+          </picture>
+        </div>
+      </div>
+    );
+  };
+
   const Topics = ({ topics }) => {
-    if (!topics) return null;
+    if (topics.length === 0) return null;
     return (
       <div className="topics">
         <strong>Topics: </strong>
@@ -55,22 +95,29 @@ export const RecipeDetails = ({ recipe }) => {
   };
 
   const Tags = ({ tags }) => {
-    if (!tags) return null;
+    const filteredCategories = ["equipment", "appliance"];
+    const displayTags = tags.filter(
+      (tag) => !filteredCategories.includes(tag.type),
+    );
+    if (displayTags.length === 0) return null;
     return (
       <div className="tags">
         <strong>Tags: </strong>
-        {tags.map((tag, index) => (
-          <>
-            <Link
-              to={`/search?q=${tag.name}`}
-              className="text-watermelon font-bold"
-              key={tag.name}
-            >
-              {tag.display_name}
-            </Link>
-            {index !== recipe.tags.length - 1 ? ", " : ""}
-          </>
-        ))}
+        {displayTags.map((tag, index) => {
+          console.log(tag);
+          return (
+            <>
+              <Link
+                to={`/search?q=${tag.name}`}
+                className="text-watermelon font-bold"
+                key={tag.name}
+              >
+                {tag.display_name}
+              </Link>
+              {index !== recipe.tags.length - 1 ? ", " : ""}
+            </>
+          );
+        })}
       </div>
     );
   };
@@ -94,7 +141,7 @@ export const RecipeDetails = ({ recipe }) => {
     });
     return (
       <div className="recipe-video">
-        <video controls className="rounded-xl w-[360px] max-w-full">
+        <video controls className="rounded-xl w-full md:w-[360px] max-w-full">
           {sources}
         </video>
       </div>
@@ -164,7 +211,7 @@ export const RecipeDetails = ({ recipe }) => {
   const Instructions = ({ instructions }) => {
     return (
       <div className="instructions-wrapper">
-        <Heading level="h2">Instructions</Heading>
+        <Heading level="h2">Preparation</Heading>
         <ol className="list-decimal flex flex-col gap-6 ml-5">
           {instructions.map((step, index) => {
             const { display_text } = step;
@@ -187,18 +234,12 @@ export const RecipeDetails = ({ recipe }) => {
         </Heading>
         <hr className="mb-1 mt-3 h-2 w-[40%] rounded-full border-none bg-gradient-tangerine-diagonal" />
       </div>
-      <div className="p-10">
+      <div className="p-5 md:p-8 md:pt-0 xl:p-10">
         <Card className="intro-card">
-          <div>
-            <p>
-              <Description description={recipe.description} />
-            </p>
+          <div className="md:flex flex-row-reverse gap-4">
+            <RecipeImage src={recipe.thumbnail_url} alt={recipe.name} />
+            <Description description={recipe.description} />
           </div>
-          <img
-            src={recipe.thumbnail_url}
-            alt={recipe.name}
-            className="h-[270px] w-[270px] rounded-full object-cover rotate-12"
-          />
         </Card>
         <Card className="quick-links-card">
           <Heading level="h4" variant="lava">
@@ -246,6 +287,8 @@ RecipeDetails.propTypes = {
   list: PropTypes.object,
   name: PropTypes.string,
   instructions: PropTypes.object,
+  src: PropTypes.string,
+  alt: PropTypes.string,
 };
 
 export default RecipeDetails;
