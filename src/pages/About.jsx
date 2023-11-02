@@ -3,7 +3,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { Button, Heading } from "@/features/ui";
 import homepage from "../assets//about/homepage.png";
 import { team } from "@/constants";
-import SvgComponent from "@/assets/HomePage/svgWave";
+import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { useState } from "react";
 
 const About = () => {

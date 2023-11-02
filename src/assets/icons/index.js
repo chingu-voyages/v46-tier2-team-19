@@ -17,6 +17,7 @@ import Stir from "./Stir";
 import Thermometer from "./Thermometer";
 import UpArrow from "./UpArrow";
 import YellowDot from "./YellowDot";
+import github from "./github.png";
 
 export const icons = {
   Close,
@@ -39,3 +40,5 @@ export const icons = {
   UpArrow,
   YellowDot,
 };
+
+export { github };

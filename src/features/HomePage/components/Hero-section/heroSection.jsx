@@ -1,5 +1,5 @@
 import YumiWithSpoon from "@/assets/brand/yumi-with-spoon/YumiWithSpoon.jsx";
-import SvgComponent from "@/assets/HomePage/svgWave";
+import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { welcome } from "@/constants";
 import { Heading, Button, Icon } from "@/features/ui";
 import { Link } from "react-router-dom";

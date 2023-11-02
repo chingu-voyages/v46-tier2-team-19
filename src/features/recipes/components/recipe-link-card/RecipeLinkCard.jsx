@@ -54,5 +54,5 @@ RecipeLinkCard.propTypes = {
   bgColor: PropTypes.string,
   text: PropTypes.string,
   variant: PropTypes.string,
-  bgGradient: PropTypes,
+  bgGradient: PropTypes.string,
 };

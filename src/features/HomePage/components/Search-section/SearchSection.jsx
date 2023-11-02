@@ -1,4 +1,4 @@
-import SvgComponent from "@/assets/HomePage/svgWave";
+import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { Icon } from "@/features/ui";
 
 import BellPeppers from "@/assets/brand/bell-peppers/BellPeppers.jsx";

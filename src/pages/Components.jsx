@@ -1,6 +1,6 @@
-import Buttons from "./Buttons";
-import Icons from "./Icons";
-import Headings from "./Headings";
+import Buttons from "../features/dev/components/Buttons";
+import Icons from "../features/dev/components/Icons";
+import Headings from "../features/dev/components/Headings";
 
 import { Heading } from "@/features/ui/Heading";
 

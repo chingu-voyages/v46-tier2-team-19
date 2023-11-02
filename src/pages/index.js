@@ -1,17 +1,7 @@
-import Home from "./home/Home";
-import Posts from "./Posts";
-import PostDetail from "./PostDetail";
+import Home from "./Home";
 import Search from "./Search";
-import RecipeDetailsPage from "./RecipesDetail";
+import RecipeDetails from "./RecipeDetails";
 import About from "./About";
-import Components from "./components/Components";
+import Components from "./Components";
 
-export {
-  Home,
-  Posts,
-  PostDetail,
-  About,
-  Search,
-  RecipeDetailsPage,
-  Components,
-};
+export { Home, About, Search, RecipeDetails, Components };
