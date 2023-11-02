@@ -23,15 +23,18 @@ export const RecipeDetails = ({ recipe }) => {
 
     return description ? (
       <div className="description">
-        <h2 className="text-clamp-h2 not-italic">{title}</h2>
+        <Heading level="h2" variant="lava">
+          {title}
+        </Heading>
         <p>{body}</p>
       </div>
     ) : null;
   };
 
   const Topics = ({ topics }) => {
+    if (!topics) return null;
     return (
-      <div className="tags">
+      <div className="topics">
         <strong>Topics: </strong>
         {topics.map((topic, index) => {
           return (
@@ -52,6 +55,7 @@ export const RecipeDetails = ({ recipe }) => {
   };
 
   const Tags = ({ tags }) => {
+    if (!tags) return null;
     return (
       <div className="tags">
         <strong>Tags: </strong>
@@ -97,13 +101,12 @@ export const RecipeDetails = ({ recipe }) => {
     );
   };
 
+  // Section is the term the testy api uses for an individual ingredient for a recipe component
   const Section = ({ list, name }) => {
     const components = list.map((component, index) => {
-      console.log(component);
       const quantity = component.measurements[0].quantity;
       const unit = component.measurements[0].unit;
       const isPlural = quantity > 1 ? true : false;
-      console.log(isPlural);
       const measurement = (
         <span className="measurement text-tangerine font-bold font-open-sans">
           <span className="quantity">
@@ -158,6 +161,24 @@ export const RecipeDetails = ({ recipe }) => {
     );
   };
 
+  const Instructions = ({ instructions }) => {
+    return (
+      <div className="instructions-wrapper">
+        <Heading level="h2">Instructions</Heading>
+        <ol className="list-decimal flex flex-col gap-6 ml-5">
+          {instructions.map((step, index) => {
+            const { display_text } = step;
+            return (
+              <li key={index} className="pl-4">
+                {`${display_text}`}
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    );
+  };
+
   return (
     <div className="page-wrapper bg-sky">
       <div className="title-wrapper bg-title-cutout bg-cover bg-no-repeat p-4 pb-12">
@@ -183,14 +204,14 @@ export const RecipeDetails = ({ recipe }) => {
           <Heading level="h4" variant="lava">
             Filed Under
           </Heading>
-          {recipe.topics && <Topics topics={recipe.topics} />}
+          <Topics topics={recipe.topics} />
           <Tags tags={recipe.tags} />
           <Heading level="h4" variant="lava" className="pt-4">
             Quick Links
           </Heading>
           <div className="quick-links">
             <QuickLink to="#ingredients" label="Ingredients" />
-            <QuickLink to="#preparation" label="Preparation" />
+            <QuickLink to="#instructions" label="Preparation" />
             <QuickLink to="#nutrition" label="Nutrition" />
             <QuickLink to="#tops" label="Tips" />
           </div>
@@ -199,8 +220,11 @@ export const RecipeDetails = ({ recipe }) => {
           videoUrl={recipe.video_url}
           renditions={recipe.renditions}
         />
-        <Card className="ingredients-card">
+        <Card className="ingredients-card" id="ingredients">
           <IngredientSections sections={recipe.sections} />
+        </Card>
+        <Card className="instructions-card" id="instructions">
+          <Instructions instructions={recipe.instructions} />
         </Card>
       </div>
     </div>
@@ -221,6 +245,7 @@ RecipeDetails.propTypes = {
   sections: PropTypes.object,
   list: PropTypes.object,
   name: PropTypes.string,
+  instructions: PropTypes.object,
 };
 
 export default RecipeDetails;
