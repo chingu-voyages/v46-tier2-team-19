@@ -19,6 +19,11 @@ export const navLinks = [
     title: "Search",
     href: "/search",
   },
+  {
+    id: "favorites",
+    title: "Favorites",
+    href: "/favorites",
+  },
 ];
 
 const footerLinks = [
