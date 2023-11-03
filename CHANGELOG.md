@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favicon and site bg gradient:** add favicon and site background gradient ([7989dd5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7989dd5b0a8b9827a5dfeb75ac28bb4d83893d62))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **global.css:** add .text-stroke class to provide text outline styling ([d8e67ba](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d8e67bace2366262a35b7d35e8ab1c932c9ac719)), closes [#333](https://github.com/chingu-voyages/v46-tier2-team-19/issues/333)
+* **global.css:** add smaller variants for text-shadow and text-stroke classes ([a8236ef](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a8236efe91491f47e946d528c04c1701ba3ac7ce))
+* **heading.jsx:** add text shadow and text stroke styling to the headings ([6271b3a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6271b3a04dd81d288065b543bbd436619411f8dd))
+* **recipe details page:** add & style recipe title, desc., tags, topics, ingredients, video, etc ([1f61402](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1f61402b6f611fc9476b307fe09926e5e4b640f9))
+* **recipe details page:** add instructions ([e4b64f5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e4b64f549cc3b9bd55740e2cc5c19ea9fff0d097))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+* **recipedetails.jsx:** improve responsive tablet layout for Recipe Details page ([1708c03](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1708c031781f57b81dd0a99f19b3429e013dc1db))
+* **recipedetails:** add more cards, activate jumplinks, continue improving layout ([d3dd734](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d3dd734199071baf17ee12fb9c2448475fcb3fc2))
+
+
+### Bug Fixes
+
+* **global css:** fix for overly thick stroke on small headings on mobile and tablet ([4374bbd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4374bbd1716000f40876032f6340704af9f30f31))
+* **global.css:** add missing closing bracket ([0fb455d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0fb455d2a9fdc35e53e5f56e2b9bd0857ff96e08))
+* merge in code from dev ([f7c3437](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f7c34372d5fab284abb965c4b2663b99cebbe099))
+* **recipedetails.jsx:** hide debug messages ([0c7d3a3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0c7d3a3fcadd0f4ccb16d7093e4620a4681095a0))
+* **svgwave.jsx:** adjust viewBox attribute in SVG to correct aspect ratio ([6b770e8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6b770e885f009848909b2035cf0c818dcad50dac))
+
 ### [0.0.13](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.11...v0.0.13) (2023-11-01)
 
 
