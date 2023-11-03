@@ -53,7 +53,7 @@ export const Header = () => {
                   leaveTo="transform scale-95 opacity-0"
                 >
                   {open && (
-                    <Menu.Items className="absolute z-10 w-32 py-2 mt-5 origin-top-right bg-sky-300 text-2xl rounded-md shadow-lg right-1 ring-1 ring-gray-900/5 focus:outline-none">
+                    <Menu.Items className="absolute z-10 mt-6 origin-top-right bg-sky-300 text-3xl rounded-bl-md overflow-hidden shadow-lg right-4 md:right-8 ring-1 ring-gray-900/5 focus:outline-none">
                       <div className="flex flex-col">
                         {navLinks.map((link) => (
                           <Menu.Item key={link.href} as={Fragment}>
@@ -64,7 +64,7 @@ export const Header = () => {
                                   active
                                     ? "bg-sky-400 text-white"
                                     : "bg-sky-300 text-white"
-                                } font-bold uppercase px-4`}
+                                } font-bold uppercase px-10 py-3`}
                               >
                                 {link.title}
                               </Link>
