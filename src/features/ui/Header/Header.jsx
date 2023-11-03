@@ -7,8 +7,6 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-  // const [toggle, setToggle] = useState(false);
-
   return (
     <header className="top-0 flex items-center justify-between px-4 py-3 bg-white shadow-md shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8 rounded-t-2xl">
       <aside className="w-40 lg:w-52">
@@ -33,11 +31,6 @@ export const Header = () => {
             {({ open }) => (
               <>
                 <Menu.Button className="-m-1.5 flex items-center p-1.5">
-                  {/* <Icon
-                    name={toggle ? "close" : "hamburger"}
-                    className="w-9 text-[#6DD1E3]"
-                    onClick={() => setToggle(!toggle)}
-                  /> */}
                   <Icon
                     className="text-5xl text-sky"
                     name={open ? "close" : "hamburger"}
