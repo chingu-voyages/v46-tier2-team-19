@@ -291,6 +291,9 @@ export const RecipeDetails = ({ recipe }) => {
   };
 
   const NutritionSection = ({ nutrition }) => {
+    if (!nutrition || Object.keys(nutrition).length === 0) {
+      return <p>No nutritional information available.</p>;
+    }
     const { updated_at, ...rest } = nutrition;
     return (
       <>
