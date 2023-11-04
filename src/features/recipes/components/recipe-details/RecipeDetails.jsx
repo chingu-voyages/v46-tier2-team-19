@@ -96,7 +96,7 @@ export const RecipeDetails = ({ recipe }) => {
       <div>
         <div className="picture-wrapper -mt-6 mb-4 box-content flex justify-center overflow-visible border-b-[.3rem] border-dashed border-tangerine-500 pb-6 md:-mr-20 md:-mt-16 md:h-[17rem] md:w-[17rem] md:rotate-12 md:rounded-full md:border-[.5rem] md:p-3 xl:h-[25rem] xl:w-[25rem]">
           <picture className="-mx-6 block overflow-clip rounded-t-xl object-cover md:shadow-2xl md:h-[17rem] md:w-[17rem] md:rounded-full xl:h-[25rem] xl:w-[25rem]">
-            <img src={src} alt={alt} className="w-full h-full object-cover" />
+            <img src={src} alt={alt} className="object-cover w-full h-full" />
           </picture>
         </div>
       </div>
@@ -113,7 +113,7 @@ export const RecipeDetails = ({ recipe }) => {
             <>
               <Link
                 to={`/search?q=${topic.slug}`}
-                className="text-watermelon font-bold"
+                className="font-bold text-watermelon"
                 key={topic.name}
               >
                 {topic.name}
@@ -146,7 +146,7 @@ export const RecipeDetails = ({ recipe }) => {
             <>
               <Link
                 to={`/search?q=${tag.name}`}
-                className="text-watermelon font-bold"
+                className="font-bold text-watermelon"
                 key={tag.name}
               >
                 {tag.display_name}
@@ -166,7 +166,7 @@ export const RecipeDetails = ({ recipe }) => {
           console.log("Scrolling to ", to);
           document.querySelector(to)?.scrollIntoView();
         }}
-        className="w-full text-center justify-between text-lg my-4"
+        className="justify-between w-full my-4 text-lg text-center"
       >
         <div className="inline-block w-full">{label}</div>
         <Icon name="right-arrow" className="text-2xl" />
@@ -180,7 +180,7 @@ export const RecipeDetails = ({ recipe }) => {
       return <source key={index} type={src.content_type} src={src.url} />;
     });
     return (
-      <div className="recipe-video mb-4">
+      <div className="mb-4 recipe-video">
         <video controls className="rounded-xl w-full md:w-[360px] max-w-full">
           {sources}
         </video>
@@ -237,7 +237,7 @@ export const RecipeDetails = ({ recipe }) => {
       const unit = component.measurements[0].unit;
       const isPlural = quantity > 1 ? true : false;
       const measurement = (
-        <span className="measurement text-tangerine font-bold font-open-sans">
+        <span className="font-bold measurement text-tangerine font-open-sans">
           <span className="quantity">
             {quantity && quantity !== "0" ? quantity + " " : "-"}
           </span>
@@ -262,7 +262,7 @@ export const RecipeDetails = ({ recipe }) => {
       );
     });
     return (
-      <div className="recipe-component py-2">
+      <div className="py-2 recipe-component">
         <Heading level="h4" variant="lava">
           {name || "You'll Need:"}
         </Heading>
@@ -290,13 +290,42 @@ export const RecipeDetails = ({ recipe }) => {
     );
   };
 
+  const NutritionSection = ({ nutrition }) => {
+    const { updated_at, ...rest } = nutrition;
+    return (
+      <>
+        <div className="flex flex-wrap justify-start lg:divide-x-2 lg:divide-sky-300">
+          {Object.entries(rest).map(([key, value]) => {
+            return (
+              <div
+                key={key}
+                className="flex items-center gap-1 px-1 lg:gap-2 lg:flex-col lg:px-4"
+              >
+                <Heading level="h5" variant="sky">
+                  {key}
+                </Heading>
+                <p className="text-2xl font-semibold font-rasa text-sky-700">
+                  {value}
+                  {key === "calories" ? "" : "g"}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+        <p className="pl-2 mt-2 text-xs font-rasa">
+          {`Last updated on ${updated_at.slice(0, 10)}`}
+        </p>
+      </>
+    );
+  };
+
   const Instructions = ({ instructions }) => {
     return (
       <div className="instructions-wrapper">
         <Heading level="h2" variant="watermelon">
           Preparation
         </Heading>
-        <ol className="list-decimal flex flex-col gap-6 ml-5">
+        <ol className="flex flex-col gap-6 ml-5 list-decimal">
           {instructions.map((step, index) => {
             const { display_text } = step;
             return (
@@ -312,7 +341,7 @@ export const RecipeDetails = ({ recipe }) => {
 
   return (
     <div className="page-wrapper bg-sky">
-      <div className="title-wrapper bg-title-cutout bg-cover bg-no-repeat p-4 pb-12">
+      <div className="p-4 pb-12 bg-no-repeat bg-cover title-wrapper bg-title-cutout">
         <Heading level="h1" variant="lava" className="pl-6 pt-6 leading-[1]">
           {recipe.name}
         </Heading>
@@ -332,7 +361,7 @@ export const RecipeDetails = ({ recipe }) => {
           </Button>
         </div>
         <Card className="intro-card">
-          <div className="md:flex flex-row-reverse gap-4">
+          <div className="flex-row-reverse gap-4 md:flex">
             <RecipeImage src={recipe.thumbnail_url} alt={recipe.name} />
             <Description description={recipe.description} />
           </div>
@@ -354,12 +383,12 @@ export const RecipeDetails = ({ recipe }) => {
               <QuickLink to="#tips" label="Tips" />
             </div>
           </Card>
-          <div className="flex flex-col justify-stretch items-stretch">
+          <div className="flex flex-col items-stretch justify-stretch">
             <RecipeVideo
               videoUrl={recipe.video_url}
               renditions={recipe.renditions}
             />
-            <Card className="difficulty-card self-stretch">
+            <Card className="self-stretch difficulty-card">
               <RecipeDifficultyCard tags={recipe.tags} />
             </Card>
           </div>
@@ -374,6 +403,7 @@ export const RecipeDetails = ({ recipe }) => {
           <Heading level="h2" variant="sky">
             Nutrition
           </Heading>
+          <NutritionSection nutrition={recipe.nutrition} />
         </Card>
         <Card id="tips">
           <Heading level="h2" variant="lava">
@@ -401,6 +431,7 @@ RecipeDetails.propTypes = {
   list: PropTypes.object,
   name: PropTypes.string,
   instructions: PropTypes.object,
+  nutrition: PropTypes.object,
   src: PropTypes.string,
   alt: PropTypes.string,
 };
