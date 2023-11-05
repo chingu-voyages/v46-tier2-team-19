@@ -1,0 +1,886 @@
+{
+  "total_time_tier": {
+    "tier": "under_30_minutes",
+    "display_tier": "Under 30 minutes"
+  },
+  "buzz_id": null,
+  "total_time_minutes": 20,
+  "created_at": 1644534455,
+  "promotion": "full",
+  "updated_at": 1645052400,
+  "video_url": "https://vid.tasty.co/output/215487/hls24_1631150838.m3u8",
+  "brand": null,
+  "video_ad_content": "none",
+  "aspect_ratio": "16:9",
+  "topics": [
+    {
+      "name": "Best Vegetarian",
+      "slug": "best-vegetarian"
+    },
+    {
+      "name": "Bread Lovers",
+      "slug": "bread"
+    },
+    {
+      "name": "Sunday Brunch",
+      "slug": "brunch"
+    },
+    {
+      "name": "Breakfast",
+      "slug": "breakfast"
+    },
+    {
+      "name": "American",
+      "slug": "american"
+    },
+    {
+      "name": "Mother's Day",
+      "slug": "mothers-day"
+    }
+  ],
+  "language": "eng",
+  "cook_time_minutes": 10,
+  "servings_noun_plural": "servings",
+  "compilations": [],
+  "sections": [
+    {
+      "position": 1,
+      "components": [
+        {
+          "ingredient": {
+            "display_singular": "large egg",
+            "display_plural": "large eggs",
+            "created_at": 1494382414,
+            "updated_at": 1509035275,
+            "id": 253,
+            "name": "large egg"
+          },
+          "id": 92487,
+          "raw_text": "6 large eggs",
+          "extra_comment": "",
+          "position": 2,
+          "measurements": [
+            {
+              "id": 682360,
+              "quantity": "6",
+              "unit": {
+                "name": "",
+                "abbreviation": "",
+                "display_singular": "",
+                "display_plural": "",
+                "system": "none"
+              }
+            }
+          ]
+        },
+        {
+          "id": 92488,
+          "raw_text": "¾ cup whole milk",
+          "extra_comment": "",
+          "position": 3,
+          "measurements": [
+            {
+              "id": 682357,
+              "quantity": "¾",
+              "unit": {
+                "name": "cup",
+                "abbreviation": "c",
+                "display_singular": "cup",
+                "display_plural": "cups",
+                "system": "imperial"
+              }
+            },
+            {
+              "unit": {
+                "abbreviation": "mL",
+                "display_singular": "mL",
+                "display_plural": "mL",
+                "system": "metric",
+                "name": "milliliter"
+              },
+              "id": 682355,
+              "quantity": "180"
+            }
+          ],
+          "ingredient": {
+            "id": 770,
+            "name": "whole milk",
+            "display_singular": "whole milk",
+            "display_plural": "whole milks",
+            "created_at": 1495732941,
+            "updated_at": 1509035235
+          }
+        },
+        {
+          "id": 92489,
+          "raw_text": "¾ cup heavy cream",
+          "extra_comment": "",
+          "position": 4,
+          "measurements": [
+            {
+              "id": 682354,
+              "quantity": "¾",
+              "unit": {
+                "name": "cup",
+                "abbreviation": "c",
+                "display_singular": "cup",
+                "display_plural": "cups",
+                "system": "imperial"
+              }
+            },
+            {
+              "unit": {
+                "name": "milliliter",
+                "abbreviation": "mL",
+                "display_singular": "mL",
+                "display_plural": "mL",
+                "system": "metric"
+              },
+              "id": 682351,
+              "quantity": "180"
+            }
+          ],
+          "ingredient": {
+            "id": 221,
+            "name": "heavy cream",
+            "display_singular": "heavy cream",
+            "display_plural": "heavy creams",
+            "created_at": 1494214054,
+            "updated_at": 1509035278
+          }
+        },
+        {
+          "raw_text": "2–4 tablespoons light brown sugar",
+          "extra_comment": "",
+          "position": 5,
+          "measurements": [
+            {
+              "unit": {
+                "abbreviation": "tbsp",
+                "display_singular": "tablespoon",
+                "display_plural": "tablespoons",
+                "system": "imperial",
+                "name": "tablespoon"
+              },
+              "id": 682359,
+              "quantity": "2"
+            }
+          ],
+          "ingredient": {
+            "name": "light brown sugar",
+            "display_singular": "light brown sugar",
+            "display_plural": "light brown sugars",
+            "created_at": 1495671124,
+            "updated_at": 1509035239,
+            "id": 707
+          },
+          "id": 92490
+        },
+        {
+          "raw_text": "½ teaspoon kosher salt",
+          "extra_comment": "",
+          "position": 6,
+          "measurements": [
+            {
+              "id": 682353,
+              "quantity": "½",
+              "unit": {
+                "name": "teaspoon",
+                "abbreviation": "tsp",
+                "display_singular": "teaspoon",
+                "display_plural": "teaspoons",
+                "system": "imperial"
+              }
+            }
+          ],
+          "ingredient": {
+            "updated_at": 1509035289,
+            "id": 11,
+            "name": "kosher salt",
+            "display_singular": "kosher salt",
+            "display_plural": "kosher salts",
+            "created_at": 1493307153
+          },
+          "id": 92491
+        },
+        {
+          "measurements": [
+            {
+              "id": 682349,
+              "quantity": "1",
+              "unit": {
+                "display_plural": "teaspoons",
+                "system": "imperial",
+                "name": "teaspoon",
+                "abbreviation": "tsp",
+                "display_singular": "teaspoon"
+              }
+            }
+          ],
+          "ingredient": {
+            "created_at": 1494985113,
+            "updated_at": 1509035263,
+            "id": 407,
+            "name": "ground cinnamon",
+            "display_singular": "ground cinnamon",
+            "display_plural": "ground cinnamons"
+          },
+          "id": 92492,
+          "raw_text": "1 teaspoon ground cinnamon",
+          "extra_comment": "",
+          "position": 7
+        },
+        {
+          "id": 92493,
+          "raw_text": "1 teaspoon vanilla bean paste or extract",
+          "extra_comment": "or extract",
+          "position": 8,
+          "measurements": [
+            {
+              "id": 682352,
+              "quantity": "1",
+              "unit": {
+                "system": "imperial",
+                "name": "teaspoon",
+                "abbreviation": "tsp",
+                "display_singular": "teaspoon",
+                "display_plural": "teaspoons"
+              }
+            }
+          ],
+          "ingredient": {
+            "created_at": 1527513590,
+            "updated_at": 1527513590,
+            "id": 4181,
+            "name": "vanilla bean paste",
+            "display_singular": "vanilla bean paste",
+            "display_plural": "vanilla bean pastes"
+          }
+        },
+        {
+          "extra_comment": "",
+          "position": 9,
+          "measurements": [
+            {
+              "id": 682356,
+              "quantity": "1",
+              "unit": {
+                "system": "none",
+                "name": "loaf",
+                "abbreviation": "loaf",
+                "display_singular": "loaf",
+                "display_plural": "loaves"
+              }
+            }
+          ],
+          "ingredient": {
+            "id": 9565,
+            "name": "challah bread",
+            "display_singular": "challah bread",
+            "display_plural": "challah breads",
+            "created_at": 1644586974,
+            "updated_at": 1644586974
+          },
+          "id": 92494,
+          "raw_text": "1 loaf of day-old challah bread, sliced 1–1½-inch-thick"
+        },
+        {
+          "raw_text": "Unsalted butter or ghee, for greasing",
+          "extra_comment": "or ghee, for greasing",
+          "position": 10,
+          "measurements": [
+            {
+              "id": 682347,
+              "quantity": "0",
+              "unit": {
+                "name": "",
+                "abbreviation": "",
+                "display_singular": "",
+                "display_plural": "",
+                "system": "none"
+              }
+            }
+          ],
+          "ingredient": {
+            "updated_at": 1509035272,
+            "id": 291,
+            "name": "unsalted butter",
+            "display_singular": "unsalted butter",
+            "display_plural": "unsalted butters",
+            "created_at": 1494806355
+          },
+          "id": 92495
+        }
+      ],
+      "name": "French Toast"
+    },
+    {
+      "components": [
+        {
+          "id": 92497,
+          "raw_text": "Softened butter",
+          "extra_comment": "",
+          "position": 12,
+          "measurements": [
+            {
+              "id": 682358,
+              "quantity": "0",
+              "unit": {
+                "display_plural": "",
+                "system": "none",
+                "name": "",
+                "abbreviation": "",
+                "display_singular": ""
+              }
+            }
+          ],
+          "ingredient": {
+            "id": 4160,
+            "name": "softened butter",
+            "display_singular": "softened butter",
+            "display_plural": "softened butters",
+            "created_at": 1527026898,
+            "updated_at": 1527026898
+          }
+        },
+        {
+          "measurements": [
+            {
+              "unit": {
+                "abbreviation": "",
+                "display_singular": "",
+                "display_plural": "",
+                "system": "none",
+                "name": ""
+              },
+              "id": 682348,
+              "quantity": "0"
+            }
+          ],
+          "ingredient": {
+            "id": 2477,
+            "name": "pure maple syrup",
+            "display_singular": "pure maple syrup",
+            "display_plural": "pure maple syrups",
+            "created_at": 1500699508,
+            "updated_at": 1509035127
+          },
+          "id": 92498,
+          "raw_text": "Pure maple syrup, warmed",
+          "extra_comment": "warmed",
+          "position": 13
+        },
+        {
+          "id": 92499,
+          "raw_text": "Flaky sea salt",
+          "extra_comment": "",
+          "position": 14,
+          "measurements": [
+            {
+              "quantity": "0",
+              "unit": {
+                "name": "",
+                "abbreviation": "",
+                "display_singular": "",
+                "display_plural": "",
+                "system": "none"
+              },
+              "id": 682350
+            }
+          ],
+          "ingredient": {
+            "id": 3099,
+            "name": "flaky sea salt",
+            "display_singular": "flaky sea salt",
+            "display_plural": "flaky sea salts",
+            "created_at": 1507925704,
+            "updated_at": 1509035088
+          }
+        },
+        {
+          "id": 92500,
+          "raw_text": "Fresh berries",
+          "extra_comment": "",
+          "position": 15,
+          "measurements": [
+            {
+              "id": 682346,
+              "quantity": "0",
+              "unit": {
+                "name": "",
+                "abbreviation": "",
+                "display_singular": "",
+                "display_plural": "",
+                "system": "none"
+              }
+            }
+          ],
+          "ingredient": {
+            "name": "fresh berries",
+            "display_singular": "fresh berry",
+            "display_plural": "fresh berries",
+            "created_at": 1500596638,
+            "updated_at": 1509035130,
+            "id": 2369
+          }
+        }
+      ],
+      "name": "For Serving",
+      "position": 2
+    }
+  ],
+  "tags": [
+    {
+      "display_name": "North American",
+      "type": "cuisine",
+      "root_tag_type": "cuisine",
+      "id": 64444,
+      "name": "north_american"
+    },
+    {
+      "id": 64449,
+      "name": "french",
+      "display_name": "French",
+      "type": "european",
+      "root_tag_type": "cuisine"
+    },
+    {
+      "type": "cooking_style",
+      "root_tag_type": "cooking_style",
+      "id": 64462,
+      "name": "comfort_food",
+      "display_name": "Comfort Food"
+    },
+    {
+      "id": 64469,
+      "name": "vegetarian",
+      "display_name": "Vegetarian",
+      "type": "dietary",
+      "root_tag_type": "dietary"
+    },
+    {
+      "id": 64471,
+      "name": "easy",
+      "display_name": "Easy",
+      "type": "difficulty",
+      "root_tag_type": "difficulty"
+    },
+    {
+      "id": 64472,
+      "name": "under_30_minutes",
+      "display_name": "Under 30 Minutes",
+      "type": "difficulty",
+      "root_tag_type": "difficulty"
+    },
+    {
+      "name": "valentines_day",
+      "display_name": "Valentine's Day",
+      "type": "holidays",
+      "root_tag_type": "seasonal",
+      "id": 64480
+    },
+    {
+      "name": "breakfast",
+      "display_name": "Breakfast",
+      "type": "meal",
+      "root_tag_type": "meal",
+      "id": 64483
+    },
+    {
+      "type": "meal",
+      "root_tag_type": "meal",
+      "id": 64484,
+      "name": "brunch",
+      "display_name": "Brunch"
+    },
+    {
+      "id": 64505,
+      "name": "weeknight",
+      "display_name": "Weeknight",
+      "type": "dinner",
+      "root_tag_type": "meal"
+    },
+    {
+      "root_tag_type": "appliance",
+      "id": 65848,
+      "name": "stove_top",
+      "display_name": "Stove Top",
+      "type": "appliance"
+    },
+    {
+      "display_name": "Big Batch",
+      "type": "cooking_style",
+      "root_tag_type": "cooking_style",
+      "id": 65851,
+      "name": "big_batch"
+    },
+    {
+      "display_name": "Special Occasion",
+      "type": "occasion",
+      "root_tag_type": "seasonal",
+      "id": 188967,
+      "name": "special_occasion"
+    },
+    {
+      "id": 1247785,
+      "name": "pyrex",
+      "display_name": "Pyrex",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "id": 1247788,
+      "name": "spatula",
+      "display_name": "Spatula",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "id": 1247790,
+      "name": "tongs",
+      "display_name": "Tongs",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "id": 1247793,
+      "name": "whisk",
+      "display_name": "Whisk",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "root_tag_type": "equipment",
+      "id": 1280506,
+      "name": "liquid_measuring_cup",
+      "display_name": "Liquid Measuring Cup",
+      "type": "equipment"
+    },
+    {
+      "id": 1280508,
+      "name": "measuring_spoons",
+      "display_name": "Measuring Spoons",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "id": 1280510,
+      "name": "mixing_bowl",
+      "display_name": "Mixing Bowl",
+      "type": "equipment",
+      "root_tag_type": "equipment"
+    },
+    {
+      "type": "holidays",
+      "root_tag_type": "seasonal",
+      "id": 6854262,
+      "name": "mothers_day",
+      "display_name": "Mother's Day"
+    },
+    {
+      "display_name": "Under 45 Minutes",
+      "type": "difficulty",
+      "root_tag_type": "difficulty",
+      "id": 8091747,
+      "name": "under_45_minutes"
+    },
+    {
+      "root_tag_type": "difficulty",
+      "id": 8091748,
+      "name": "under_1_hour",
+      "display_name": "Under 1 Hour",
+      "type": "difficulty"
+    },
+    {
+      "display_name": "Country Crock Brunch",
+      "type": "feature_page",
+      "root_tag_type": "feature_page",
+      "id": 9104327,
+      "name": "country_crock_brunch"
+    },
+    {
+      "root_tag_type": "meal",
+      "id": 9299364,
+      "name": "sweet_breakfasts",
+      "display_name": "Sweet Breakfasts",
+      "type": "breakfast"
+    }
+  ],
+  "price": {
+    "portion": 750,
+    "consumption_total": 700,
+    "consumption_portion": 200,
+    "updated_at": "2023-11-05T06:27:03+01:00",
+    "total": 2900
+  },
+  "keywords": "",
+  "seo_title": "",
+  "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/341495.jpg",
+  "show": {
+    "id": 63,
+    "name": "Tasty 101"
+  },
+  "yields": "Servings: 4",
+  "beauty_url": null,
+  "brand_id": null,
+  "servings_noun_singular": "serving",
+  "show_id": 63,
+  "description": "This iconic dish is all about the details. While french toast might seem simple, looks can be deceiving. To get that perfectly crispy exterior and creamy, silky custard on the inside we spent weeks eating tons of butter, bread, and syrup to discover the best classic french toast recipe. The end result is indulgent, delicious, and most importantly, easy to make. What’s not to love?",
+  "is_one_top": false,
+  "credits": [
+    {
+      "type": "internal",
+      "name": "Katie Aubin"
+    },
+    {
+      "type": "internal",
+      "name": "Codii Lopez"
+    },
+    {
+      "name": "Kelly Paige",
+      "type": "internal"
+    }
+  ],
+  "is_shoppable": true,
+  "prep_time_minutes": 5,
+  "inspired_by_url": null,
+  "is_subscriber_content": false,
+  "tips_and_ratings_enabled": true,
+  "original_video_url": "https://s3.amazonaws.com/video-api-prod/assets/42109c902ae449bda59cebafa04745ca/BFV81893_FrenchToast_ADB_090821_Final_16x9_YT.mp4",
+  "draft_status": "published",
+  "nutrition_visibility": "auto",
+  "facebook_posts": [],
+  "thumbnail_alt_text": "101",
+  "nutrition": {
+    "calories": 426,
+    "carbohydrates": 25,
+    "fat": 31,
+    "protein": 17,
+    "sugar": 11,
+    "fiber": 0,
+    "updated_at": "2022-02-12T07:09:37+01:00"
+  },
+  "approved_at": 1645125797,
+  "id": 8110,
+  "name": "How To Make Classic French Toast",
+  "seo_path": "8757513,9295874,64449",
+  "slug": "how-to-make-classic-french-toast",
+  "renditions": [
+    {
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/square_720/1631150838_00001.png",
+      "name": "mp4_720x404",
+      "width": 720,
+      "duration": 353896,
+      "bit_rate": 1243,
+      "minimum_bit_rate": null,
+      "content_type": "video/mp4",
+      "url": "https://vid.tasty.co/output/215487/square_720/1631150838",
+      "height": 404,
+      "file_size": 54947396,
+      "maximum_bit_rate": null,
+      "aspect": "landscape",
+      "container": "mp4"
+    },
+    {
+      "maximum_bit_rate": null,
+      "minimum_bit_rate": null,
+      "content_type": "video/mp4",
+      "aspect": "landscape",
+      "name": "mp4_320x180",
+      "height": 180,
+      "width": 320,
+      "bit_rate": 444,
+      "container": "mp4",
+      "url": "https://vid.tasty.co/output/215487/square_320/1631150838",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/square_320/1631150838_00001.png",
+      "duration": 353896,
+      "file_size": 19632223
+    },
+    {
+      "minimum_bit_rate": null,
+      "content_type": "video/mp4",
+      "container": "mp4",
+      "name": "mp4_720x404",
+      "height": 404,
+      "bit_rate": 1243,
+      "maximum_bit_rate": null,
+      "aspect": "landscape",
+      "url": "https://vid.tasty.co/output/215487/square_720/1631150838",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/square_720/1631150838_00001.png",
+      "width": 720,
+      "duration": 353896,
+      "file_size": 54947396
+    },
+    {
+      "name": "mp4_1280x720",
+      "width": 1280,
+      "bit_rate": 2602,
+      "maximum_bit_rate": null,
+      "minimum_bit_rate": null,
+      "content_type": "video/mp4",
+      "url": "https://vid.tasty.co/output/215487/landscape_720/1631150838",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/landscape_720/1631150838_00001.png",
+      "height": 720,
+      "duration": 353896,
+      "file_size": 115083637,
+      "aspect": "landscape",
+      "container": "mp4"
+    },
+    {
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/square_320/1631150838_00001.png",
+      "width": 320,
+      "file_size": 19632223,
+      "bit_rate": 444,
+      "maximum_bit_rate": null,
+      "content_type": "video/mp4",
+      "container": "mp4",
+      "url": "https://vid.tasty.co/output/215487/square_320/1631150838",
+      "name": "mp4_320x180",
+      "height": 180,
+      "duration": 353896,
+      "minimum_bit_rate": null,
+      "aspect": "landscape"
+    },
+    {
+      "width": 640,
+      "file_size": 46802727,
+      "bit_rate": 1058,
+      "maximum_bit_rate": null,
+      "aspect": "landscape",
+      "container": "mp4",
+      "url": "https://vid.tasty.co/output/215487/landscape_480/1631150838",
+      "height": 360,
+      "duration": 353896,
+      "minimum_bit_rate": null,
+      "content_type": "video/mp4",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/landscape_480/1631150838_00001.png",
+      "name": "mp4_640x360"
+    },
+    {
+      "height": 720,
+      "duration": 353896,
+      "file_size": 115083637,
+      "bit_rate": 2602,
+      "minimum_bit_rate": null,
+      "url": "https://vid.tasty.co/output/215487/landscape_720/1631150838",
+      "name": "mp4_1280x720",
+      "width": 1280,
+      "maximum_bit_rate": null,
+      "content_type": "video/mp4",
+      "aspect": "landscape",
+      "container": "mp4",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/landscape_720/1631150838_00001.png"
+    },
+    {
+      "content_type": "video/mp4",
+      "container": "mp4",
+      "name": "mp4_640x360",
+      "height": 360,
+      "width": 640,
+      "bit_rate": 1058,
+      "maximum_bit_rate": null,
+      "minimum_bit_rate": null,
+      "aspect": "landscape",
+      "url": "https://vid.tasty.co/output/215487/landscape_480/1631150838",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/landscape_480/1631150838_00001.png",
+      "duration": 353896,
+      "file_size": 46802727
+    },
+    {
+      "height": 1080,
+      "maximum_bit_rate": 4581,
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/1445289064805-h2exzu/1631150838_00001.png",
+      "content_type": "application/vnd.apple.mpegurl",
+      "aspect": "landscape",
+      "container": "ts",
+      "width": 1920,
+      "duration": 353896,
+      "file_size": null,
+      "bit_rate": null,
+      "minimum_bit_rate": 269,
+      "url": "https://vid.tasty.co/output/215487/hls24_1631150838.m3u8",
+      "name": "low"
+    },
+    {
+      "duration": 353896,
+      "minimum_bit_rate": 269,
+      "url": "https://vid.tasty.co/output/215487/hls24_1631150838.m3u8",
+      "aspect": "landscape",
+      "container": "ts",
+      "height": 1080,
+      "width": 1920,
+      "file_size": null,
+      "bit_rate": null,
+      "maximum_bit_rate": 4581,
+      "content_type": "application/vnd.apple.mpegurl",
+      "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/215487/1445289064805-h2exzu/1631150838_00001.png",
+      "name": "low"
+    }
+  ],
+  "canonical_id": "recipe:8110",
+  "country": "US",
+  "is_app_only": false,
+  "num_servings": 4,
+  "video_id": 135115,
+  "instructions": [
+    {
+      "id": 70664,
+      "display_text": "Preheat a nonstick electric griddle to 300°F (150°C). (Alternatively, heat a large nonstick skillet over medium-low heat.)",
+      "position": 1,
+      "start_time": 0,
+      "end_time": 0,
+      "temperature": 300,
+      "appliance": "oven"
+    },
+    {
+      "start_time": 113000,
+      "end_time": 125833,
+      "temperature": null,
+      "appliance": null,
+      "id": 70665,
+      "display_text": "In a large bowl, whisk the eggs until well combined. Add the milk, heavy cream, brown sugar, salt, cinnamon, and vanilla bean paste and whisk until completely combined.",
+      "position": 2
+    },
+    {
+      "position": 3,
+      "start_time": 169000,
+      "end_time": 172000,
+      "temperature": null,
+      "appliance": null,
+      "id": 70666,
+      "display_text": "Working in batches, dip each slice of challah in the custard, letting soak for 20–60 seconds on each side, until fully saturated but not soggy."
+    },
+    {
+      "id": 70667,
+      "display_text": "Lightly grease the griddle with butter. Once melted, add the soaked challah on the griddle and cook, without disturbing, until golden brown and crispy, about 2 minutes. Use a flat spatula to flip the bread and continue cooking until the other side is golden brown, 2 minutes more. Wipe the pan clean between batches and add more butter as needed.",
+      "position": 4,
+      "start_time": 192500,
+      "end_time": 208000,
+      "temperature": null,
+      "appliance": null
+    },
+    {
+      "position": 5,
+      "start_time": 307000,
+      "end_time": 317500,
+      "temperature": null,
+      "appliance": null,
+      "id": 70668,
+      "display_text": "Serve the French toast with a pat of butter, a drizzle of warm maple syrup, a sprinkle of flaky salt, and berries."
+    },
+    {
+      "temperature": null,
+      "appliance": null,
+      "id": 70669,
+      "display_text": "Enjoy!",
+      "position": 6,
+      "start_time": 325000,
+      "end_time": 328666
+    }
+  ],
+  "user_ratings": {
+    "count_positive": 336,
+    "count_negative": 8,
+    "score": 0.976744
+  }
+}
