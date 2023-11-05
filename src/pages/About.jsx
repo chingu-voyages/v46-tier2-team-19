@@ -4,8 +4,11 @@ import { Heading } from "@/features/ui";
 import homepage from "@/assets/about/homepage.png";
 import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
+import usePageTitle from "../hooks/usePageTitle";
 
 const About = () => {
+  usePageTitle("About");
+
   return (
     <div>
       {/* <h1 className="text-center">About</h1> */}
@@ -85,7 +88,7 @@ const About = () => {
               <div className="relative">
                 <div className="float-right ml-4">
                   <img
-                    className="rounded-full border-4 border-sky-200 transition duration-300 origin-bottom group-hover:scale-125 group-hover:rotate-3"
+                    className="rounded-full border-4 w-[130px] h-[130px] object-cover border-sky-200 transition duration-300 origin-bottom group-hover:scale-125 group-hover:rotate-3"
                     src={image}
                     alt={name}
                   />
