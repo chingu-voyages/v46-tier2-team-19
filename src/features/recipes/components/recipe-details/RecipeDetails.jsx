@@ -14,7 +14,7 @@ import { RecipeDifficultyCard } from "./RecipeDifficultyCard";
 import { IngredientSections } from "./IngredientSections";
 import { Instructions } from "./Instructions";
 import { FavoriteButton } from "./FavoriteButton";
-import { Nutrition } from "./Nutrition";
+import { NutritionSection } from "./Nutrition";
 import { Tips } from "./Tips";
 
 export const RecipeDetails = ({ recipe }) => {
@@ -76,7 +76,7 @@ export const RecipeDetails = ({ recipe }) => {
           <Heading level="h2" variant="sky">
             Nutrition
           </Heading>
-          <Nutrition nutrition={recipe.nutrition} />
+          <NutritionSection nutrition={recipe.nutrition} />
         </Card>
         <Card
           id="tips"
