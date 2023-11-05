@@ -7,11 +7,13 @@ import RecipeDetails from "@/features/recipes/components/recipe-details/RecipeDe
 const RecipesDetailPage = () => {
   const { recipeId } = useParams();
   const [cachedRecipesList] = useSessionStorage("recipes", []);
-
+  let recipe = null;
   // Attempt to retrieve recipe from session storage.
-  let recipe = cachedRecipesList.results.filter(
-    (result) => result.id === +recipeId,
-  );
+  if (cachedRecipesList.length > 0) {
+    recipe = cachedRecipesList.results.find(
+      (result) => result.id === +recipeId,
+    );
+  }
 
   // Call API to fetch recipe details if not found in cache.
   const { data, isLoading, isError, error } = recipe
