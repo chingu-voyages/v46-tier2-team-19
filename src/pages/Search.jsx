@@ -5,8 +5,11 @@ import { RecipeList } from "@/features/recipes";
 import { Heading, SearchBox } from "@/features/ui";
 import debounce from "lodash/debounce";
 import { useSearchParams } from "react-router-dom";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Search = () => {
+  usePageTitle("Search Recipes");
+
   const [search, setSearch] = useSearchParams();
   const searchTerm = search.get("q") || "";
   const debouncedSetSearchParams = debounce(setSearch, 300);
