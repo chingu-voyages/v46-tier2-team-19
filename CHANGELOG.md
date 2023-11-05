@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.16) (2023-11-05)
+
+
+### Features
+
+* **avatar-darrick.jpg:** add avatar image file for Darrick ([3f1d61b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3f1d61b80238223b52647d7fff716b0c45c77c52))
+* **avatar-grey.jpg:** add avatar image file for Grey ([ef4e8af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ef4e8afa579ab513301a705a9ef756325b5bc31c))
+* **constants/index.js:** add avatar images & info for Darrick & Grey ([3a249b2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3a249b20c7b07e44638daee5df9e3692918ca61a))
+
+
+### Bug Fixes
+
+* **about.jsx:** modified avatar image size ([1fb2c77](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1fb2c77ede083c302cc68027203d294340a2d22d))
+
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+
 ### [0.0.15](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.15) (2023-11-03)
 
 
