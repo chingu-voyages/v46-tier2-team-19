@@ -1,3 +1,6 @@
+import AvatarGrey from "../assets/about/avatar-grey.jpg";
+import AvatarDarrick from "../assets/about/avatar-darrick.jpg";
+
 const name = "YumYumYes!";
 const welcome =
   "Welcome to YumYumYes, your gateway to delicious recipes and culinary inspiration! Let's embark on a flavorful journey together! ";
@@ -19,6 +22,11 @@ export const navLinks = [
     title: "Search",
     href: "/search",
   },
+  {
+    id: "favorites",
+    title: "Favorites",
+    href: "/favorites",
+  },
 ];
 
 const footerLinks = [
@@ -36,11 +44,11 @@ const footerLinks = [
 
 const team = [
   {
-    name: "Alice Butler",
-    role: "Web Developer",
+    name: "Greimil",
+    role: "Web Designer & Developer",
     summary:
-      "Alice utilized her expertise in HTML, CSS, and JavaScript to collaborate with the project team, creating a user-friendly, responsive website that successfully met project objectives.",
-    image: "https://randomuser.me/api/portraits/women/69.jpg",
+      "I am a self-motivated software developer pursuing a Computer Science degree, blending formal education with self-taught knowledge. I actively worked on this project, contributing to web design and coding for functional and aesthetically pleasing interfaces. My background in both design and development allows me to contribute comprehensively to projects, and I'm eager to refine my skills further, solve complex problems, and create user-centric software solutions through continuous learning and improvement.",
+    image: AvatarGrey,
     socials: [
       {
         name: "GitHub",
@@ -53,19 +61,19 @@ const team = [
     ],
   },
   {
-    name: "Bob Hoffman",
-    role: "Product Owner",
+    name: "Darrick Fauvel",
+    role: "Web Developer",
     summary:
-      "Bob, with his expertise, collaborated with the project team to ensure the development of a user-friendly, responsive website that successfully met project objectives.",
-    image: "https://randomuser.me/api/portraits/men/48.jpg",
+      "I am an experienced web developer skilled in JavaScript and React, who is based in Massachusetts, USA. In agile collaboration with the team, I helped create reusable React components, developed the Favorite Recipes feature, and constructed the About page with its Team feature, all while emphasizing website responsiveness. I hold a Bachelor of IT degree (summa cum laude) from UMass Lowell, and have rad 😎 experience dating back to the early days of the Web before CSS & JavaScript. 😲",
+    image: AvatarDarrick,
     socials: [
       {
         name: "GitHub",
-        url: "https://github.com",
+        url: "https://github.com/DarrickFauvel",
       },
       {
         name: "LinkedIn",
-        url: "https://linkedin.com",
+        url: "https://www.linkedin.com/in/darrickfauvel/",
       },
     ],
   },
