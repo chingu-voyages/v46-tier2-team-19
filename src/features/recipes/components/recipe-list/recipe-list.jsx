@@ -1,9 +1,13 @@
 import PropTypes from "prop-types";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
+import { Navigate } from "react-router-dom";
+// import { PageNotFound } from "@/pages";
 
 export const RecipeList = ({ searchTerm }) => {
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
+  const SesionValue = sessionStorage.getItem("recipes");
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -18,8 +22,10 @@ export const RecipeList = ({ searchTerm }) => {
     recipes.results.length === 0
   ) {
     console.log(!recipes);
-    console.log(Array.isArray(recipes.results));
-    return <div>No recipes found</div>;
+    console.log(!Array.isArray(recipes.results));
+    console.log(recipes.results.length === 0);
+    console.log(SesionValue);
+    return <Navigate to="no-found-page" />;
   }
 
   return (
