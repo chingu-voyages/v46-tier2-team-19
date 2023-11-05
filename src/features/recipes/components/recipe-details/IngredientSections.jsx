@@ -8,7 +8,7 @@ export const IngredientSections = ({ sections }) => {
       <Heading level="h2" variant="tangerine">
         Ingredients
       </Heading>
-      <div className="columns-2">
+      <div className="md:columns-2">
         {sections.map((section, index) => {
           return (
             <Section
