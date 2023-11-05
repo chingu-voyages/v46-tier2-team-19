@@ -4,8 +4,11 @@ import { Heading } from "@/features/ui";
 import homepage from "@/assets/about/homepage.png";
 import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
+import usePageTitle from "../hooks/usePageTitle";
 
 const About = () => {
+  usePageTitle("About");
+
   return (
     <div>
       {/* <h1 className="text-center">About</h1> */}
