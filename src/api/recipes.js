@@ -48,8 +48,7 @@ export async function fetchRecipeDetails(id) {
       `https://tasty.p.rapidapi.com/recipes/get-more-info`,
       {
         headers: {
-          "X-RapidAPI-Key":
-            "c222131657msh9269f1c4dcb2ea4p1ed181jsn7bfd8bcf97a9",
+          "X-RapidAPI-Key": import.meta.env.VITE_TASTY_API_KEY,
           "X-RapidAPI-Host": "tasty.p.rapidapi.com",
         },
         params: { id },
