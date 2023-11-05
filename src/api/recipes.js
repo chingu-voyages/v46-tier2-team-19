@@ -40,3 +40,24 @@ export async function fetchRecipes(search, from = 0, size = 20) {
     console.error(error);
   }
 }
+
+export async function fetchRecipeDetails(id) {
+  console.log(`Fetching ${id} recipe details`);
+  try {
+    const { data } = await axios.get(
+      `https://tasty.p.rapidapi.com/recipes/get-more-info`,
+      {
+        headers: {
+          "X-RapidAPI-Key":
+            "c222131657msh9269f1c4dcb2ea4p1ed181jsn7bfd8bcf97a9",
+          "X-RapidAPI-Host": "tasty.p.rapidapi.com",
+        },
+        params: { id },
+      },
+    );
+    console.log("fetched Details", data);
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}
