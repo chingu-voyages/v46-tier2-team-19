@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-
 import { Heading } from "@/features/ui";
 
 // Page Components
@@ -20,7 +19,7 @@ import { Tips } from "./Tips";
 export const RecipeDetails = ({ recipe }) => {
   return (
     <div className="page-wrapper bg-sky">
-      <div className="title-wrapper bg-title-cutout bg-cover bg-no-repeat p-4 pb-12">
+      <div className="p-4 pb-12 bg-no-repeat bg-cover title-wrapper bg-title-cutout">
         <Heading level="h1" variant="lava" className="pl-6 pt-6 leading-[1]">
           {recipe.name}
         </Heading>
