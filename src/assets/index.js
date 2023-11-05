@@ -1,6 +1,6 @@
 import FeatureRecipe from "./RecipePhoto.png";
-
-export { FeatureRecipe };
+import FeatureChickenRecipe from "./FeaturedChickenSweetPotatos.jpg";
+export { FeatureRecipe, FeatureChickenRecipe };
 
 export * from "./brand";
 export * from "./brand/food";
