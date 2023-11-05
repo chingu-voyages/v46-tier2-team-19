@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.16) (2023-11-05)
+
+
+### Features
+
+* **recipedetails.jsx:** add check for cachedRecipesList length before attempting to find recipe ([b999145](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b999145caeb800290ebe579dec20d4041c7a1b76))
+* **recipedetails.jsx:** add check for empty nutrition object to display a message none is available ([36dab3c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/36dab3c67e78645b08cb4cb7713cdd05ee7c0751))
+* **recipedetails.jsx:** add NutritionSection component to display nutrition information ([1cc28db](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1cc28dbd11a1dcf0c17ad5be7da416f5ee536638))
+* **recipes.js:** add fetchRecipeDetails function to retrieve specific recipe details ([6ef6c1c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6ef6c1cd579a3a2e93974077fefbd37994ddf6ac))
+* **usepagetitle hook:** implement usePageTitle hook in About, Favorites, Home, & Search pages ([71b699d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/71b699d327151e1de29002e4a831508088cd1cbe))
+* **usepagetitle.js:** create custom hook to update page titles ([f80de7d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f80de7da2fc4239d5619cd88e7491d7c9a07c400))
+
+
+### Bug Fixes
+
+* **fetch-recipe-by-id.js:** corrected fetchRecipeById API call ([f089256](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f08925690c75c027968c2cc1a50e76a4e0110be0))
+* **global.css:** increase heading brightness ([01dd2bf](https://github.com/chingu-voyages/v46-tier2-team-19/commit/01dd2bffbcf6a091c798f5c91613c5bd29f97da1))
+
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+
 ### [0.0.15](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.15) (2023-11-03)
 
 
