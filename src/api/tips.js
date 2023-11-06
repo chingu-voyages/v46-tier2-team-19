@@ -10,7 +10,7 @@ export async function fetchTips(id, from = 0, size = 20) {
       },
       params: { from, size, id: id },
     });
-    return data;
+    return data.results;
   } catch (error) {
     console.error(error);
   }
