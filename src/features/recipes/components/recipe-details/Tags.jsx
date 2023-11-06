@@ -14,9 +14,7 @@ export const Tags = ({ tags }) => {
   if (displayTags.length === 0) return null;
   return (
     <div className="tags">
-      <strong>Tags: </strong>
       {displayTags.map((tag, index) => {
-        console.log(tag);
         return (
           <>
             <Link
