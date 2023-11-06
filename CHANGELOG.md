@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.17...v0.0.18) (2023-11-06)
+
+
+### Features
+
+* **add nutrition section:** merge in nutrition section from Tim's branch ([3c487c2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3c487c210d3e0e41d507423fd01392cf41641204))
+* **avatar-joseph.webp:** add avatar image of Joseph ([fd69ca0](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fd69ca0bdb168ddc046231920c63590a7bf7857b))
+* **avatar-tim.jpg:** add avatar image of Tim ([5bfaada](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5bfaada516611229beba6c1980a2f2b51bfe9ed2))
+* **constants/index.js:** import team data from module ([21d5b76](https://github.com/chingu-voyages/v46-tier2-team-19/commit/21d5b7614c36707fb658c7a58b5e3764140288d5))
+* **recipe detail page:** improve layout of recipe detail page on large screens and refactor ([bf0087b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/bf0087b4daabbe17fcaee35ce5384ef4e29b8df4))
+* **server.js:** add get-more-info endpoint to config ([06f8508](https://github.com/chingu-voyages/v46-tier2-team-19/commit/06f85083574922bc66dca6348acbaf4a9ca5b37c))
+* **teamdata.js:** create team data module to be imported into constants ([e8ab2c4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e8ab2c43e35526d3617d94bb6589d00a6b2790ab))
+
+
+### Bug Fixes
+
+* **ingredientsections:** make two-column layout only on tablet+ ([673f49e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/673f49ecc40c6b2330f48868549a12fb167ad957))
+* **mirage server:** make recipe detail lookup dynamic ([cdd89cd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cdd89cd03af2c6ed9a94a90e22835767c2482a24))
+
+### [0.0.16](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.16) (2023-11-05)
+
+
+### Features
+
+* **avatar-darrick.jpg:** add avatar image file for Darrick ([3f1d61b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3f1d61b80238223b52647d7fff716b0c45c77c52))
+* **avatar-grey.jpg:** add avatar image file for Grey ([ef4e8af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ef4e8afa579ab513301a705a9ef756325b5bc31c))
+* **constants/index.js:** add avatar images & info for Darrick & Grey ([3a249b2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3a249b20c7b07e44638daee5df9e3692918ca61a))
+
+
+### Bug Fixes
+
+* **about.jsx:** modified avatar image size ([1fb2c77](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1fb2c77ede083c302cc68027203d294340a2d22d))
 
 ### [0.0.17](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.17) (2023-11-05)
 
