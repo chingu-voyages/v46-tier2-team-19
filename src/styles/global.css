@@ -129,7 +129,7 @@
   }
 
   .text-stroke {
-    -webkit-text-stroke: 1.5px var(--color-light-cream);
+    -webkit-text-stroke: 1px var(--color-light-cream);
   }
   .text-stroke-sm {
     -webkit-text-stroke: 0.75px var(--color-light-cream);
@@ -157,4 +157,10 @@ h5.font-display,
 h6,
 h6.font-display {
   font-family: var(--font-open-sans);
+}
+
+.text-no-stroke {
+
+  -webkit-text-stroke:  0px ; 
+
 }
