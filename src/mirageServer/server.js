@@ -4,6 +4,7 @@ import recipesListData from "./endpoints/recipes/list.json";
 import recipesListSimilaritiesData from "./endpoints/recipes/listSimilarities.json";
 import recipesAutocomplete from "./endpoints/recipes/autocomplete.json";
 //import recipeGetMoreInfo from "./endpoints/recipes/get-more-info.json";
+import recipeTips from "./endpoints/tips/tips.json";
 
 export default function () {
   const jsonPlaceholderAPIRoot = "https://jsonplaceholder.typicode.com";
@@ -94,6 +95,7 @@ export default function () {
           timing: 1200,
         },
       );
+      this.get(`${tastyAPIRoot}/tips/list`, () => recipeTips, { timing: 1200 });
     },
   });
 }
