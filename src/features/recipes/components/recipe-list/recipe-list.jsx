@@ -1,13 +1,17 @@
 import PropTypes from "prop-types";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
+
+import { LoadingState } from "@/features/ui";
+
 import { Navigate } from "react-router-dom";
+
 
 export const RecipeList = ({ searchTerm }) => {
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingState />;
   }
 
   if (isError) {
