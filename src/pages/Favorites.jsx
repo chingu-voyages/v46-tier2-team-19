@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { Button, Heading } from "@/features/ui";
 import { RecipeCard } from "@/features/recipes/components/recipe-card";
+import usePageTitle from "../hooks/usePageTitle";
 
 const Favorites = () => {
+  usePageTitle("Favorite Recipes");
+
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
