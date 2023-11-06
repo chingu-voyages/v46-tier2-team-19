@@ -135,6 +135,7 @@ export default {
         RedBall: "url('/src/assets/HomePage/RedPlasticBall.png')",
         YellowBall: "url('/src/assets/HomePage/YellowPlasticBall.png')",
         OrangeBall: "url('/src/assets/HomePage/OrangePlasticBall.png')",
+        GreenBall: "url('/src/assets/HomePage/GreenPlasticBall.png')",
         "title-cutout":
           "url('/src/assets/brand/swooshes/title-background-cutout.svg')",
       },

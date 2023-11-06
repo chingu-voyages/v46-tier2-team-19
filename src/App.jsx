@@ -1,7 +1,14 @@
 import Spa from "./routes";
 import makeServer from "./mirageServer/server";
 import { Routes, Route } from "react-router-dom";
-import { Home, About, Search, RecipeDetails, Components } from "@/pages";
+import {
+  Home,
+  About,
+  Search,
+  RecipeDetails,
+  Components,
+  PageNotFound,
+} from "@/pages";
 import Favorites from "./pages/Favorites";
 // Please keep on when possible to avoid using up our Tasty API free quota
 // All api calls will be intercepted and fulfilled by the mirage server.
@@ -23,6 +30,7 @@ function App() {
         </Route>
         <Route path="/components" element={<Components />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>
   );
