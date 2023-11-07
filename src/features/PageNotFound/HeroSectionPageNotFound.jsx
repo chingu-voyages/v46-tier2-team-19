@@ -7,11 +7,11 @@ export const HeroSectionPageNotFound = () => {
   };
 
   return (
-    <div className="bg-gradient-lava-diagonal flex flex-col md:flex-row md:items-center md:justify-center pt-8 px-8  md:pt-14 md:px-14   md:grid md:grid-rows-[132px,132px,132px]  md:grid-cols-[1fr,355px] lg:grid-rows-[192px,220px,220px] lg:grid-cols-[1fr,564px]  2xl:grid-cols-[1fr,795px] ">
+    <div className="bg-gradient-lava-diagonal flex flex-col md:flex-row gap-7 lg:gap-0  md:items-center md:justify-center pt-8 px-8  md:pt-14 md:px-14   md:grid md:grid-rows-[132px,132px,132px]  md:grid-cols-[1fr,355px] lg:grid-rows-[192px,220px,220px] lg:grid-cols-[1fr,564px]   ">
       <Heading
-        level="h3"
+        level="h2"
         variant="tangerine"
-        className=" text-2xl  mb-4 md:mb-0 col-span-2  md:w-[480px]  lg:self-end  2xl:col-span-1 2xl:w-full   "
+        className="  leading-[1.2]   mb-4 md:mb-0 col-span-2   lg:self-end  md:text-[32px] md:w-3/4  lg:leading-[64px] lg:w-3/4 xl:w-2/3  lg:text-[44px] "
       >
         {
           "Oops! It looks like the recipe you're hunting for has slipped out of the pot."
@@ -35,11 +35,11 @@ export const HeroSectionPageNotFound = () => {
         </Button>
       </Link>
 
-      <div className="flex justify-center items-end md:row-start-2  md:col-start-2   md:self-start   lg:row-span-1 ">
+      <div className="flex justify-center items-end md:row-start-2  md:col-start-2      lg:row-span-1 ">
         <img
           src={YumiReading}
           alt="Yumi Reading"
-          className="w-72 md:w-[355px] lg:w-[558px] xl:w-[795px] "
+          className="w-72 md:w-[355px] lg:w-[558px]  "
         />
       </div>
     </div>
