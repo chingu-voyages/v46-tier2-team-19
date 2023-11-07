@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.18...v0.0.19) (2023-11-07)
+
+
+### Features
+
+* **about.jsx:** add new styling to About page ([80ee2fd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/80ee2fd44cc3efbdb4a23db9a7276b1b011a6600))
+* **assets/about/*.png:** add new images for About page ([0456718](https://github.com/chingu-voyages/v46-tier2-team-19/commit/045671847efb4f3869a154a23ddaf274789f6995))
+* **constants/teamdata.js:** modify team data info ([cecdd74](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cecdd741a855433d9992f3bc0a3d4ec220e9704e))
+* **feature-of-day.jsx:** replace FeatureRecipe with FeatureChickenRecipe, add navigation to recipe ([093bbff](https://github.com/chingu-voyages/v46-tier2-team-19/commit/093bbffb7996e935da74dcd0927183b161a7535d))
+* **notfoundpage:** not Found Page added,user is redirect to the 404 when there are not any  recipe ([2a8dd3b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/2a8dd3b3420df831403960bb791e31d59d4b0ad7))
+* **recipe details:** continue improving Difficulty Card and Overall Layout ([b57d65b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b57d65baf6c941a94d0956d03af5e7779e3bf662))
+* **recipe-list.jsx:** replace static loading text with LoadingState component ([ec31982](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ec319828c73129d3b2a9e4a6db3f339ca1b0605d))
+* **search.jsx:** add FeatureOfTheDay component and colorful balls to the search page ([4cdaec4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4cdaec4df4e5e8312f13f5db46b2c916c2469bf3))
+* **tailwind.config.js:** add GreenBall asset to tailwind configuration ([3b93d08](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3b93d088c64e93ed79bb4fd71a52d04c918c303d))
+
+
+### Bug Fixes
+
+* **goblal css:** text stroke reduce to 1px, and top recipe text in h4 fix ([554a242](https://github.com/chingu-voyages/v46-tier2-team-19/commit/554a242ed22546a842a45e8be564b7d5b787c136))
+* **notfoundpage:** branch Update with the dev branch ([72cc649](https://github.com/chingu-voyages/v46-tier2-team-19/commit/72cc649c6094d5337a15afca6131b500a22b1c7b))
+* **notfoundpage:** not Found Page layout fix ([7924e0c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7924e0c380e83448ec4e97b186bf176c9b266582))
+
 ### [0.0.18](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.17...v0.0.18) (2023-11-06)
 
 
