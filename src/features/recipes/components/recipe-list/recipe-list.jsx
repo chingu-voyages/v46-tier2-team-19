@@ -6,7 +6,6 @@ import { LoadingState } from "@/features/ui";
 
 import { Navigate } from "react-router-dom";
 
-
 export const RecipeList = ({ searchTerm }) => {
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
 
