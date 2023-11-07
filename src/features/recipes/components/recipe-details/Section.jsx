@@ -41,6 +41,6 @@ export const Section = ({ list, name }) => {
 };
 
 Section.propTypes = {
-  list: PropTypes.object,
+  list: PropTypes.array,
   name: PropTypes.string,
 };

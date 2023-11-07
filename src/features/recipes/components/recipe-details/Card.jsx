@@ -12,7 +12,7 @@ export const Card = ({ children, className, id }) => {
 };
 
 Card.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.oneOfType(PropTypes.object, PropTypes.array),
   className: PropTypes.string,
   id: PropTypes.string,
 };

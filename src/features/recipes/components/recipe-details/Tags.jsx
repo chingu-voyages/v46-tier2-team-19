@@ -8,24 +8,24 @@ export const Tags = ({ tags }) => {
     "difficulty",
     "business_tags",
   ];
-  const displayTags = tags.filter(
-    (tag) => !filteredCategories.includes(tag.type),
-  );
+  const displayTags = tags
+    .filter((tag) => !filteredCategories.includes(tag.type))
+    .slice(0, 20);
   if (displayTags.length === 0) return null;
   return (
-    <div className="tags">
+    <div className="tags" key="tags">
       {displayTags.map((tag, index) => {
         return (
-          <>
+          <span key={tag.name}>
             <Link
               to={`/search?q=${tag.name}`}
               className="text-watermelon font-bold"
-              key={tag.name}
+              key={tag.name + String(Math.random())}
             >
               {tag.display_name}
             </Link>
             {index !== displayTags.length - 1 ? ", " : ""}
-          </>
+          </span>
         );
       })}
     </div>
@@ -33,5 +33,5 @@ export const Tags = ({ tags }) => {
 };
 
 Tags.propTypes = {
-  tags: PropTypes.object,
+  tags: PropTypes.array,
 };
