@@ -2,6 +2,154 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.17...v0.0.18) (2023-11-06)
+
+
+### Features
+
+* **add nutrition section:** merge in nutrition section from Tim's branch ([3c487c2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3c487c210d3e0e41d507423fd01392cf41641204))
+* **avatar-joseph.webp:** add avatar image of Joseph ([fd69ca0](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fd69ca0bdb168ddc046231920c63590a7bf7857b))
+* **avatar-tim.jpg:** add avatar image of Tim ([5bfaada](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5bfaada516611229beba6c1980a2f2b51bfe9ed2))
+* **constants/index.js:** import team data from module ([21d5b76](https://github.com/chingu-voyages/v46-tier2-team-19/commit/21d5b7614c36707fb658c7a58b5e3764140288d5))
+* **recipe detail page:** improve layout of recipe detail page on large screens and refactor ([bf0087b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/bf0087b4daabbe17fcaee35ce5384ef4e29b8df4))
+* **server.js:** add get-more-info endpoint to config ([06f8508](https://github.com/chingu-voyages/v46-tier2-team-19/commit/06f85083574922bc66dca6348acbaf4a9ca5b37c))
+* **teamdata.js:** create team data module to be imported into constants ([e8ab2c4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e8ab2c43e35526d3617d94bb6589d00a6b2790ab))
+
+
+### Bug Fixes
+
+* **ingredientsections:** make two-column layout only on tablet+ ([673f49e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/673f49ecc40c6b2330f48868549a12fb167ad957))
+* **mirage server:** make recipe detail lookup dynamic ([cdd89cd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cdd89cd03af2c6ed9a94a90e22835767c2482a24))
+
+### [0.0.16](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.16) (2023-11-05)
+
+
+### Features
+
+* **avatar-darrick.jpg:** add avatar image file for Darrick ([3f1d61b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3f1d61b80238223b52647d7fff716b0c45c77c52))
+* **avatar-grey.jpg:** add avatar image file for Grey ([ef4e8af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ef4e8afa579ab513301a705a9ef756325b5bc31c))
+* **constants/index.js:** add avatar images & info for Darrick & Grey ([3a249b2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3a249b20c7b07e44638daee5df9e3692918ca61a))
+
+
+### Bug Fixes
+
+* **about.jsx:** modified avatar image size ([1fb2c77](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1fb2c77ede083c302cc68027203d294340a2d22d))
+
+### [0.0.17](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.17) (2023-11-05)
+
+
+### Features
+
+* **recipedetails.jsx:** add check for cachedRecipesList length before attempting to find recipe ([b999145](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b999145caeb800290ebe579dec20d4041c7a1b76))
+* **recipedetails.jsx:** add check for empty nutrition object to display a message none is available ([36dab3c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/36dab3c67e78645b08cb4cb7713cdd05ee7c0751))
+* **recipedetails.jsx:** add NutritionSection component to display nutrition information ([1cc28db](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1cc28dbd11a1dcf0c17ad5be7da416f5ee536638))
+* **recipes.js:** add fetchRecipeDetails function to retrieve specific recipe details ([6ef6c1c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6ef6c1cd579a3a2e93974077fefbd37994ddf6ac))
+* **usepagetitle hook:** implement usePageTitle hook in About, Favorites, Home, & Search pages ([71b699d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/71b699d327151e1de29002e4a831508088cd1cbe))
+* **usepagetitle.js:** create custom hook to update page titles ([f80de7d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f80de7da2fc4239d5619cd88e7491d7c9a07c400))
+
+
+### Bug Fixes
+
+* **fetch-recipe-by-id.js:** corrected fetchRecipeById API call ([f089256](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f08925690c75c027968c2cc1a50e76a4e0110be0))
+* **global.css:** increase heading brightness ([01dd2bf](https://github.com/chingu-voyages/v46-tier2-team-19/commit/01dd2bffbcf6a091c798f5c91613c5bd29f97da1))
+
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+
+
+### [0.0.16](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.15...v0.0.16) (2023-11-05)
+
+
+### Features
+
+* **recipedetails.jsx:** add check for cachedRecipesList length before attempting to find recipe ([b999145](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b999145caeb800290ebe579dec20d4041c7a1b76))
+* **recipedetails.jsx:** add check for empty nutrition object to display a message none is available ([36dab3c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/36dab3c67e78645b08cb4cb7713cdd05ee7c0751))
+* **recipedetails.jsx:** add NutritionSection component to display nutrition information ([1cc28db](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1cc28dbd11a1dcf0c17ad5be7da416f5ee536638))
+* **recipes.js:** add fetchRecipeDetails function to retrieve specific recipe details ([6ef6c1c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6ef6c1cd579a3a2e93974077fefbd37994ddf6ac))
+* **usepagetitle hook:** implement usePageTitle hook in About, Favorites, Home, & Search pages ([71b699d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/71b699d327151e1de29002e4a831508088cd1cbe))
+* **usepagetitle.js:** create custom hook to update page titles ([f80de7d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f80de7da2fc4239d5619cd88e7491d7c9a07c400))
+* **avatar-darrick.jpg:** add avatar image file for Darrick ([3f1d61b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3f1d61b80238223b52647d7fff716b0c45c77c52))
+* **avatar-grey.jpg:** add avatar image file for Grey ([ef4e8af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ef4e8afa579ab513301a705a9ef756325b5bc31c))
+* **constants/index.js:** add avatar images & info for Darrick & Grey ([3a249b2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3a249b20c7b07e44638daee5df9e3692918ca61a))
+
+
+
+### Bug Fixes
+
+* **fetch-recipe-by-id.js:** corrected fetchRecipeById API call ([f089256](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f08925690c75c027968c2cc1a50e76a4e0110be0))
+* **global.css:** increase heading brightness ([01dd2bf](https://github.com/chingu-voyages/v46-tier2-team-19/commit/01dd2bffbcf6a091c798f5c91613c5bd29f97da1))
+* **about.jsx:** modified avatar image size ([1fb2c77](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1fb2c77ede083c302cc68027203d294340a2d22d))
+
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+
+### [0.0.15](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.15) (2023-11-03)
+
+
+### Features
+
+* **favicon and site bg gradient:** add favicon and site background gradient ([7989dd5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7989dd5b0a8b9827a5dfeb75ac28bb4d83893d62))
+* **global.css:** add .text-stroke class to provide text outline styling ([d8e67ba](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d8e67bace2366262a35b7d35e8ab1c932c9ac719)), closes [#333](https://github.com/chingu-voyages/v46-tier2-team-19/issues/333)
+* **global.css:** add smaller variants for text-shadow and text-stroke classes ([a8236ef](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a8236efe91491f47e946d528c04c1701ba3ac7ce))
+* **heading.jsx:** add text shadow and text stroke styling to the headings ([6271b3a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6271b3a04dd81d288065b543bbd436619411f8dd))
+* **recipe details page:** add & style recipe title, desc., tags, topics, ingredients, video, etc ([1f61402](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1f61402b6f611fc9476b307fe09926e5e4b640f9))
+* **recipe details page:** add instructions ([e4b64f5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e4b64f549cc3b9bd55740e2cc5c19ea9fff0d097))
+* **recipedetails.jsx:** improve responsive tablet layout for Recipe Details page ([1708c03](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1708c031781f57b81dd0a99f19b3429e013dc1db))
+* **recipedetails:** add more cards, activate jumplinks, continue improving layout ([d3dd734](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d3dd734199071baf17ee12fb9c2448475fcb3fc2))
+
+
+### Bug Fixes
+
+* **global css:** fix for overly thick stroke on small headings on mobile and tablet ([4374bbd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4374bbd1716000f40876032f6340704af9f30f31))
+* **global.css:** add missing closing bracket ([0fb455d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0fb455d2a9fdc35e53e5f56e2b9bd0857ff96e08))
+* **header.jsx:** improve styling of mobile menu ([82606c1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/82606c19f7f5d648101aa773c5d6b44913fc2b9c))
+* merge in code from dev ([f7c3437](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f7c34372d5fab284abb965c4b2663b99cebbe099))
+* **recipedetails.jsx:** hide debug messages ([0c7d3a3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0c7d3a3fcadd0f4ccb16d7093e4620a4681095a0))
+* **svgwave.jsx:** adjust viewBox attribute in SVG to correct aspect ratio ([6b770e8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6b770e885f009848909b2035cf0c818dcad50dac))
+
+
+### [0.0.14](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.13...v0.0.14) (2023-11-03)
+
+
+### Features
+
+* **app.jsx:** add Favorites page route ([a822968](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a82296832770e8eace4dd6cac7a4cfd332425d25))
+* **constants/index.js:** add Favorites object to navLinks ([7203564](https://github.com/chingu-voyages/v46-tier2-team-19/commit/720356413228906dc08688183672458e401443b5))
+* **favicon and site bg gradient:** add favicon and site background gradient ([7989dd5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7989dd5b0a8b9827a5dfeb75ac28bb4d83893d62))
+* **favorites.jsx:** add Favorites page ([5cb1a6a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/5cb1a6aebbbe930f7721a5c72178d37cd4941e5f))
+* **global.css:** add .text-stroke class to provide text outline styling ([d8e67ba](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d8e67bace2366262a35b7d35e8ab1c932c9ac719)), closes [#333](https://github.com/chingu-voyages/v46-tier2-team-19/issues/333)
+* **global.css:** add smaller variants for text-shadow and text-stroke classes ([a8236ef](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a8236efe91491f47e946d528c04c1701ba3ac7ce))
+* **heading.jsx:** add text shadow and text stroke styling to the headings ([6271b3a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6271b3a04dd81d288065b543bbd436619411f8dd))
+* **recipe details page:** add & style recipe title, desc., tags, topics, ingredients, video, etc ([1f61402](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1f61402b6f611fc9476b307fe09926e5e4b640f9))
+* **recipe details page:** add instructions ([e4b64f5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e4b64f549cc3b9bd55740e2cc5c19ea9fff0d097))
+* **recipedetails.jsx:** add Favorites feature to the recipe details page ([c082b55](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c082b555e1170fd16a270e1f90d2c1f5a02c190e))
+* **recipedetails.jsx:** improve responsive tablet layout for Recipe Details page ([1708c03](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1708c031781f57b81dd0a99f19b3429e013dc1db))
+* **recipedetails:** add more cards, activate jumplinks, continue improving layout ([d3dd734](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d3dd734199071baf17ee12fb9c2448475fcb3fc2))
+
+
+### Bug Fixes
+
+* **global css:** fix for overly thick stroke on small headings on mobile and tablet ([4374bbd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4374bbd1716000f40876032f6340704af9f30f31))
+* **global.css:** add missing closing bracket ([0fb455d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0fb455d2a9fdc35e53e5f56e2b9bd0857ff96e08))
+* **header.jsx:** improve styling of mobile menu ([82606c1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/82606c19f7f5d648101aa773c5d6b44913fc2b9c))
+* merge in code from dev ([f7c3437](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f7c34372d5fab284abb965c4b2663b99cebbe099))
+* **recipedetails.jsx:** hide debug messages ([0c7d3a3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0c7d3a3fcadd0f4ccb16d7093e4620a4681095a0))
+* **svgwave.jsx:** adjust viewBox attribute in SVG to correct aspect ratio ([6b770e8](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6b770e885f009848909b2035cf0c818dcad50dac))
+
 ### [0.0.13](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.11...v0.0.13) (2023-11-01)
 
 

@@ -5,6 +5,10 @@ import { FetchRecipes } from "../../api";
 import { Listbox } from "@headlessui/react";
 import { useNavigate, useLocation } from "react-router-dom";
 
+import { LoadingState } from "@/features/ui";
+
+import { Navigate } from "react-router-dom";
+
 export const RecipeList = ({ searchTerm }) => {
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
   const [tagsCollection, setTagsCollection] = useState({});
@@ -80,7 +84,7 @@ export const RecipeList = ({ searchTerm }) => {
     : recipes?.results;
   console.log({ filteredRecipes });
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingState />;
   }
 
   if (isError) {
@@ -93,8 +97,9 @@ export const RecipeList = ({ searchTerm }) => {
     recipes.results.length === 0
   ) {
     console.log(!recipes);
-    console.log(Array.isArray(recipes.results));
-    return <div>No recipes found</div>;
+    console.log(!Array.isArray(recipes.results));
+    console.log(recipes.results.length === 0);
+    return <Navigate to="no-found-page" />;
   }
 
   return (

@@ -3,6 +3,7 @@ import jsonPlaceHolderData from "./endpoints/jsonPlaceHolder.json";
 import recipesListData from "./endpoints/recipes/list.json";
 import recipesListSimilaritiesData from "./endpoints/recipes/listSimilarities.json";
 import recipesAutocomplete from "./endpoints/recipes/autocomplete.json";
+//import recipeGetMoreInfo from "./endpoints/recipes/get-more-info.json";
 
 export default function () {
   const jsonPlaceholderAPIRoot = "https://jsonplaceholder.typicode.com";
@@ -78,6 +79,17 @@ export default function () {
       this.get(
         `${tastyAPIRoot}/recipes/autocomplete`,
         () => recipesAutocomplete,
+        {
+          timing: 1200,
+        },
+      );
+      this.get(
+        `${tastyAPIRoot}/recipes/get-more-info`,
+        (schema, request) => {
+          const id = request.queryParams.id;
+          const data = recipesListData;
+          return data.results.find((recipe) => recipe.id === +id);
+        },
         {
           timing: 1200,
         },
