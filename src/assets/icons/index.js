@@ -1,5 +1,7 @@
+import Clock from "./Clock";
 import Close from "./Close";
 import DownArrow from "./DownArrow";
+import Easy from "./Easy";
 import Flame from "./Flame";
 import GreenDot from "./GreenDot";
 import Hamburger from "./Hamburger";
@@ -20,8 +22,10 @@ import YellowDot from "./YellowDot";
 import github from "./github.png";
 
 export const icons = {
+  Clock,
   Close,
   DownArrow,
+  Easy,
   Flame,
   GreenDot,
   Hamburger,
