@@ -158,9 +158,6 @@ h6,
 h6.font-display {
   font-family: var(--font-open-sans);
 }
-
 .text-no-stroke {
-
   -webkit-text-stroke:  0px ; 
-
 }
