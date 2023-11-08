@@ -69,6 +69,7 @@ const About = () => {
               with different abilities.
             </p>
           </>
+          <span className="clear-both"></span>
         </div>
 
         {/* Display top of wave between sections */}
@@ -134,6 +135,7 @@ const About = () => {
                   </article>
                 </div>
                 <p className="z-10">{summary}</p>
+                <span className="clear-both"></span>
               </div>
 
               {
