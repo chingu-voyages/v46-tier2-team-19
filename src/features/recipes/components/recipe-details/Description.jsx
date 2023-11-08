@@ -37,7 +37,11 @@ export const Description = ({ description }) => {
           {title}
         </span>
       </Heading>
-      <p className={`${body.length > 100 ? "" : "text-2xl"} italic`}>{body}</p>
+      <p
+        className={`${body.length > 100 ? "" : "text-2xl"} italic md:text-2xl`}
+      >
+        {body}
+      </p>
     </div>
   ) : null;
 };

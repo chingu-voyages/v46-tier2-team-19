@@ -34,5 +34,5 @@ export const NutritionSection = ({ nutrition }) => {
 };
 
 NutritionSection.propTypes = {
-  nutrition: PropTypes.array,
+  nutrition: PropTypes.object,
 };
