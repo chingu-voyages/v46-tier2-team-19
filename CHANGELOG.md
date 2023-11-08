@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.19...v0.0.20) (2023-11-08)
+
+
+### Bug Fixes
+
+* **about.jsx:** add float clears ([b84ae15](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b84ae154a48f2ebe31b04d983c37992d314808d6))
+
 ### [0.0.19](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.18...v0.0.19) (2023-11-07)
 
 
