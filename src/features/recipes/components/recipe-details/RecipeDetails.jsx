@@ -84,7 +84,7 @@ export const RecipeDetails = ({ recipe }) => {
           <Heading level="h2" variant="lava">
             Tips
           </Heading>
-          <Tips tips={recipe.tips} />
+          <Tips recipeId={recipe.id} />
         </Card>
       </div>
     </div>
