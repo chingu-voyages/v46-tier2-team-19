@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { Button } from "@/features/ui";
+import { Button, Icon } from "@/features/ui";
 
 export const FavoriteButton = ({ recipe }) => {
   // Function to check if a recipe with a specific ID exists in the array
@@ -34,17 +34,20 @@ export const FavoriteButton = ({ recipe }) => {
     }
   }, []);
   return (
-    <div className="grid place-content-center">
-      <Button
-        variant="secondary"
-        size="small"
-        onClick={() => handleFavoriteClick(recipe)}
-      >
+    <Button
+      variant="secondary"
+      size="medium"
+      className="w-full text-center justify-between text-lg my-4"
+      onClick={() => handleFavoriteClick(recipe)}
+    >
+      <div className="inline-block w-full">
+        {" "}
         {hasFavoriteRecipeWithId(recipe.id)
           ? "Remove from Favorites"
           : "Add to Favorites"}
-      </Button>
-    </div>
+      </div>
+      <Icon name="right-arrow" className="text-2xl" />
+    </Button>
   );
 };
 

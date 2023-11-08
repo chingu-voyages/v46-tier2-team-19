@@ -61,5 +61,5 @@ export const RecipeDifficultyCard = ({ tags }) => {
 };
 
 RecipeDifficultyCard.propTypes = {
-  tags: PropTypes.object,
+  tags: PropTypes.array,
 };
