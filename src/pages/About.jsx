@@ -1,32 +1,50 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { Heading } from "@/features/ui";
-import homepage from "@/assets/about/homepage.png";
+// import homepage from "@/assets/about/homepage.png";
 import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
 import usePageTitle from "../hooks/usePageTitle";
+import ChinguRectangle from "../assets/about/chingu-rectangle.png";
+import Yumi_1 from "../assets/about/yumi-standing-with-orange-apron-holding-fruit-basket.png";
+import Yumi_2 from "../assets/about/yumi-with-blue-apron-holding-brown-salad-bowl.png";
 
 const About = () => {
   usePageTitle("About");
 
   return (
-    <div>
+    <div className="bg-gradient-watermelon-diagonal">
       {/* <h1 className="text-center">About</h1> */}
-      <Heading level="h1" variant="tangerine" className="px-10 pt-10">
-        About
+      <Heading
+        level="h1"
+        variant="tangerine"
+        className="px-10 pt-10 text-center text-white"
+      >
+        About Chingu
       </Heading>
 
       {/* START Project section */}
       <section className="relative px-10 pb-10 xl:pb-20" id="project">
-        <Heading level="h2" variant="watermelon">
+        {/* <Heading level="h2" variant="watermelon">
           This Project
-        </Heading>
+        </Heading> */}
 
-        <div className="pb-10">
-          <img
+        <img
+          className="w-1/2 mb-6 mx-auto"
+          src={ChinguRectangle}
+          alt="Chingu logo"
+        />
+
+        <div className="pb-10 text-slate-100">
+          {/* <img
             src={homepage}
             alt="YumYumYes! hompage"
             className="float-right rounded-lg w-1/2 ml-4 mb-2 max-w-sm"
+          /> */}
+          <img
+            className="float-right"
+            src={Yumi_1}
+            alt="Yumi standing, wearing apron and holding fruit basket"
           />
           <p className="mb-4">
             We developed a unique web app with a distinctive brand and a
@@ -51,22 +69,27 @@ const About = () => {
               with different abilities.
             </p>
           </>
+          <span className="clear-both"></span>
         </div>
 
         {/* Display top of wave between sections */}
-        <SvgComponent className="absolute -bottom-1 left-0 fill-[#FFC945]" />
+        <SvgComponent className="absolute -bottom-1 left-0 -scale-x-100 fill-[#FFC945]" />
       </section>
       {/* END Project section */}
 
       {/* START Team section */}
-      <section className="relative bg-gradient-sky-diagonal pt-6" id="team">
+      <section className="relative pt-6 bg-slate-100" id="team">
         <Heading
           level="h2"
-          variant="watermelon"
-          className="px-10 pt-10 md:pt-14 lg:pt-20 xl:pt-24 text-white"
+          variant="tangerine"
+          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-32 lg:text-right"
         >
-          Our Team
+          Meet the YumYumTeam!
         </Heading>
+
+        <p className="text-right px-10 pb-10 sm:text-center lg:text-right lg:pr-14">
+          These are the exceptional team members that made YumYumYes! possible.
+        </p>
 
         <div className="grid gap-x-20 md:grid-cols-2 xl:grid-cols-3">
           {team.map(({ name, role, summary, image, socials }, index) => (
@@ -74,7 +97,7 @@ const About = () => {
               className="relative group px-10 py-14 first:pt-0 md:pt-0"
               key={name}
             >
-              <Heading level="h3" variant="lava">
+              <Heading level="h3" variant="watermelon">
                 {name}
               </Heading>
               <Heading
@@ -112,6 +135,7 @@ const About = () => {
                   </article>
                 </div>
                 <p className="z-10">{summary}</p>
+                <span className="clear-both"></span>
               </div>
 
               {
@@ -134,7 +158,17 @@ const About = () => {
         </div>
 
         {/* Display bottom of wave in between sections */}
-        <SvgComponent className="absolute -top-1 left-0 rotate-180 fill-[#FFC945]" />
+        <div className="absolute -top-1 left-0 w-full">
+          <div className="bg-[#FFC945] h-[100px]"></div>
+          <SvgComponent className="-mt-1 rotate-180 fill-[#FFC945]" />
+        </div>
+
+        {/* Display Yumi_2 image between sections */}
+        <img
+          className="absolute -top-1 left-6 w-1/3 max-w-[200px] lg:max-w-[300px]"
+          src={Yumi_2}
+          alt="Yumi wearing blue apron holding brown salad bowl"
+        />
       </section>
       {/* END Team section */}
     </div>
