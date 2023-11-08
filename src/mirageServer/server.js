@@ -34,7 +34,8 @@ export default function () {
   }
 
   function matchSearchId(q, data) {
-    const id = q.match(/(?<=id:)[0-9]+/i);
+    const idMatch = q.match(/(?:id:)([0-9]+)/i);
+    const id = idMatch && idMatch[1];
     if (!id) return false;
     const result = data.results.find((recipe) => recipe.id === +id);
     if (!result) return false;
