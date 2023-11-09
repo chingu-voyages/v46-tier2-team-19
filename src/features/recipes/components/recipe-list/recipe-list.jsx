@@ -30,6 +30,7 @@ export const RecipeList = ({ searchTerm }) => {
     cuisine: [],
     cooking_style: [],
   });
+
   // This useEffect is for setting the initial tagsCollection when recipes are fetched
   useEffect(() => {
     if (recipes?.results) {
