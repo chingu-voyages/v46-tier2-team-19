@@ -31,10 +31,14 @@ export async function fetchRecipes(search, from = 0, size = 20) {
         params: { from, size, q: search },
       },
     );
-    localStorage.setItem(
-      `${search}-searchRecipeResults`,
-      JSON.stringify(data.results),
-    );
+    try {
+      localStorage.setItem(
+        `${search}-searchRecipeResults`,
+        JSON.stringify(data.results),
+      );
+    } catch (error) {
+      console.error("Could not write to local storage:", error);
+    }
     return data;
   } catch (error) {
     console.error(error);

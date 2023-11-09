@@ -1,7 +1,7 @@
 {
   "name": "recipe-app",
   "private": true,
-  "version": "0.0.18",
+  "version": "0.0.20",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,6 +37,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-query": "^3.39.3",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.3"
   },
   "devDependencies": {

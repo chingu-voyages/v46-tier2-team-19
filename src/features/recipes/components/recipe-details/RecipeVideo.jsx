@@ -6,8 +6,8 @@ export const RecipeVideo = ({ videoUrl, renditions, ...attributes }) => {
     return <source key={index} type={src.content_type} src={src.url} />;
   });
   return (
-    <div className="recipe-video mb-4" {...attributes}>
-      <video controls className="rounded-xl w-full md:w-[360px] max-w-full">
+    <div {...attributes}>
+      <video controls className="rounded-xl w-full">
         {sources}
       </video>
     </div>
@@ -16,5 +16,5 @@ export const RecipeVideo = ({ videoUrl, renditions, ...attributes }) => {
 
 RecipeVideo.propTypes = {
   videoUrl: PropTypes.string,
-  renditions: PropTypes.object,
+  renditions: PropTypes.array,
 };
