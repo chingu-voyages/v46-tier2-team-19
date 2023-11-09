@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { useState, useEffect, useMemo, useRef } from "react";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
-import { Filters } from "../filters";
+import Filters from "../filters";
 import { LoadingState, Heading } from "@/features/ui";
 import { Navigate } from "react-router-dom";
 import { BiPlus, BiMinus } from "react-icons/bi";
