@@ -3,6 +3,7 @@ import { useSessionStorage } from "@/features/recipes/hooks";
 import { Heading, LoadingState } from "@/features/ui";
 import { FetchRecipeDetailsById } from "@/features/recipes/api";
 import RecipeDetails from "@/features/recipes/components/recipe-details/RecipeDetails";
+import PageNotFound from "./PageNotFound";
 
 const RecipesDetailPage = () => {
   const { recipeId } = useParams();
@@ -38,6 +39,8 @@ const RecipesDetailPage = () => {
   if (isError) {
     return <div>Error: {error}</div>;
   }
+
+  if (!data?.name) return <PageNotFound />;
 
   return <RecipeDetails recipe={data} />;
 };

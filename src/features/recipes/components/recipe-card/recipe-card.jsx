@@ -10,22 +10,22 @@ export const RecipeCard = ({
   id,
 }) => {
   return (
-    <div className="transition duration-500 bg-white shadow-md w-72 h-72 lg:w-96 hover:shsadow-xl rounded-2xl tranform hover:scale-105">
+    <div className="w-full transition duration-500 bg-white shadow-md h-fit md:h-80 hover:shadow-xl rounded-2xl tranform hover:scale-105">
       <Link to={`/recipes/${id}`}>
         <img
           src={thumbnail_url}
           alt={thumbnail_alt_text}
-          className="object-cover object-center h-48 w-72 lg:w-96 rounded-t-2xl"
+          className="object-cover object-center w-full h-48 rounded-t-2xl"
         />
-        <div className="py-3 mx-auto w-72 lg:w-80">
+        <div className="w-full p-3 mx-auto">
           <Heading
             level="h4"
             variant="lava"
-            className="tracking-tighter truncate"
+            className="tracking-tighter break-words"
           >
             {name}
           </Heading>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between">
             <p className="text-1">{`${num_servings} serving(s)`}</p>
             <div>
               <StarRating {...user_ratings} />
