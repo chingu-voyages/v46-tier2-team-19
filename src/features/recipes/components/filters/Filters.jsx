@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Heading } from "@/features/ui";
+
 export const Filters = ({ tagsCollection, onTagSelected, selectedTags }) => {
   const isTagSelected = (tag) => {
     return selectedTags.some((selectedTag) => selectedTag.id === tag.id);
