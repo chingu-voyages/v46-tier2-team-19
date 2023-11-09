@@ -1,86 +1,101 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
+
 import PropTypes from "prop-types";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
 import { Filters } from "../filters";
-import { useNavigate, useLocation } from "react-router-dom";
-
-import { LoadingState } from "@/features/ui";
-
+import { LoadingState, Heading } from "@/features/ui";
 import { Navigate } from "react-router-dom";
-
+import { BiPlus, BiMinus } from "react-icons/bi";
+const allowedTagTypes = [
+  "difficulty",
+  "meal",
+  "occasion",
+  "dietary",
+  "cuisine",
+  "cooking_style",
+];
 export const RecipeList = ({ searchTerm }) => {
+  const prevTagsCollectionRef = useRef();
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
-  const [tagsCollection, setTagsCollection] = useState({});
-  const [selectedTag, setSelectedTag] = useState(null);
-  const navigate = useNavigate();
-  const location = useLocation();
-  const filterTypes = [
-    "Difficulty",
-    "Meal",
-    "Occasion",
-    "Diet",
-    "Cuisine",
-    "Cooking Style",
-  ];
-
-  const getTagFromUrl = useCallback(() => {
-    const queryParams = new URLSearchParams(location.search);
-    return queryParams.get("tag");
-  }, [location.search]);
-
-  useEffect(() => {
-    const tagIdFromUrl = getTagFromUrl();
-    if (tagIdFromUrl) {
-      const tag = findTagById(tagsCollection, tagIdFromUrl);
-
-      setSelectedTag(tag);
-    } else {
-      setSelectedTag(null);
-    }
-  }, [getTagFromUrl, tagsCollection]);
-
-  // Effect to update URL when selectedTag changes
-  useEffect(() => {
-    if (selectedTag) {
-      const searchParams = new URLSearchParams(location.search);
-      searchParams.set("tag", selectedTag.id);
-      navigate({ search: searchParams.toString() }, { replace: true }); // Update the URL
-    }
-  }, [selectedTag, navigate, location.search]);
-
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  // Initial tags collection state, derived from recipes
+  const [tagsCollection, setTagsCollection] = useState({
+    difficulty: [],
+    meal: [],
+    occasion: [],
+    dietary: [],
+    cuisine: [],
+    cooking_style: [],
+  });
+  // This useEffect is for setting the initial tagsCollection when recipes are fetched
   useEffect(() => {
     if (recipes?.results) {
       const newTagsCollection = recipes.results.reduce((acc, recipe) => {
         recipe.tags.forEach((tag) => {
-          if (filterTypes.includes(tag.type)) {
+          if (allowedTagTypes.includes(tag.type)) {
             if (!acc[tag.type]) {
               acc[tag.type] = [];
             }
-            let existingTag = acc[tag.type].find((t) => t.id === tag.id);
-            if (existingTag) {
-              existingTag.count += 1;
-            } else {
-              acc[tag.type].push({
-                count: 1,
-                id: tag.id,
-                name: tag.name,
-                displayName: tag.display_name,
-              });
+            if (!acc[tag.type].some((t) => t.id === tag.id)) {
+              acc[tag.type].push(tag);
             }
           }
         });
         return acc;
       }, {});
-      setTagsCollection(newTagsCollection);
-    }
-  }, [recipes, filterTypes]);
 
-  const filteredRecipes = selectedTag
-    ? recipes.results.filter((recipe) =>
-        recipe.tags.some((tag) => tag.id === selectedTag.id),
-      )
-    : recipes?.results;
+      // Initialize the state with the allowed tag types only
+      const initializedTagsCollection = allowedTagTypes.reduce((acc, type) => {
+        acc[type] = newTagsCollection[type] || [];
+        return acc;
+      }, {});
+
+      // Check if the initializedTagsCollection is different from the current tagsCollection
+      if (
+        JSON.stringify(prevTagsCollectionRef.current) !==
+        JSON.stringify(initializedTagsCollection)
+      ) {
+        setTagsCollection(initializedTagsCollection);
+        prevTagsCollectionRef.current = initializedTagsCollection;
+      }
+    }
+  }, [recipes]);
+
+  const filteredRecipes =
+    selectedTags.length > 0
+      ? recipes.results.filter((recipe) => {
+          const hasMatchingTag = recipe.tags.some((tag) =>
+            selectedTags.some((selectedTag) => {
+              const match = selectedTag.id === tag.id;
+
+              return match;
+            }),
+          );
+
+          return hasMatchingTag;
+        })
+      : recipes?.results;
+
+  const displayedTags = useMemo(() => {
+    let filteredTagsByType = { ...tagsCollection };
+
+    // If there are selected tags, filter the tagsCollection to only include tags that are present in the filtered recipes
+    if (selectedTags.length > 0) {
+      filteredTagsByType = Object.keys(tagsCollection).reduce((acc, type) => {
+        acc[type] = tagsCollection[type].filter((tag) =>
+          filteredRecipes.some((recipe) =>
+            recipe.tags.some((recipeTag) => recipeTag.id === tag.id),
+          ),
+        );
+        return acc;
+      }, {});
+    }
+
+    return filteredTagsByType;
+  }, [selectedTags, filteredRecipes, tagsCollection]);
 
   if (isLoading) {
     return <LoadingState />;
@@ -101,13 +116,59 @@ export const RecipeList = ({ searchTerm }) => {
     return <Navigate to="no-found-page" />;
   }
 
+  const handleTagClick = (clickedTag) => {
+    setSelectedTags((currentSelectedTags) => {
+      // Check if the tag is already selected
+      const isSelected = currentSelectedTags.some(
+        (tag) => tag.id === clickedTag.id,
+      );
+      if (isSelected) {
+        // If the tag is already selected, remove it from the array
+        return currentSelectedTags.filter((tag) => tag.id !== clickedTag.id);
+      } else {
+        // If the tag is not selected, add it to the array
+        return [...currentSelectedTags, clickedTag];
+      }
+    });
+  };
+
   return (
     <>
-      <Filters tagsCollection={tagsCollection} />
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-x-4">
+          <Heading level="h3" variant="tangerine" className="capitalize">
+            {searchTerm}
+          </Heading>
+          <Heading level="h4" variant="tangerine" className="capitalize">
+            {`${filteredRecipes.length} recipes`}
+          </Heading>
+        </div>
+        <button
+          className="flex items-center font-bold"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span>
+            {isOpen ? (
+              <BiMinus className="text-tangerine-500" />
+            ) : (
+              <BiPlus className="text-tangerine-500" />
+            )}
+          </span>
+          <p className="text-xl tracking-wider text-tangerine-500">refine</p>
+        </button>
+      </div>
+      {isOpen && (
+        <Filters
+          tagsCollection={displayedTags}
+          selectedTags={selectedTags}
+          onTagSelected={handleTagClick}
+        />
+      )}
       <div className="grid justify-center grid-cols-1 mx-auto mt-5 mb-10 gap-x-10 gap-y-12 justify-items-center md:grid-cols-2 w-fit auto-rows-fr lg:grid-cols-3">
-        {filteredRecipes.map((recipe) => (
-          <RecipeCard key={recipe.id} {...recipe} />
-        ))}
+        {filteredRecipes &&
+          filteredRecipes.map((recipe) => (
+            <RecipeCard key={`recipe-${recipe.id}`} {...recipe} />
+          ))}
       </div>
     </>
   );
@@ -115,11 +176,4 @@ export const RecipeList = ({ searchTerm }) => {
 
 RecipeList.propTypes = {
   searchTerm: PropTypes.string.isRequired,
-};
-
-const findTagById = (tagsCollection, tagId) => {
-  const tag = Object.values(tagsCollection)
-    .flatMap(Object.values)
-    .find((tag) => tag.id === tagId);
-  return tag || null;
 };
