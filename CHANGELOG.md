@@ -2,6 +2,60 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.26](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.25...v0.0.26) (2023-11-10)
+
+
+### Features
+
+* **spa:** add ScrollToTop function to scroll to top on route change ([0375a27](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0375a277044662816871dd33d885f148048a30d2))
+
+
+### Bug Fixes
+
+* **list.json:** add the feature of the day recipe to the list.json ([edf754d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/edf754d7be627f2bf3e071e1895b40429e67c6db))
+* **recipe-list.jsx:** add null checks to prevent errors when recipes or tags are undefined ([0bb52a2](https://github.com/chingu-voyages/v46-tier2-team-19/commit/0bb52a2fb5478a2fa1bb53513f818767ac400cd3))
+
+### [0.0.24](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.23...v0.0.24) (2023-11-10)
+
+
+### Features
+
+* **vite.config.js:** add file extensions to resolve property to enhance module resolution ([e146574](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e146574a268a1f780668862da511eaa1ca9b44ce))
+* **vite.config.js:** add support for .jsx file extensions ([4031e75](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4031e7541c717c31777fa4d7ac7529ea67b1c07f))
+
+
+### Bug Fixes
+
+* **about.jsx:** fix YumYumTeam heading responsiveness ([b38bcf3](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b38bcf36aa32ee30aa925c0c414600d534ce1b1c))
+* **filters:** correct the file name in the export statement from 'filters' to 'Filters.jsx' ([152941b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/152941b7f508525ba1c7240f6cf616b4fb2b19f3))
+* **recipe-list.jsx:** change initial value of reduce function from object to array ([d7de903](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d7de903684d452378043f03fe85391a421ea3227))
+
+### [0.0.23](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.22...v0.0.23) (2023-11-08)
+
+
+### Features
+
+* **about.jsx:** add y3-shadow-md-inner class to About page ([4d82459](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4d82459a4c483bcb430ba9ac814842cdfed1c1b2))
+* **global.css:** create y3-shadow-md-inner class ([7c67434](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7c674343fbcc3be4d6c6a3dd24bff81b3db03f28))
+
+### [0.0.22](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.21...v0.0.22) (2023-11-08)
+
+
+### Bug Fixes
+
+* **about.jsx:** removed white stroke around main heading & deleted deprecated comments ([9453c1e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9453c1e545b666b7b97a71fa8d8f83e899124f85))
+
+### [0.0.21](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.20...v0.0.21) (2023-11-08)
+
+
+### Features
+
+* **avatar-henri.jpg:** add image of Henri ([35f9be5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/35f9be5367ceeb0c885349939d7f6b74032b9677))
+* **constants/teamdata.js:** add team member info for Henri ([70ca20d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/70ca20d02e2901f78d98e16dceb50c0f64b77338))
+* **filters:** create a tags filter component ([cd39e40](https://github.com/chingu-voyages/v46-tier2-team-19/commit/cd39e40f8c93e5494ea157d55a43af9ca0c65f58))
+* **recipe-list.jsx:** add tag filtering functionality to recipe list ([fdc6526](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fdc6526c9f0b7050c247f776c753b0a79bf3db5e))
+* **recipe-list.jsx:** added filter component ([65f98f0](https://github.com/chingu-voyages/v46-tier2-team-19/commit/65f98f052db727371dae8dcde60a46722317b490))
+
 ### [0.0.25](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.20...v0.0.25) (2023-11-10)
 
 
