@@ -19,6 +19,7 @@ const allowedTagTypes = [
 export const RecipeList = ({ searchTerm }) => {
   const prevTagsCollectionRef = useRef();
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
+  console.log(recipes);
   const [selectedTags, setSelectedTags] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   // Initial tags collection state, derived from recipes
@@ -46,7 +47,7 @@ export const RecipeList = ({ searchTerm }) => {
           }
         });
         return acc;
-      }, {});
+      }, []);
 
       // Initialize the state with the allowed tag types only
       const initializedTagsCollection = allowedTagTypes.reduce((acc, type) => {
