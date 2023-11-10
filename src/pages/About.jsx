@@ -87,14 +87,14 @@ const About = () => {
           Meet the YumYumTeam!
         </Heading>
 
-        <p className="text-right px-10 pb-10 sm:text-center lg:text-right lg:pr-14">
+        <p className="px-10 text-right sm:text-center lg:text-right lg:pr-14">
           These are the exceptional team members that made YumYumYes! possible.
         </p>
 
-        <div className="grid gap-x-20 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid p-10 gap-x-20 md:grid-cols-2 md:gap-16 lg:mt-8 xl:grid-cols-3">
           {team.map(({ name, role, summary, image, socials }, index) => (
             <article
-              className="relative group px-10 py-14 first:pt-0 md:pt-0"
+              className="relative group py-14 md:py-0 first:pt-0 md:pt-0"
               key={name}
             >
               <Heading level="h3" variant="watermelon">
