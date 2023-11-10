@@ -2,10 +2,11 @@ import AvatarGrey from "../assets/about/avatar-grey.jpg";
 import AvatarDarrick from "../assets/about/avatar-darrick.jpg";
 import AvatarTim from "../assets/about/avatar-tim.jpg";
 import AvatarJoseph from "../assets/about/avatar-joseph.webp";
+import AvatarHenri from "../assets/about/avatar-henri.jpg";
 
 const team = [
   {
-    name: "Greimil",
+    name: "Greimil Nuñez",
     role: "Designer & Developer",
     summary:
       "I am a self-motivated software developer pursuing a Computer Science degree, blending formal education with self-taught knowledge. I actively worked on this project, contributing to web design and coding for functional and aesthetically pleasing interfaces. My background in both design and development allows me to contribute comprehensively to projects, and I'm eager to refine my skills further, solve complex problems, and create user-centric software solutions through continuous learning and improvement.",
@@ -25,7 +26,7 @@ const team = [
     name: "Darrick Fauvel",
     role: "Developer",
     summary:
-      "I am an experienced web developer skilled in JavaScript and React, who is based in Massachusetts, USA. In agile collaboration with the team, I helped create reusable React components, developed the Favorite Recipes feature, and constructed the About page with its Team feature, all while emphasizing website responsiveness. I hold a Bachelor of IT degree (summa cum laude) from UMass Lowell, and have rad 😎 experience dating back to the early days of the Web before CSS & JavaScript. 😲",
+      "An experienced web developer skilled in JavaScript and React, Darrick is based in Massachusetts, USA. In agile collaboration with the team, he helped create several features on the site, all while emphasizing website responsiveness. He holds a Bachelor of IT degree (summa cum laude) from UMass Lowell, and has the rad 😎 experience of developing websites when more than 216 colors was unsafe. 😲",
     image: AvatarDarrick,
     socials: [
       {
@@ -72,12 +73,38 @@ const team = [
       },
     ],
   },
+  {
+    name: "Henri Lambertucci",
+    role: "UI/UX Designer",
+    summary:
+      "Hey there, I'm Henri, a 36-year-old U.S. Air Force veteran with a background in civil engineering. I've always had a thing for tech, and now I'm diving headfirst into the world of web development. When I'm not tinkering with websites, you'll find me battling it out in online games, soaking up the sun at the beach, or catching the latest flick at the movie theater. I guess you could say I'm a bit of a geek with a dash of adventure and a love for relaxation. I'm all about bringing your ideas to life online and making your digital presence shine.",
+    image: AvatarHenri,
+    socials: [
+      {
+        name: "GitHub",
+        url: "https://github.com/henrike32",
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/hslambert/",
+      },
+    ],
+  },
   // {
   //   name: "",
   //   role: "",
   //   summary: "",
   //   image: "",
-  //   socials: [{ gitHub: "", linkedIn: "" }],
+  //   socials: [
+  //     {
+  //       name: "GitHub",
+  //       url: "https://github.com/",
+  //     },
+  //     {
+  //       name: "LinkedIn",
+  //       url: "https://www.linkedin.com/",
+  //     },
+  //   ],
   // },
 ];
 
