@@ -29,7 +29,7 @@ const Search = () => {
         <Heading level="h2" variant="watermelon" className="text-center">
           YumYum Time!!
         </Heading>
-        <div className="flex flex-wrap items-center my-5 lg:mx-2 lg:gap-x-2">
+        <div className="flex flex-wrap items-center justify-center my-5 lg:mx-2 lg:gap-x-2">
           <div className="flex items-center w-1/3 lg:w-[20%]">
             <BellPeppers resolution="360" alt="bell-peppers" />
           </div>
