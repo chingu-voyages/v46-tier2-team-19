@@ -39,6 +39,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
+* **about.jsx:** removed white stroke around main heading & deleted deprecated comments ([9453c1e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9453c1e545b666b7b97a71fa8d8f83e899124f85))
 * **fetchrecipes:** wrap localStorage.setItem in try/catch block ([14330bc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/14330bcfd6a2a7879f9c40d4e4bd62c5e79f1dda))
 * **matchsearchid:** replace negative lookahead with capturing group (for Safari) ([9a79455](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9a79455099d8d0c2f6af5902bb78f858a06572d8))
 
@@ -59,6 +60,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
+* **about.jsx:** removed white stroke around main heading & deleted deprecated comments ([9453c1e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9453c1e545b666b7b97a71fa8d8f83e899124f85))
 * **fetchrecipes:** wrap localStorage.setItem in try/catch block ([14330bc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/14330bcfd6a2a7879f9c40d4e4bd62c5e79f1dda))
 * **matchsearchid:** replace negative lookahead with capturing group (for Safari) ([9a79455](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9a79455099d8d0c2f6af5902bb78f858a06572d8))
 
