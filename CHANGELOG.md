@@ -2,12 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.23](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.20...v0.0.23) (2023-11-08)
+
+
+### Features
+
+* **about.jsx:** add y3-shadow-md-inner class to About page ([4d82459](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4d82459a4c483bcb430ba9ac814842cdfed1c1b2))
+* **api:** add new tips.js file to fetch tips from Tasty API ([da69610](https://github.com/chingu-voyages/v46-tier2-team-19/commit/da69610c0c2e18c5daabfc02521618f16e05a996))
+* **global.css:** create y3-shadow-md-inner class ([7c67434](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7c674343fbcc3be4d6c6a3dd24bff81b3db03f28))
+* **mirageserver:** add tips.json and endpoint for tips in server.js ([ad337dc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ad337dcc0b65abd43131ac8c80b571a569d583c0))
+* **package.json, package-lock.json:** add react-responsive-carousel package ([713c339](https://github.com/chingu-voyages/v46-tier2-team-19/commit/713c3395219ec7b41c6cd31afb7c76b99af17ca4))
+* **recipe details:** continue improving responsive layout ([83e4357](https://github.com/chingu-voyages/v46-tier2-team-19/commit/83e4357964e724c1919ca2e3a32f26c4ebffaa24))
+* **recipes/api:** add fetch-tips-by-id.js to fetch tips by recipe id ([de66f72](https://github.com/chingu-voyages/v46-tier2-team-19/commit/de66f72afa817a209c798a59eab2ff90c0faad9a))
+* **tips.jsx:** implement dynamic tips fetching and display in a carousel ([a23fa0b](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a23fa0ba7dd14f008310eca182459cc3934b8437))
+
+
+### Bug Fixes
+
+* **fetchrecipes:** wrap localStorage.setItem in try/catch block ([14330bc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/14330bcfd6a2a7879f9c40d4e4bd62c5e79f1dda))
+* **matchsearchid:** replace negative lookahead with capturing group (for Safari) ([9a79455](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9a79455099d8d0c2f6af5902bb78f858a06572d8))
+
 ### [0.0.22](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.20...v0.0.22) (2023-11-08)
 
 
 ### Features
 
+* **about.jsx:** add y3-shadow-md-inner class to About page ([4d82459](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4d82459a4c483bcb430ba9ac814842cdfed1c1b2))
 * **api:** add new tips.js file to fetch tips from Tasty API ([da69610](https://github.com/chingu-voyages/v46-tier2-team-19/commit/da69610c0c2e18c5daabfc02521618f16e05a996))
+* **global.css:** create y3-shadow-md-inner class ([7c67434](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7c674343fbcc3be4d6c6a3dd24bff81b3db03f28))
 * **mirageserver:** add tips.json and endpoint for tips in server.js ([ad337dc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ad337dcc0b65abd43131ac8c80b571a569d583c0))
 * **package.json, package-lock.json:** add react-responsive-carousel package ([713c339](https://github.com/chingu-voyages/v46-tier2-team-19/commit/713c3395219ec7b41c6cd31afb7c76b99af17ca4))
 * **recipe details:** continue improving responsive layout ([83e4357](https://github.com/chingu-voyages/v46-tier2-team-19/commit/83e4357964e724c1919ca2e3a32f26c4ebffaa24))
@@ -26,7 +48,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
+* **about.jsx:** add y3-shadow-md-inner class to About page ([4d82459](https://github.com/chingu-voyages/v46-tier2-team-19/commit/4d82459a4c483bcb430ba9ac814842cdfed1c1b2))
 * **api:** add new tips.js file to fetch tips from Tasty API ([da69610](https://github.com/chingu-voyages/v46-tier2-team-19/commit/da69610c0c2e18c5daabfc02521618f16e05a996))
+* **global.css:** create y3-shadow-md-inner class ([7c67434](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7c674343fbcc3be4d6c6a3dd24bff81b3db03f28))
 * **mirageserver:** add tips.json and endpoint for tips in server.js ([ad337dc](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ad337dcc0b65abd43131ac8c80b571a569d583c0))
 * **package.json, package-lock.json:** add react-responsive-carousel package ([713c339](https://github.com/chingu-voyages/v46-tier2-team-19/commit/713c3395219ec7b41c6cd31afb7c76b99af17ca4))
 * **recipe details:** continue improving responsive layout ([83e4357](https://github.com/chingu-voyages/v46-tier2-team-19/commit/83e4357964e724c1919ca2e3a32f26c4ebffaa24))

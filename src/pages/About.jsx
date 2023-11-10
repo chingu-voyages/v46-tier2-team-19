@@ -12,7 +12,8 @@ const About = () => {
   usePageTitle("About");
 
   return (
-    <div className="bg-gradient-watermelon-diagonal">
+    <div className="bg-gradient-watermelon-diagonal y3-shadow-md-inner">
+      {/* <h1 className="text-center">About</h1> */}
       <Heading
         level="h1"
         variant="tangerine"
