@@ -1,7 +1,7 @@
 // eslint-disable-next-line react-hooks/exhaustive-deps
 
 import PropTypes from "prop-types";
-import { useState, useEffect, useMemo, useRef } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { RecipeCard } from "../recipe-card";
 import { FetchRecipes } from "../../api";
 import { Filters } from "../filters";
@@ -17,54 +17,34 @@ const allowedTagTypes = [
   "cooking_style",
 ];
 export const RecipeList = ({ searchTerm }) => {
-  const prevTagsCollectionRef = useRef();
   const { data: recipes, isLoading, isError, error } = FetchRecipes(searchTerm);
-  console.log(recipes);
   const [selectedTags, setSelectedTags] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
-  // Initial tags collection state, derived from recipes
-  const [tagsCollection, setTagsCollection] = useState({
-    difficulty: [],
-    meal: [],
-    occasion: [],
-    dietary: [],
-    cuisine: [],
-    cooking_style: [],
-  });
+  // State to store the tags available in the fetched recipes
+  const [tagsCollection, setTagsCollection] = useState(() =>
+    allowedTagTypes.reduce((acc, type) => ({ ...acc, [type]: [] }), {}),
+  );
 
-  // This useEffect is for setting the initial tagsCollection when recipes are fetched
+  // This effect will run once on initial render to initialize tagsCollection
   useEffect(() => {
     if (recipes?.results) {
-      const newTagsCollection = recipes.results.reduce((acc, recipe) => {
-        recipe.tags.forEach((tag) => {
-          if (allowedTagTypes.includes(tag.type)) {
-            if (!acc[tag.type]) {
-              acc[tag.type] = [];
+      const newTagsCollection = allowedTagTypes.reduce((collection, type) => {
+        collection[type] = recipes.results
+          .flatMap((recipe) => recipe.tags)
+          .filter((tag) => tag.type === type)
+          .reduce((uniqueTags, tag) => {
+            if (!uniqueTags.some((uniqueTag) => uniqueTag.id === tag.id)) {
+              uniqueTags.push(tag);
             }
-            if (!acc[tag.type].some((t) => t.id === tag.id)) {
-              acc[tag.type].push(tag);
-            }
-          }
-        });
-        return acc;
-      }, []);
+            return uniqueTags;
+          }, []);
 
-      // Initialize the state with the allowed tag types only
-      const initializedTagsCollection = allowedTagTypes.reduce((acc, type) => {
-        acc[type] = newTagsCollection[type] || [];
-        return acc;
+        return collection;
       }, {});
 
-      // Check if the initializedTagsCollection is different from the current tagsCollection
-      if (
-        JSON.stringify(prevTagsCollectionRef.current) !==
-        JSON.stringify(initializedTagsCollection)
-      ) {
-        setTagsCollection(initializedTagsCollection);
-        prevTagsCollectionRef.current = initializedTagsCollection;
-      }
+      setTagsCollection(newTagsCollection);
     }
-  }, [recipes]);
+  }, [recipes]); // Depends on 'recipes' to re-run if recipes change
 
   const filteredRecipes =
     selectedTags.length > 0
