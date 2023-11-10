@@ -1,7 +1,6 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { Heading } from "@/features/ui";
-// import homepage from "@/assets/about/homepage.png";
 import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
 import usePageTitle from "../hooks/usePageTitle";
@@ -13,22 +12,18 @@ const About = () => {
   usePageTitle("About");
 
   return (
-    <div className="bg-gradient-watermelon-diagonal">
+    <div className="bg-gradient-watermelon-diagonal y3-shadow-md-inner">
       {/* <h1 className="text-center">About</h1> */}
       <Heading
         level="h1"
         variant="tangerine"
-        className="px-10 pt-10 text-center text-white"
+        className="px-10 pt-10 text-center text-white text-no-stroke"
       >
         About Chingu
       </Heading>
 
       {/* START Project section */}
       <section className="relative px-10 pb-10 xl:pb-20" id="project">
-        {/* <Heading level="h2" variant="watermelon">
-          This Project
-        </Heading> */}
-
         <img
           className="w-1/2 mb-6 mx-auto"
           src={ChinguRectangle}
@@ -36,11 +31,6 @@ const About = () => {
         />
 
         <div className="pb-10 text-slate-100">
-          {/* <img
-            src={homepage}
-            alt="YumYumYes! hompage"
-            className="float-right rounded-lg w-1/2 ml-4 mb-2 max-w-sm"
-          /> */}
           <img
             className="float-right"
             src={Yumi_1}
@@ -82,7 +72,7 @@ const About = () => {
         <Heading
           level="h2"
           variant="tangerine"
-          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-32 lg:text-right"
+          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-36 lg:text-right xl:pt-40"
         >
           Meet the YumYumTeam!
         </Heading>
