@@ -27,11 +27,11 @@ export const RecipeList = ({ searchTerm }) => {
 
   // This effect will run once on initial render to initialize tagsCollection
   useEffect(() => {
-    if (recipes?.results) {
+    if (recipes && recipes.results) {
       const newTagsCollection = allowedTagTypes.reduce((collection, type) => {
         collection[type] = recipes.results
-          .flatMap((recipe) => recipe.tags)
-          .filter((tag) => tag.type === type)
+          .flatMap((recipe) => recipe.tags || [])
+          .filter((tag) => tag && tag.type === type)
           .reduce((uniqueTags, tag) => {
             if (!uniqueTags.some((uniqueTag) => uniqueTag.id === tag.id)) {
               uniqueTags.push(tag);
