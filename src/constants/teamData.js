@@ -43,7 +43,7 @@ const team = [
     name: "Tim DeHof",
     role: "DevOps & Developer",
     summary:
-      'I\'m a dynamic software developer with a background in mechanical design, now channeling my expertise into Fullstack development with skills in Postgres, Express, React, and Node. My proficiency in transforming initial "napkin" ideas into concrete user-centric interfaces is a testament to my unique blend of design and technical prowess. Leading projects and coding key components like search functions, I excel at crafting intuitive experiences that anticipate user needs. With a commitment to continuous learning and a passion for the iterative, fast-paced world of software development, I aim to seamlessly integrate functional design with robust technology to create seamless and responsive software solutions.',
+      "He is a dynamic software developer with a background in mechanical design, now specializing in Fullstack development with skills in Postgres, Express, React, and Node. Renowned for transforming initial concepts into user-centric interfaces, he leads projects and excels in developing intuitive features like search functions. With a passion for continuous learning, he integrates functional design with robust technology to deliver seamless and responsive software solutions.",
     image: AvatarTim,
     socials: [
       {
