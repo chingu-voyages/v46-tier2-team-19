@@ -19,11 +19,9 @@ export const Filters = ({ tagsCollection, onTagSelected, selectedTags }) => {
               <li key={tag.id}>
                 <button
                   onClick={() => onTagSelected(tag)}
-                  className={`border-2 rounded-full px-4 text-sm cursor-pointer ${
-                    isTagSelected(tag)
-                      ? "bg-gradient-tangerine-diagonal text-white"
-                      : "text-tangerine-600  border-tangerine-600"
-                  }  `}
+                  className={` transition ease-in-out border-2 rounded-full delay-150 px-4 text-sm cursor-pointer bg-tangerine-300 text-tangerine-800 hover:shadow-lg hover:scale-110 ${
+                    isTagSelected(tag) ? "border-tangerine-800" : "border-white"
+                  }`}
                 >
                   {tag.display_name}
                 </button>
