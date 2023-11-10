@@ -103,7 +103,7 @@ const About = () => {
               <Heading
                 level="h4"
                 variant="lava"
-                className="font-display font-bold text-2xl text-lava-500 -mt-2 mb-3"
+                className="font-display font-bold text-2xl text-lava-500 -mt-2 mb-3 text-no-stroke"
               >
                 {role}
               </Heading>
