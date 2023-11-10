@@ -72,7 +72,7 @@ const About = () => {
         <Heading
           level="h2"
           variant="tangerine"
-          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-32 lg:text-right"
+          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-36 lg:text-right xl:pt-40"
         >
           Meet the YumYumTeam!
         </Heading>
