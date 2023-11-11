@@ -8,6 +8,7 @@ import { Filters } from "../filters";
 import { LoadingState, Heading } from "@/features/ui";
 import { Navigate } from "react-router-dom";
 import { BiPlus, BiMinus } from "react-icons/bi";
+
 const allowedTagTypes = [
   "difficulty",
   "meal",
@@ -62,25 +63,36 @@ export const RecipeList = ({ searchTerm }) => {
       : recipes?.results;
 
   const displayedTags = useMemo(() => {
-    let filteredTagsByType = {};
+    const filteredTags = {};
 
     // Create a set of tag IDs present in the filtered recipes
     const filteredTagIds = new Set(
-      filteredRecipes.flatMap((recipe) =>
-        recipe.tags?.map((recipeTag) => recipeTag.id),
+      (filteredRecipes || []).flatMap((recipe) =>
+        (recipe.tags || []).map((recipeTag) => recipeTag.id).filter(Boolean),
       ),
     );
 
     // Iterate over the types of tags and filter them based on the selected tags and filtered recipes
-    for (const type in tagsCollection) {
-      filteredTagsByType[type] = tagsCollection[type].filter(
+    Object.keys(tagsCollection).forEach((type) => {
+      filteredTags[type] = tagsCollection[type].filter(
         (tag) =>
           filteredTagIds.has(tag.id) ||
           selectedTags.some((selectedTag) => selectedTag.id === tag.id),
       );
-    }
+    });
 
-    return filteredTagsByType;
+    // Remove the tag from the second type if it has already been added to the first type
+    const otherTypes = Object.keys(filteredTags).filter((t) => t !== t.type);
+    otherTypes.forEach((otherType) => {
+      const index = filteredTags[otherType].findIndex(
+        (tag) => tag.id === tag.id,
+      );
+      if (index !== -1) {
+        filteredTags[otherType].splice(index, 1);
+      }
+    });
+
+    return filteredTags;
   }, [selectedTags, filteredRecipes, tagsCollection]);
 
   if (isLoading) {
@@ -120,29 +132,27 @@ export const RecipeList = ({ searchTerm }) => {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between lg:px-10">
         <div className="flex items-center gap-x-4">
-          <Heading level="h3" variant="watermelon" className="capitalize">
+          <Heading level="h3" variant="tangerine" className="capitalize">
             {searchTerm}
           </Heading>
-          <Heading level="h4" variant="watermelon" className="capitalize">
+          <Heading level="h4" variant="tangerine" className="capitalize">
             {`${filteredRecipes.length} recipes`}
           </Heading>
         </div>
         <button
-          className="flex items-center font-bold"
+          className="flex items-center px-4 font-bold text-center rounded-full shadow-lg bg-gradient-tangerine-diagonal"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span>
             {isOpen ? (
-              <BiMinus className="text-watermelon-800" />
+              <BiMinus className="text-watermelon-50" />
             ) : (
-              <BiPlus className="text-watermelon-800" />
+              <BiPlus className="text-watermelon-50" />
             )}
           </span>
-          <p className="pr-10 text-xl tracking-wider text-watermelon-800">
-            refine
-          </p>
+          <p className="text-xl tracking-widest text-watermelon-50">refine</p>
         </button>
       </div>
       {isOpen && (
