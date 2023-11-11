@@ -95,7 +95,7 @@ export const RecipeList = ({ searchTerm }) => {
     console.log(!recipes);
     console.log(!Array.isArray(recipes.results));
     console.log(recipes.results.length === 0);
-    return <Navigate to="no-found-page" />;
+    return <Navigate to="no-found-page" replace={true} />;
   }
 
   const handleTagClick = (clickedTag) => {
