@@ -19,7 +19,7 @@ export const Tags = ({ tags }) => {
           <span key={tag.name}>
             <Link
               to={`/search?q=${tag.name}`}
-              className="text-watermelon font-bold"
+              className="text-watermelon font-bold decoration-tangerine decoration-2 underline-offset-2 hover:underline"
               key={tag.name + String(Math.random())}
             >
               {tag.display_name}
