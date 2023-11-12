@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.31](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.30...v0.0.31) (2023-11-12)
+
+
+### Features
+
+* add .env.example file with VITE_TASTY_API_KEY and VITE_TASTY_API_URL variables ([d80878c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d80878c4aac42bb14fa6e8cecd9f985c06f04cc0))
+* add screenshot-home-dev.png to public directory ([e389efd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e389efd2570478588f4f6e4d2440caddeceb9175))
+* **main:** suppress console logs in non-development environments ([f329eb1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/f329eb1d061705241f1e9fdb303fc1fcdedd455c))
+* **recipe details:** add graphics to recipe details page ([3158a3f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3158a3f7716eb1700164631fc34814cbe5ce522e))
+
+
+### Bug Fixes
+
+* **instructions.jsx:** layout fix for mobile screens ([b0d483e](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b0d483e08d5c1e7597a0d5a77f4a4d90f1f42bd7))
+* **recipedetails:** add padding across top of recipe details page ([7b0b1d9](https://github.com/chingu-voyages/v46-tier2-team-19/commit/7b0b1d98621560aaac41177aa2feff4862d11c9b))
+* **tips:** avoid overlapped text in tips section ([6c8746a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/6c8746a36aeaef0bd064e6577707c936d970f36a))
+
+### [0.0.29](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.28...v0.0.29) (2023-11-12)
+
+
+### Features
+
+* **constants/index.js:** reorder header & footer menu items ([72fd3af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/72fd3af6809c2f8349d37da441aad01118741d2f))
 
 ### [0.0.30](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.28...v0.0.30) (2023-11-12)
 
