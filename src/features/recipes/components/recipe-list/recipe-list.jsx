@@ -50,12 +50,9 @@ export const RecipeList = ({ searchTerm }) => {
   const filteredRecipes =
     selectedTags.length > 0
       ? recipes.results.filter((recipe) => {
-          const hasMatchingTag = recipe.tags.some((tag) =>
-            selectedTags.some((selectedTag) => {
-              const match = selectedTag.id === tag.id;
-
-              return match;
-            }),
+          const recipeTags = recipe.tags || [];
+          const hasMatchingTag = recipeTags.some((tag) =>
+            selectedTags.some((selectedTag) => selectedTag.id === tag.id),
           );
 
           return hasMatchingTag;
