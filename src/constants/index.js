@@ -7,15 +7,23 @@ const logoUrl = "";
 
 export const navLinks = [
   {
+    id: "search",
+    title: "Search",
+    href: "/search",
+  },
+  {
+    id: "favorites",
+    title: "Favorites",
+    href: "/favorites",
+  },
+  {
     id: "about",
     title: "About",
     href: "/about",
   },
-  // {
-  //   id: "posts",
-  //   title: "Posts",
-  //   href: "/posts",
-  // },
+];
+
+const footerLinks = [
   {
     id: "search",
     title: "Search",
@@ -26,18 +34,10 @@ export const navLinks = [
     title: "Favorites",
     href: "/favorites",
   },
-];
-
-const footerLinks = [
   {
     id: "about",
     title: "About",
     href: "/about",
-  },
-  {
-    id: "search",
-    title: "Search",
-    href: "/search",
   },
 ];
 
