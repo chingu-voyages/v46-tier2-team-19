@@ -4,8 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.0.28](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.26...v0.0.28) (2023-11-11)
 
-
 ### Features
+
+
+* **search.jsx:** enhance page heading and adjust layout for better user experience ([25ff48a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/25ff48a4f43bc6fe249ed4f0e5580e5154730ed7))
 
 * **favorites.jsx:** display confirmation modal on Clear Favorites button click ([fffd05f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fffd05f305d5964837d4c0b02577e46fddc905c6))
 
@@ -15,6 +17,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * **favorites.jsx:** display confirmation modal on Clear Favorites button click ([fffd05f](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fffd05f305d5964837d4c0b02577e46fddc905c6))
+
 
 ### [0.0.26](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.25...v0.0.26) (2023-11-10)
 
