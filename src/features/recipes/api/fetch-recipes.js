@@ -3,7 +3,8 @@ import { useQuery } from "@tanstack/react-query";
 import { useSessionStorage } from "../hooks";
 
 export function FetchRecipes(search) {
-  const [cachedRecipes, setCachedRecipes] = useSessionStorage("recipes", null);
+  const KEY = `${search}-searchRecipeResults`;
+  const [cachedRecipes, setCachedRecipes] = useSessionStorage(KEY, null);
   const {
     data: recipes,
     isLoading,

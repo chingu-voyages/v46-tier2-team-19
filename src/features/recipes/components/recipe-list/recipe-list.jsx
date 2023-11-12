@@ -8,6 +8,7 @@ import { Filters } from "../filters";
 import { LoadingState, Heading } from "@/features/ui";
 import { Navigate } from "react-router-dom";
 import { BiPlus, BiMinus } from "react-icons/bi";
+
 const allowedTagTypes = [
   "difficulty",
   "meal",
@@ -49,12 +50,9 @@ export const RecipeList = ({ searchTerm }) => {
   const filteredRecipes =
     selectedTags.length > 0
       ? recipes.results.filter((recipe) => {
-          const hasMatchingTag = recipe.tags.some((tag) =>
-            selectedTags.some((selectedTag) => {
-              const match = selectedTag.id === tag.id;
-
-              return match;
-            }),
+          const recipeTags = recipe.tags || [];
+          const hasMatchingTag = recipeTags.some((tag) =>
+            selectedTags.some((selectedTag) => selectedTag.id === tag.id),
           );
 
           return hasMatchingTag;
@@ -62,21 +60,36 @@ export const RecipeList = ({ searchTerm }) => {
       : recipes?.results;
 
   const displayedTags = useMemo(() => {
-    let filteredTagsByType = { ...tagsCollection };
+    const filteredTags = {};
 
-    // If there are selected tags, filter the tagsCollection to only include tags that are present in the filtered recipes
-    if (selectedTags.length > 0) {
-      filteredTagsByType = Object.keys(tagsCollection).reduce((acc, type) => {
-        acc[type] = tagsCollection[type].filter((tag) =>
-          filteredRecipes.some((recipe) =>
-            recipe.tags.some((recipeTag) => recipeTag.id === tag.id),
-          ),
-        );
-        return acc;
-      }, {});
-    }
+    // Create a set of tag IDs present in the filtered recipes
+    const filteredTagIds = new Set(
+      (filteredRecipes || []).flatMap((recipe) =>
+        (recipe.tags || []).map((recipeTag) => recipeTag.id).filter(Boolean),
+      ),
+    );
 
-    return filteredTagsByType;
+    // Iterate over the types of tags and filter them based on the selected tags and filtered recipes
+    Object.keys(tagsCollection).forEach((type) => {
+      filteredTags[type] = tagsCollection[type].filter(
+        (tag) =>
+          filteredTagIds.has(tag.id) ||
+          selectedTags.some((selectedTag) => selectedTag.id === tag.id),
+      );
+    });
+
+    // Remove the tag from the second type if it has already been added to the first type
+    const otherTypes = Object.keys(filteredTags).filter((t) => t !== t.type);
+    otherTypes.forEach((otherType) => {
+      const index = filteredTags[otherType].findIndex(
+        (tag) => tag.id === tag.id,
+      );
+      if (index !== -1) {
+        filteredTags[otherType].splice(index, 1);
+      }
+    });
+
+    return filteredTags;
   }, [selectedTags, filteredRecipes, tagsCollection]);
 
   if (isLoading) {
@@ -95,7 +108,7 @@ export const RecipeList = ({ searchTerm }) => {
     console.log(!recipes);
     console.log(!Array.isArray(recipes.results));
     console.log(recipes.results.length === 0);
-    return <Navigate to="no-found-page" />;
+    return <Navigate to="no-found-page" replace={true} />;
   }
 
   const handleTagClick = (clickedTag) => {
@@ -116,7 +129,7 @@ export const RecipeList = ({ searchTerm }) => {
 
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between lg:px-10">
         <div className="flex items-center gap-x-4">
           <Heading level="h3" variant="tangerine" className="capitalize">
             {searchTerm}
@@ -126,17 +139,17 @@ export const RecipeList = ({ searchTerm }) => {
           </Heading>
         </div>
         <button
-          className="flex items-center font-bold"
+          className="flex items-center px-4 font-bold text-center rounded-full shadow-lg bg-gradient-tangerine-diagonal"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span>
             {isOpen ? (
-              <BiMinus className="text-tangerine-500" />
+              <BiMinus className="text-watermelon-50" />
             ) : (
-              <BiPlus className="text-tangerine-500" />
+              <BiPlus className="text-watermelon-50" />
             )}
           </span>
-          <p className="text-xl tracking-wider text-tangerine-500">refine</p>
+          <p className="text-xl tracking-widest text-watermelon-50">refine</p>
         </button>
       </div>
       {isOpen && (
