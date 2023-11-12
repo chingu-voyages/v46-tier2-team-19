@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.29](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.28...v0.0.29) (2023-11-12)
+
+
+### Features
+
+* **assets:** add art and picture components ([51554a1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/51554a12b884d332c7bc3d185c6661927379b85f))
+* **constants/index.js:** reorder header & footer menu items ([72fd3af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/72fd3af6809c2f8349d37da441aad01118741d2f))
+
+
+### Bug Fixes
+
+* **recipe-list.jsx:** add replace prop to Navigate component to prevent history stack overflow ([c4e8648](https://github.com/chingu-voyages/v46-tier2-team-19/commit/c4e8648df720890cbc469536bcb399ee1dd5c77d))
+
+### [0.0.27](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.26...v0.0.27) (2023-11-10)
+
+
+### Features
+
+* **search.jsx:** enhance page heading and adjust layout for better user experience ([25ff48a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/25ff48a4f43bc6fe249ed4f0e5580e5154730ed7))
+
 ### [0.0.28](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.26...v0.0.28) (2023-11-11)
 
 ### Features
