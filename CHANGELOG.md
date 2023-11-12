@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
+
+* **assets:** add art and picture components ([51554a1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/51554a12b884d332c7bc3d185c6661927379b85f))
+* **constants/index.js:** reorder header & footer menu items ([72fd3af](https://github.com/chingu-voyages/v46-tier2-team-19/commit/72fd3af6809c2f8349d37da441aad01118741d2f))
 * add .env.example file with VITE_TASTY_API_KEY and VITE_TASTY_API_URL variables ([d80878c](https://github.com/chingu-voyages/v46-tier2-team-19/commit/d80878c4aac42bb14fa6e8cecd9f985c06f04cc0))
 * add screenshot-home-dev.png to public directory ([e389efd](https://github.com/chingu-voyages/v46-tier2-team-19/commit/e389efd2570478588f4f6e4d2440caddeceb9175))
 * **assets:** add art and picture components ([51554a1](https://github.com/chingu-voyages/v46-tier2-team-19/commit/51554a12b884d332c7bc3d185c6661927379b85f))
