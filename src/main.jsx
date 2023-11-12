@@ -18,3 +18,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </QueryClientProvider>
   </React.StrictMode>,
 );
+if (process.env.NODE_ENV !== "development") {
+  console.log = function () {};
+  console.debug = function () {};
+  console.info = function () {};
+  console.warn = function () {};
+  console.error = function () {};
+}
