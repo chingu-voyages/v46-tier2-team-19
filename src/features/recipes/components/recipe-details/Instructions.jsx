@@ -4,7 +4,7 @@ import YumiWithBasket from "@/assets/brand/yumi-with-basket/YumiWithBasket";
 
 export const Instructions = ({ instructions }) => {
   return (
-    <div className="instructions-wrapper pr-[10rem]">
+    <div className="instructions-wrapper sm:pr-[10rem] pb-[30rem] sm:pb-0">
       <Heading level="h2" variant="watermelon">
         Preparation
       </Heading>
@@ -20,7 +20,7 @@ export const Instructions = ({ instructions }) => {
       </ol>
       <YumiWithBasket
         resolution="300"
-        className="absolute -bottom-4 -right-6 max-w-[50%] w-[14rem]"
+        className="absolute -bottom-4 right-[2.5rem] sm:-right-6 max-w-full sm:max-w-[50%] w-[14rem]"
       />
     </div>
   );
