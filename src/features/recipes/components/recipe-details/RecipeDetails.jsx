@@ -26,7 +26,7 @@ export const RecipeDetails = ({ recipe }) => {
         <hr className="mb-1 mt-3 h-2 w-[40%] rounded-full border-none bg-gradient-tangerine-diagonal" />
       </div>
 
-      <div className="page-body p-5 md:p-8 md:pt-0 xl:p-10 md:grid md:grid-cols-12 md:grid-rows-10 md:gap-10">
+      <div className="page-body p-5 md:p-8 xl:p-10 md:grid md:grid-cols-12 md:grid-rows-10 md:gap-10">
         <IntroCard
           description={recipe.description}
           imageUrl={recipe.thumbnail_url}
