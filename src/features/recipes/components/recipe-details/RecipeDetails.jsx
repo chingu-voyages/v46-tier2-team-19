@@ -13,8 +13,10 @@ import { Instructions } from "./Instructions";
 import { FavoriteButton } from "./FavoriteButton";
 import { NutritionSection } from "./Nutrition";
 import { Tips } from "./Tips";
+import usePageTitle from "../../../../hooks/usePageTitle";
 
 export const RecipeDetails = ({ recipe }) => {
+  usePageTitle(recipe.name);
   return (
     <div className="page-wrapper bg-sky">
       <div className="p-4 pb-12 bg-no-repeat bg-cover title-wrapper bg-title-cutout">
@@ -49,9 +51,9 @@ export const RecipeDetails = ({ recipe }) => {
         <RecipeVideo
           videoUrl={recipe.video_url}
           renditions={recipe.renditions}
-          className="mb-4 outline-4 md:col-start-7 md:col-end-13 md:row-start-1 lg:col-start-1 lg:col-end-5 lg:row-start-3 lg:-mx-4 lg:-mb-4 2xl:col-end-4"
+          className="mb-12 outline-4 md:col-start-7 md:col-end-13 md:row-start-1 lg:col-start-1 lg:col-end-5 lg:row-start-3 lg:-mx-4 lg:-mb-4 2xl:col-end-4"
         />
-        <Card className="difficulty-card md:col-start-7 md:col-end-13 md:row-start-2 lg:col-start-5 2xl:col-start-4">
+        <Card className="difficulty-card md:col-start-7 md:col-end-13 md:row-start-2 lg:col-start-5 2xl:col-start-4 flex items-center">
           <RecipeDifficultyCard tags={recipe.tags} />
         </Card>
         <Card
@@ -61,7 +63,7 @@ export const RecipeDetails = ({ recipe }) => {
           <IngredientSections sections={recipe.sections} />
         </Card>
         <Card
-          className="instructions-card md:col-start-1 md:col-end-13 lg:col-start-5 lg:col-end-13 2xl:col-start-4"
+          className="instructions-card relative md:col-start-1 md:col-end-13 lg:col-start-5 lg:col-end-13 2xl:col-start-4"
           id="preparation"
         >
           <Instructions instructions={recipe.instructions} />
