@@ -37,7 +37,7 @@ const files = {
 };
 
 const ChefCarrots = ({
-  resolution = 360,
+  resolution = 300,
   alt = "Chef Carrots the Friendly Bunny",
   className,
 }) => {

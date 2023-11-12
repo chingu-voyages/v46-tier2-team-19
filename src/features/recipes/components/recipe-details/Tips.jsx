@@ -26,7 +26,7 @@ export const Tips = ({ recipeId }) => {
       showIndicators={true}
       dynamicHeight={false}
       stopOnHover={true}
-      className="shadow-xl bg-tangerine-300 rounded-xl"
+      className="bg-transparent mx-[-2.25rem] [&_.carousel-slider]:overflow-visible [&_.control-dots]:bottom-[-2rem]"
     >
       {tips.map((tip) => (
         <div key={tip.tip_id}>
@@ -62,6 +62,7 @@ const TipCard = ({
           <img
             src={author_avatar_url}
             className="object-cover w-6 h-6 rounded-full"
+            alt=""
           />
         </div>
         <p className="text-[18px] font-bold">
@@ -69,12 +70,12 @@ const TipCard = ({
         </p>
       </div>
       <div className="flex flex-col items-start p-2">
-        <p className="tracking-wide text-lava-900 text-[14px] ">
+        <p className="tracking-wide text-lava-900 text-base ">
           &#34;{tip_body}&#34;
         </p>
       </div>
       <div>
-        <p className="text-sm">{RenderYearsSinceTimeStamp(updated_at)}</p>
+        <p className="text-base">{RenderYearsSinceTimeStamp(updated_at)}</p>
       </div>
     </div>
   );
