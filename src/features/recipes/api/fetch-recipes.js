@@ -14,6 +14,7 @@ export function FetchRecipes(search) {
     onSuccess: (data) => {
       setCachedRecipes(data);
     },
+
     enabled: !!search,
     staleTime: 1000 * 60 * 5, // 5 minutes
     cacheTime: 1000 * 60 * 60, // 1 hour
@@ -22,7 +23,7 @@ export function FetchRecipes(search) {
   return {
     data: recipes || cachedRecipes,
     isLoading: isLoading && !cachedRecipes,
-    isError,
-    error,
+    isError: isError,
+    error: error,
   };
 }
