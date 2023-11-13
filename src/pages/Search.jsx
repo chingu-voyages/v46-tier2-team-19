@@ -31,7 +31,7 @@ const Search = () => {
       >
         YumYum Time!!
       </Heading>
-      <SvgComponent className="w-full fill-sky-300" />
+      <SvgComponent className="w-full fill-sky-300 -mb-1" />
       <div className="flex flex-col flex-shrink-0 w-full px-4 lg:px-20 bg-gradient-Search">
         <div className="flex flex-wrap items-center justify-center my-5 lg:mx-2 lg:gap-x-2">
           <div className="flex items-center w-1/3 lg:w-[20%]">
