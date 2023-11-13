@@ -31,7 +31,7 @@ export const Description = ({ description }) => {
   const body = words.slice(titleLength).join(" ");
   console.log("body length:", body.length);
   return description ? (
-    <div className="description pr-8 pt-2 pl-20">
+    <div className="description px-8 pt-2 md:pl-20">
       <Heading level="h2" variant="lava" className="leading-none">
         <span className={title.length > 10 ? "text-clamp-h3" : ""}>
           {title}

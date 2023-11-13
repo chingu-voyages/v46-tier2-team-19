@@ -10,7 +10,7 @@ export const IntroCard = ({ name, imageUrl, description }) => {
         <div className="absolute left-0 top-0 z-0 h-full overflow-hidden rounded-tl-[1rem] pt-[20rem] md:pt-0">
           <PlantsTL
             resolution="128"
-            className="select-none pointer-events-none block h-full w-[8rem] lg:w-[8rem] overflow-hidden lg:rounded-tl-[1rem]"
+            className="pointer-events-none hidden h-full w-[8rem] select-none overflow-hidden md:block lg:w-[8rem] lg:rounded-tl-[1rem]"
           />
         </div>
         <div className="intro-wrapper relative flex-row-reverse gap-4 md:flex">
@@ -30,7 +30,7 @@ export const IntroCard = ({ name, imageUrl, description }) => {
       </Card>
     );
   return (
-    <div className="picture-wrapper md:col-start-1 md:col-end-13 md:row-start-3 lg:col-start-5 lg:row-start-1 2xl:col-start-4 overflow-hidden rounded-xl">
+    <div className="picture-wrapper overflow-hidden rounded-xl md:col-start-1 md:col-end-13 md:row-start-3 lg:col-start-5 lg:row-start-1 2xl:col-start-4">
       <picture className="w-full">
         <img
           src={imageUrl}
