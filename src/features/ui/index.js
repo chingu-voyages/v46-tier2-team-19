@@ -8,3 +8,4 @@ export * from "./Button";
 export * from "./Picture";
 export * from "./LoadingState";
 export * from "../HomePage";
+export * from "../PageNotFound";

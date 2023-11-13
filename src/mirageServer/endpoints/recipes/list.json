@@ -2,6 +2,899 @@
   "count": 1518,
   "results": [
     {
+      "aspect_ratio": "1:1",
+      "id": 3194,
+      "inspired_by_url": null,
+      "brand": null,
+      "show_id": 34,
+      "created_at": 1513281355,
+      "description": "This one-pan roasted chicken and sweet potatoes recipe is a delicious and easy way to enjoy a flavorful and filling meal. With tender chicken, sweet potatoes, and flavorful seasoning, this recipe is perfect for a busy weeknight.",
+      "seo_title": null,
+      "video_id": 39588,
+      "yields": "Servings: 1",
+      "user_ratings": {
+        "count_negative": 105,
+        "score": 0.927436,
+        "count_positive": 1342
+      },
+      "credits": [
+        {
+          "name": "Mercedes Sandoval",
+          "type": "internal"
+        }
+      ],
+      "show": {
+        "id": 34,
+        "name": "Goodful"
+      },
+      "is_subscriber_content": false,
+      "renditions": [
+        {
+          "file_size": 46589372,
+          "minimum_bit_rate": null,
+          "content_type": "video/mp4",
+          "url": "https://vid.tasty.co/output/68224/square_720/1513303098",
+          "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/68224/square_720/1513303098_00001.png",
+          "name": "mp4_720x720",
+          "height": 720,
+          "duration": 186522,
+          "maximum_bit_rate": null,
+          "aspect": "square",
+          "container": "mp4",
+          "width": 720,
+          "bit_rate": 1999
+        },
+        {
+          "maximum_bit_rate": null,
+          "minimum_bit_rate": null,
+          "aspect": "square",
+          "container": "mp4",
+          "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/68224/square_320/1513303098_00001.png",
+          "name": "mp4_320x320",
+          "duration": 186522,
+          "bit_rate": 691,
+          "file_size": 16090829,
+          "content_type": "video/mp4",
+          "url": "https://vid.tasty.co/output/68224/square_320/1513303098",
+          "height": 320,
+          "width": 320
+        },
+        {
+          "minimum_bit_rate": null,
+          "container": "mp4",
+          "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/68224/landscape_720/1513303098_00001.png",
+          "width": 720,
+          "duration": 186522,
+          "file_size": 46551633,
+          "bit_rate": 1997,
+          "maximum_bit_rate": null,
+          "content_type": "video/mp4",
+          "aspect": "square",
+          "url": "https://vid.tasty.co/output/68224/landscape_720/1513303098",
+          "height": 720,
+          "name": "mp4_720x720"
+        },
+        {
+          "minimum_bit_rate": null,
+          "aspect": "square",
+          "name": "mp4_480x480",
+          "width": 480,
+          "file_size": 26962093,
+          "bit_rate": 1157,
+          "maximum_bit_rate": null,
+          "content_type": "video/mp4",
+          "container": "mp4",
+          "url": "https://vid.tasty.co/output/68224/landscape_480/1513303098",
+          "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/68224/landscape_480/1513303098_00001.png",
+          "height": 480,
+          "duration": 186522
+        },
+        {
+          "file_size": null,
+          "minimum_bit_rate": 272,
+          "content_type": "application/vnd.apple.mpegurl",
+          "url": "https://vid.tasty.co/output/68224/hls24_1513303098.m3u8",
+          "name": "low",
+          "height": 1080,
+          "duration": 186478,
+          "maximum_bit_rate": 3631,
+          "aspect": "square",
+          "container": "ts",
+          "poster_url": "https://img.buzzfeed.com/video-transcoder-prod/output/68224/1445289064805-h2exzu/1513303098_00001.png",
+          "width": 1080,
+          "bit_rate": null
+        }
+      ],
+      "buzz_id": 4707416,
+      "promotion": "full",
+      "tags": [
+        {
+          "id": 64444,
+          "name": "north_american",
+          "display_name": "North American",
+          "type": "cuisine",
+          "root_tag_type": "cuisine"
+        },
+        {
+          "id": 64462,
+          "name": "comfort_food",
+          "display_name": "Comfort Food",
+          "type": "cooking_style",
+          "root_tag_type": "cooking_style"
+        },
+        {
+          "display_name": "Dairy-Free",
+          "type": "dietary",
+          "root_tag_type": "dietary",
+          "id": 64463,
+          "name": "dairy_free"
+        },
+        {
+          "name": "gluten_free",
+          "display_name": "Gluten-Free",
+          "type": "dietary",
+          "root_tag_type": "dietary",
+          "id": 64465
+        },
+        {
+          "name": "healthy",
+          "display_name": "Healthy",
+          "type": "healthy",
+          "root_tag_type": "healthy",
+          "id": 64466
+        },
+        {
+          "id": 64471,
+          "name": "easy",
+          "display_name": "Easy",
+          "type": "difficulty",
+          "root_tag_type": "difficulty"
+        },
+        {
+          "name": "under_30_minutes",
+          "display_name": "Under 30 Minutes",
+          "type": "difficulty",
+          "root_tag_type": "difficulty",
+          "id": 64472
+        },
+        {
+          "root_tag_type": "meal",
+          "id": 64486,
+          "name": "dinner",
+          "display_name": "Dinner",
+          "type": "meal"
+        },
+        {
+          "type": "meal",
+          "root_tag_type": "meal",
+          "id": 64489,
+          "name": "lunch",
+          "display_name": "Lunch"
+        },
+        {
+          "id": 64492,
+          "name": "baking",
+          "display_name": "Baking",
+          "type": "appliance",
+          "root_tag_type": "appliance"
+        },
+        {
+          "root_tag_type": "meal",
+          "id": 64505,
+          "name": "weeknight",
+          "display_name": "Weeknight",
+          "type": "dinner"
+        },
+        {
+          "id": 65855,
+          "name": "one_pot_or_pan",
+          "display_name": "One-Pot or Pan",
+          "type": "cooking_style",
+          "root_tag_type": "cooking_style"
+        },
+        {
+          "type": "equipment",
+          "root_tag_type": "equipment",
+          "id": 1247775,
+          "name": "oven_mitts",
+          "display_name": "Oven Mitts"
+        },
+        {
+          "id": 1247780,
+          "name": "parchment_paper",
+          "display_name": "Parchment Paper",
+          "type": "equipment",
+          "root_tag_type": "equipment"
+        },
+        {
+          "display_name": "Pyrex",
+          "type": "equipment",
+          "root_tag_type": "equipment",
+          "id": 1247785,
+          "name": "pyrex"
+        },
+        {
+          "id": 1247790,
+          "name": "tongs",
+          "display_name": "Tongs",
+          "type": "equipment",
+          "root_tag_type": "equipment"
+        },
+        {
+          "id": 1280500,
+          "name": "baking_pan",
+          "display_name": "Baking Pan",
+          "type": "equipment",
+          "root_tag_type": "equipment"
+        },
+        {
+          "id": 1280501,
+          "name": "chefs_knife",
+          "display_name": "Chef's Knife",
+          "type": "equipment",
+          "root_tag_type": "equipment"
+        },
+        {
+          "id": 1280503,
+          "name": "cutting_board",
+          "display_name": "Cutting Board",
+          "type": "equipment",
+          "root_tag_type": "equipment"
+        },
+        {
+          "root_tag_type": "feature_page",
+          "id": 6986107,
+          "name": "mccormick_ugc_one_pot_others",
+          "display_name": "McCormick UGC One Pot Others",
+          "type": "feature_page"
+        },
+        {
+          "type": "healthy",
+          "root_tag_type": "healthy",
+          "id": 8091917,
+          "name": "high_protein",
+          "display_name": "High-Protein"
+        },
+        {
+          "name": "low_sugar",
+          "display_name": "Low-Sugar",
+          "type": "healthy",
+          "root_tag_type": "healthy",
+          "id": 8091918
+        },
+        {
+          "name": "low_fat",
+          "display_name": "Low-Fat",
+          "type": "healthy",
+          "root_tag_type": "healthy",
+          "id": 8091919
+        },
+        {
+          "name": "high_fiber",
+          "display_name": "High-Fiber",
+          "type": "healthy",
+          "root_tag_type": "healthy",
+          "id": 8091920
+        },
+        {
+          "id": 10089785,
+          "name": "walmart_meal_planning_october",
+          "display_name": "Walmart Meal Planning October",
+          "type": "business_tags",
+          "root_tag_type": "business_tags"
+        }
+      ],
+      "beauty_url": "https://img.buzzfeed.com/video-api-prod/assets/711a5ab95e2a49609b992bc5834da2cd/BFV34175_One-PanMealsUnder500Calories-BeautyShot.jpg",
+      "is_one_top": false,
+      "language": "eng",
+      "brand_id": null,
+      "servings_noun_plural": "servings",
+      "slug": "one-pan-roasted-chicken-and-sweet-potatoes",
+      "is_app_only": false,
+      "name": "One-Pan Roasted Chicken And Sweet Potatoes",
+      "seo_path": "9295813,64486,64505",
+      "servings_noun_singular": "serving",
+      "thumbnail_alt_text": "",
+      "approved_at": 1513564124,
+      "sections": [
+        {
+          "components": [
+            {
+              "extra_comment": "diced",
+              "position": 1,
+              "measurements": [
+                {
+                  "id": 727563,
+                  "quantity": "1",
+                  "unit": {
+                    "display_singular": "",
+                    "display_plural": "",
+                    "system": "none",
+                    "name": "",
+                    "abbreviation": ""
+                  }
+                }
+              ],
+              "ingredient": {
+                "name": "small sweet potato",
+                "display_singular": "small sweet potato",
+                "display_plural": "small sweet potatoes",
+                "created_at": 1496365459,
+                "updated_at": 1509035206,
+                "id": 1139
+              },
+              "id": 30504,
+              "raw_text": "1 small sweet potato, diced"
+            },
+            {
+              "id": 30505,
+              "raw_text": "1 lemon, sliced, seeds removed",
+              "extra_comment": "sliced, seeds removed",
+              "position": 2,
+              "measurements": [
+                {
+                  "id": 727570,
+                  "quantity": "1",
+                  "unit": {
+                    "name": "",
+                    "abbreviation": "",
+                    "display_singular": "",
+                    "display_plural": "",
+                    "system": "none"
+                  }
+                }
+              ],
+              "ingredient": {
+                "updated_at": 1509035282,
+                "id": 155,
+                "name": "lemon",
+                "display_singular": "lemon",
+                "display_plural": "lemons",
+                "created_at": 1493906426
+              }
+            },
+            {
+              "position": 3,
+              "measurements": [
+                {
+                  "unit": {
+                    "display_singular": "cup",
+                    "display_plural": "cups",
+                    "system": "imperial",
+                    "name": "cup",
+                    "abbreviation": "c"
+                  },
+                  "id": 727567,
+                  "quantity": "1"
+                },
+                {
+                  "id": 727566,
+                  "quantity": "360",
+                  "unit": {
+                    "name": "gram",
+                    "abbreviation": "g",
+                    "display_singular": "g",
+                    "display_plural": "g",
+                    "system": "metric"
+                  }
+                }
+              ],
+              "ingredient": {
+                "id": 374,
+                "name": "green beans",
+                "display_singular": "green bean",
+                "display_plural": "green beans",
+                "created_at": 1494976031,
+                "updated_at": 1509035266
+              },
+              "id": 30506,
+              "raw_text": "1 cup green beans, trimmed",
+              "extra_comment": "trimmed"
+            },
+            {
+              "id": 30507,
+              "raw_text": "1 tablespoon olive oil",
+              "extra_comment": "",
+              "position": 4,
+              "measurements": [
+                {
+                  "id": 727564,
+                  "quantity": "1",
+                  "unit": {
+                    "name": "tablespoon",
+                    "abbreviation": "tbsp",
+                    "display_singular": "tablespoon",
+                    "display_plural": "tablespoons",
+                    "system": "imperial"
+                  }
+                }
+              ],
+              "ingredient": {
+                "id": 4,
+                "name": "olive oil",
+                "display_singular": "olive oil",
+                "display_plural": "olive oils",
+                "created_at": 1493306183,
+                "updated_at": 1509035290
+              }
+            },
+            {
+              "id": 30508,
+              "raw_text": "1 tablespoon rosemary, chopped",
+              "extra_comment": "",
+              "position": 5,
+              "measurements": [
+                {
+                  "id": 727560,
+                  "quantity": "1",
+                  "unit": {
+                    "display_singular": "tablespoon",
+                    "display_plural": "tablespoons",
+                    "system": "imperial",
+                    "name": "tablespoon",
+                    "abbreviation": "tbsp"
+                  }
+                }
+              ],
+              "ingredient": {
+                "name": "chopped fresh rosemary leaves",
+                "display_singular": "chopped fresh rosemary leaf",
+                "display_plural": "chopped fresh rosemary leaves",
+                "created_at": 1678823278,
+                "updated_at": 1678823278,
+                "id": 10849
+              }
+            },
+            {
+              "raw_text": "1 tablespoon thyme, chopped",
+              "extra_comment": "",
+              "position": 6,
+              "measurements": [
+                {
+                  "id": 727569,
+                  "quantity": "1",
+                  "unit": {
+                    "name": "tablespoon",
+                    "abbreviation": "tbsp",
+                    "display_singular": "tablespoon",
+                    "display_plural": "tablespoons",
+                    "system": "imperial"
+                  }
+                }
+              ],
+              "ingredient": {
+                "name": "chopped fresh thyme leaves",
+                "display_singular": "chopped fresh thyme leaf",
+                "display_plural": "chopped fresh thyme leaves",
+                "created_at": 1678823272,
+                "updated_at": 1678823272,
+                "id": 10848
+              },
+              "id": 30509
+            },
+            {
+              "id": 30510,
+              "raw_text": "1 clove garlic, minced",
+              "extra_comment": "minced",
+              "position": 7,
+              "measurements": [
+                {
+                  "id": 727559,
+                  "quantity": "1",
+                  "unit": {
+                    "name": "clove",
+                    "abbreviation": "clove",
+                    "display_singular": "clove",
+                    "display_plural": "cloves",
+                    "system": "none"
+                  }
+                }
+              ],
+              "ingredient": {
+                "created_at": 1493744766,
+                "updated_at": 1509035285,
+                "id": 95,
+                "name": "garlic",
+                "display_singular": "garlic",
+                "display_plural": "garlics"
+              }
+            },
+            {
+              "ingredient": {
+                "updated_at": 1509035289,
+                "id": 11,
+                "name": "kosher salt",
+                "display_singular": "kosher salt",
+                "display_plural": "kosher salts",
+                "created_at": 1493307153
+              },
+              "id": 30511,
+              "raw_text": "½ teaspoon salt, plus more to season",
+              "extra_comment": "plus more to taste",
+              "position": 8,
+              "measurements": [
+                {
+                  "id": 727568,
+                  "quantity": "½",
+                  "unit": {
+                    "display_plural": "teaspoons",
+                    "system": "imperial",
+                    "name": "teaspoon",
+                    "abbreviation": "tsp",
+                    "display_singular": "teaspoon"
+                  }
+                }
+              ]
+            },
+            {
+              "extra_comment": "plus more to taste",
+              "position": 9,
+              "measurements": [
+                {
+                  "id": 727561,
+                  "quantity": "¼",
+                  "unit": {
+                    "abbreviation": "tsp",
+                    "display_singular": "teaspoon",
+                    "display_plural": "teaspoons",
+                    "system": "imperial",
+                    "name": "teaspoon"
+                  }
+                }
+              ],
+              "ingredient": {
+                "id": 166,
+                "name": "freshly ground black pepper",
+                "display_singular": "freshly ground black pepper",
+                "display_plural": "freshly ground black peppers",
+                "created_at": 1493925438,
+                "updated_at": 1509035282
+              },
+              "id": 30512,
+              "raw_text": "¼ teaspoon ground black pepper, plus more to season"
+            },
+            {
+              "id": 30513,
+              "raw_text": "1 boneless, skinless chicken breast",
+              "extra_comment": "",
+              "position": 10,
+              "measurements": [
+                {
+                  "id": 727562,
+                  "quantity": "1",
+                  "unit": {
+                    "display_singular": "",
+                    "display_plural": "",
+                    "system": "none",
+                    "name": "",
+                    "abbreviation": ""
+                  }
+                }
+              ],
+              "ingredient": {
+                "display_singular": "boneless, skinless chicken breast",
+                "display_plural": "boneless, skinless chicken breasts",
+                "created_at": 1493390997,
+                "updated_at": 1509035287,
+                "id": 33,
+                "name": "boneless, skinless chicken breast"
+              }
+            },
+            {
+              "position": 11,
+              "measurements": [
+                {
+                  "unit": {
+                    "display_singular": "teaspoon",
+                    "display_plural": "teaspoons",
+                    "system": "imperial",
+                    "name": "teaspoon",
+                    "abbreviation": "tsp"
+                  },
+                  "id": 727565,
+                  "quantity": "¼"
+                }
+              ],
+              "ingredient": {
+                "display_plural": "paprikas",
+                "created_at": 1493430149,
+                "updated_at": 1509035286,
+                "id": 42,
+                "name": "paprika",
+                "display_singular": "paprika"
+              },
+              "id": 30514,
+              "raw_text": "¼ teaspoon paprika",
+              "extra_comment": ""
+            }
+          ],
+          "name": null,
+          "position": 1
+        }
+      ],
+      "facebook_posts": [],
+      "nutrition": {
+        "sugar": 20,
+        "fiber": 33,
+        "updated_at": "2023-03-25T07:08:24+01:00",
+        "calories": 536,
+        "carbohydrates": 52,
+        "fat": 18,
+        "protein": 39
+      },
+      "tips_and_ratings_enabled": true,
+      "updated_at": 1683237600,
+      "compilations": [
+        {
+          "draft_status": "published",
+          "is_shoppable": false,
+          "language": "eng",
+          "promotion": "full",
+          "slug": "one-pan-meals-under-500-calories",
+          "canonical_id": "compilation:342",
+          "created_at": 1513281206,
+          "name": "One-Pan Meals Under 500 Calories",
+          "video_url": "https://vid.tasty.co/output/68224/hls24_1513303098.m3u8",
+          "show": [
+            {
+              "id": 34,
+              "name": "Goodful"
+            }
+          ],
+          "approved_at": 1513564174,
+          "beauty_url": "https://img.buzzfeed.com/video-api-prod/assets/711a5ab95e2a49609b992bc5834da2cd/BFV34175_One-PanMealsUnder500Calories-BeautyShot.jpg",
+          "country": "US",
+          "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/124164.jpg",
+          "video_id": 39588,
+          "facebook_posts": [],
+          "aspect_ratio": "1:1",
+          "buzz_id": 4707419,
+          "description": null,
+          "id": 342,
+          "keywords": null,
+          "thumbnail_alt_text": ""
+        },
+        {
+          "promotion": "full",
+          "approved_at": 1541000496,
+          "buzz_id": null,
+          "created_at": 1541000315,
+          "id": 712,
+          "is_shoppable": true,
+          "keywords": null,
+          "language": "eng",
+          "aspect_ratio": "1:1",
+          "draft_status": "published",
+          "canonical_id": "compilation:712",
+          "show": [
+            {
+              "id": 34,
+              "name": "Goodful"
+            }
+          ],
+          "video_url": "https://vid.tasty.co/output/113684/hls24_1540919176.m3u8",
+          "beauty_url": null,
+          "country": "US",
+          "description": "We’re all looking for ways to eat a bit healthier and let’s face it: it’s not always easy. But that’s why we’re here to help. These quick and easy dinners under 500 calories promise you explosions of flavor, courtesy of some strong, herbaceous notes and the freshest of ingredients. From a <a href=\"https://tasty.co/recipe/one-pan-roasted-chicken-and-sweet-potatoes\">single-pan roasted chicken</a> to a <a href=\"https://tasty.co/recipe/one-pot-chickpea-curry\">one-pot chickpea curry</a>, we’re here to help you eat healthy, happy, and flavor-laden. \n",
+          "slug": "dinners-under-500-calories",
+          "thumbnail_alt_text": "",
+          "thumbnail_url": "https://img.buzzfeed.com/video-api-prod/assets/e83de47984b74d7f81e491aabe00e836/4_Healthy_Weeknight_Dinners_Under_300_Calories.jpg",
+          "video_id": 22965,
+          "facebook_posts": [],
+          "name": "Dinners Under 500 Calories"
+        },
+        {
+          "approved_at": 1557454609,
+          "aspect_ratio": "1:1",
+          "slug": "sweet-potato-recipes-under-500-calories",
+          "draft_status": "published",
+          "id": 938,
+          "video_url": "https://vid.tasty.co/output/132144/hls24_1557379812.m3u8",
+          "language": "eng",
+          "promotion": "full",
+          "canonical_id": "compilation:938",
+          "buzz_id": null,
+          "country": "US",
+          "description": null,
+          "is_shoppable": false,
+          "keywords": null,
+          "video_id": 82921,
+          "facebook_posts": [],
+          "show": [
+            {
+              "name": "Goodful",
+              "id": 34
+            }
+          ],
+          "beauty_url": null,
+          "created_at": 1557379588,
+          "name": "Sweet Potato Recipes Under 500 Calories ",
+          "thumbnail_alt_text": "",
+          "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/215305.jpg"
+        },
+        {
+          "is_shoppable": true,
+          "name": "5 Sheet Pan Dinners For The Easiest Week Ever",
+          "video_url": "https://vid.tasty.co/output/149413/hls24_1571895435.m3u8",
+          "buzz_id": null,
+          "description": null,
+          "id": 1203,
+          "slug": "5-sheet-pan-dinners-for-the-easiest-week-ever",
+          "facebook_posts": [],
+          "created_at": 1571895323,
+          "draft_status": "published",
+          "language": "eng",
+          "keywords": null,
+          "thumbnail_alt_text": "",
+          "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/239826.jpg",
+          "video_id": 93739,
+          "canonical_id": "compilation:1203",
+          "approved_at": 1577892431,
+          "aspect_ratio": "1:1",
+          "country": "US",
+          "beauty_url": null,
+          "promotion": "full",
+          "show": [
+            {
+              "name": "Tasty",
+              "id": 17
+            }
+          ]
+        },
+        {
+          "show": [
+            {
+              "id": 17,
+              "name": "Tasty"
+            }
+          ],
+          "aspect_ratio": "1:1",
+          "name": "Kickstart Your New Year With These Low Calorie Meal Recipes",
+          "thumbnail_alt_text": "",
+          "canonical_id": "compilation:1320",
+          "approved_at": 1576162826,
+          "country": "US",
+          "promotion": "full",
+          "id": 1320,
+          "language": "eng",
+          "video_id": 97160,
+          "video_url": "https://vid.tasty.co/output/154794/hls24_1576141088.m3u8",
+          "facebook_posts": [],
+          "beauty_url": null,
+          "buzz_id": null,
+          "description": null,
+          "keywords": null,
+          "slug": "kickstart-your-new-year-with-these-low-calorie-meal-recipes",
+          "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/247447.jpg",
+          "created_at": 1576141044,
+          "draft_status": "published",
+          "is_shoppable": false
+        },
+        {
+          "draft_status": "published",
+          "is_shoppable": false,
+          "video_url": "https://vid.tasty.co/output/160298/hls24_1581588059.m3u8",
+          "facebook_posts": [],
+          "approved_at": 1581602162,
+          "beauty_url": null,
+          "created_at": 1581587786,
+          "language": "eng",
+          "name": "5 Low Calorie Sweet Potato Recipes",
+          "promotion": "full",
+          "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/255244.jpg",
+          "country": "US",
+          "video_id": 100181,
+          "show": [
+            {
+              "name": "Goodful",
+              "id": 34
+            }
+          ],
+          "canonical_id": "compilation:1401",
+          "aspect_ratio": "1:1",
+          "buzz_id": null,
+          "description": null,
+          "id": 1401,
+          "keywords": null,
+          "slug": "5-low-calorie-sweet-potato-recipes",
+          "thumbnail_alt_text": ""
+        }
+      ],
+      "draft_status": "published",
+      "video_url": "https://vid.tasty.co/output/68224/hls24_1513303098.m3u8",
+      "cook_time_minutes": null,
+      "original_video_url": "https://s3.amazonaws.com/video-api-prod/assets/99e7a28d1cfd4b228ffbf7d64be39064/BFV34175_One-PanMealsUnder500Calories-FB1080SQ.mp4",
+      "video_ad_content": "none",
+      "canonical_id": "recipe:3194",
+      "price": {
+        "total": 1550,
+        "portion": 1550,
+        "consumption_total": 650,
+        "consumption_portion": 650,
+        "updated_at": "2023-11-09T06:07:13+01:00"
+      },
+      "topics": [
+        {
+          "slug": "easy-dinner",
+          "name": "Easy Dinner"
+        },
+        {
+          "name": "Healthy Eating",
+          "slug": "healthy"
+        },
+        {
+          "slug": "one-pot",
+          "name": "One-Pot Recipes"
+        },
+        {
+          "name": "Romantic Dinners",
+          "slug": "romantic-dinners"
+        },
+        {
+          "name": "Lunch",
+          "slug": "lunch"
+        },
+        {
+          "name": "Dinner",
+          "slug": "dinner"
+        },
+        {
+          "name": "American",
+          "slug": "american"
+        }
+      ],
+      "prep_time_minutes": null,
+      "keywords": null,
+      "total_time_minutes": null,
+      "instructions": [
+        {
+          "display_text": "Preheat the oven to 375˚F (190˚C). Line a baking sheet with parchment paper.",
+          "position": 1,
+          "start_time": 0,
+          "end_time": 0,
+          "temperature": 375,
+          "appliance": "oven",
+          "id": 26813
+        },
+        {
+          "id": 26814,
+          "display_text": "Add the sweet potatoes, green beans, lemon, olive oil, salt, pepper, rosemary, thyme, and garlic to the prepared baking sheet and toss until fully coated. Spread on either side of the baking sheet, leaving space in the middle. Place the chicken at the center of the pan and season with salt, pepper, and the paprika.",
+          "position": 2,
+          "start_time": 113350,
+          "end_time": 131690,
+          "temperature": null,
+          "appliance": null
+        },
+        {
+          "id": 26817,
+          "display_text": "Bake until the vegetables are tender and chicken is cooked through, about 20 minutes.",
+          "position": 3,
+          "start_time": 0,
+          "end_time": 0,
+          "temperature": null,
+          "appliance": null
+        },
+        {
+          "id": 26818,
+          "display_text": "Enjoy!",
+          "position": 4,
+          "start_time": 158650,
+          "end_time": 173230,
+          "temperature": null,
+          "appliance": null
+        }
+      ],
+      "is_shoppable": true,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/cb5bf201eeef4702bc44b4bff81b9630/BFV34175_One-PanMealsUnder500Calories-FB1080SQ.jpg",
+      "country": "US",
+      "num_servings": 1,
+      "total_time_tier": {
+        "tier": "under_30_minutes",
+        "display_tier": "Under 30 minutes"
+      },
+      "nutrition_visibility": "auto"
+    },
+    {
       "is_one_top": false,
       "cook_time_minutes": 10,
       "promotion": "full",

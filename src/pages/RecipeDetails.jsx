@@ -1,29 +1,25 @@
 import { useParams } from "react-router-dom";
 import { useSessionStorage } from "@/features/recipes/hooks";
 import { Heading, LoadingState } from "@/features/ui";
-import { FetchRecipeById } from "@/features/recipes/api";
+import { FetchRecipeDetailsById } from "@/features/recipes/api";
 import RecipeDetails from "@/features/recipes/components/recipe-details/RecipeDetails";
+import PageNotFound from "./PageNotFound";
 
 const RecipesDetailPage = () => {
-  let { recipeId } = useParams();
-
+  const { recipeId } = useParams();
   const [cachedRecipesList] = useSessionStorage("recipes", []);
-  console.log(cachedRecipesList);
-
+  let recipe = null;
   // Attempt to retrieve recipe from session storage.
-  const cachedRecipe = cachedRecipesList.results?.find(
-    (recipe) => recipe.id === recipeId,
-  );
+  if (cachedRecipesList.length > 0) {
+    recipe = cachedRecipesList.results.find(
+      (result) => result.id === +recipeId,
+    );
+  }
 
-  let recipe = {};
-  let query = null;
-
-  if (cachedRecipe) recipe = cachedRecipe;
-  else query = `id:${recipeId}`;
-
-  const { data, isLoading, isError, error } = FetchRecipeById(query);
-
-  if (data) recipe = data.results[0];
+  // Call API to fetch recipe details if not found in cache.
+  const { data, isLoading, isError, error } = recipe
+    ? { data: recipe[0], isLoading: false, isError: false, error: null }
+    : FetchRecipeDetailsById(recipeId);
 
   // Quit gracefully if no id is available
   if (!recipeId) {
@@ -44,7 +40,9 @@ const RecipesDetailPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  return <RecipeDetails recipe={recipe} />;
+  if (!data?.name) return <PageNotFound />;
+
+  return <RecipeDetails recipe={data} />;
 };
 
 export default RecipesDetailPage;
