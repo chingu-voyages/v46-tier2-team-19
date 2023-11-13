@@ -5,7 +5,7 @@ import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
 import usePageTitle from "../hooks/usePageTitle";
 import ChinguRectangle from "../assets/about/chingu-rectangle.png";
-import Yumi_2 from "@/assets/about/yumi-with-blue-apron-holding-brown-salad-bowl.png";
+import Yumi from "@/assets/about/yumi-with-blue-apron-holding-brown-salad-bowl.png";
 import YumiWithBasket from "@/assets/brand/yumi-with-basket/YumiWithBasket";
 
 const About = () => {
@@ -145,7 +145,7 @@ const About = () => {
         {/* Display Yumi_2 image between sections */}
         <img
           className="absolute top-[-1rem] md:top-[-2rem] left-6 w-1/3 max-w-[200px] lg:max-w-[300px]"
-          src={Yumi_2}
+          src={Yumi}
           alt="Yumi wearing blue apron holding brown salad bowl"
         />
         <SvgComponent className="fill-banana -mb-1 bg-[#f2f5f9]" />
