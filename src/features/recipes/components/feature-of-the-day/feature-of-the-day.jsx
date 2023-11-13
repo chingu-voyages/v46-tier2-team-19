@@ -11,17 +11,21 @@ export const FeatureOfTheDay = () => {
       <Heading
         level="h1"
         variant="watermelon"
-        className="text-center underline decoration-dashed decoration-tangerine-400 underline-offset-[24px]"
+        className="text-center underline decoration-dashed decoration-tangerine-400 underline-offset-[24px] balance"
       >
         Recipe of the day
       </Heading>
       <div className="flex flex-col items-center justify-center px-4 py-6 lg:space-x-6 lg:flex-row">
         <img
           src={FeatureChickenRecipe}
-          className="object-contain w-64 rounded-2xl"
+          className="object-contain w-64 rounded-2xl mb-8"
         />
         <div className="flex flex-col max-w-lg text-left">
-          <Heading level="h3" variant="tangerine" className="tracking-tight">
+          <Heading
+            level="h3"
+            variant="tangerine"
+            className="tracking-tight balance"
+          >
             Roasted Chicken And Sweet Potatoes Recipe
           </Heading>
           <p className="tracking-tight font-rasa">
@@ -33,10 +37,10 @@ export const FeatureOfTheDay = () => {
           <Button
             variant="primary"
             size="large"
-            className="w-full mt-4 lg:w-1/2"
+            className="w-full mt-4 lg:w-1/2 mb-10"
             onClick={handleNavigate}
           >
-            See the Recipe
+            <span className="align-center w-full">See the Recipe</span>
             <Icon name="right-arrow" className="transform scale-125" />
           </Button>
         </div>

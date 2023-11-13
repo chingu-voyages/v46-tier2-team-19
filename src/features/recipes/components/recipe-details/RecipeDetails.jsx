@@ -26,7 +26,7 @@ export const RecipeDetails = ({ recipe }) => {
         <hr className="mb-1 mt-3 h-2 w-[40%] rounded-full border-none bg-gradient-tangerine-diagonal" />
       </div>
 
-      <div className="p-5 page-body md:p-8 xl:p-10 md:grid md:grid-cols-12 md:grid-rows-10 md:gap-10">
+      <div className="page-body p-5 md:p-8 xl:p-10 md:grid md:grid-cols-12 md:grid-rows-10 md:gap-10">
         <IntroCard
           description={recipe.description}
           imageUrl={recipe.thumbnail_url}
@@ -53,9 +53,7 @@ export const RecipeDetails = ({ recipe }) => {
           renditions={recipe.renditions}
           className="mb-12 outline-4 md:col-start-7 md:col-end-13 md:row-start-1 lg:col-start-1 lg:col-end-5 lg:row-start-3 lg:-mx-4 lg:-mb-4 2xl:col-end-4"
         />
-        <Card className="flex items-center difficulty-card md:col-start-7 md:col-end-13 md:row-start-2 lg:col-start-5 2xl:col-start-4">
-          <RecipeDifficultyCard tags={recipe.tags} />
-        </Card>
+        <RecipeDifficultyCard tags={recipe.tags} />
         <Card
           className="ingredients-card md:col-start-1 md:col-end-13 lg:col-start-5 lg:col-end-13 lg:row-span-2 2xl:col-start-4"
           id="ingredients"
