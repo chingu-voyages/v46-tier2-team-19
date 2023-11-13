@@ -5,47 +5,31 @@ import SvgComponent from "@/assets/brand/swooshes/svgWave";
 import { team } from "@/constants";
 import usePageTitle from "../hooks/usePageTitle";
 import ChinguRectangle from "../assets/about/chingu-rectangle.png";
-import Yumi_1 from "../assets/about/yumi-standing-with-orange-apron-holding-fruit-basket.png";
-import Yumi_2 from "../assets/about/yumi-with-blue-apron-holding-brown-salad-bowl.png";
+import Yumi_2 from "@/assets/about/yumi-with-blue-apron-holding-brown-salad-bowl.png";
+import YumiWithBasket from "@/assets/brand/yumi-with-basket/YumiWithBasket";
 
 const About = () => {
   usePageTitle("About");
 
   return (
-    <div className="bg-gradient-watermelon-diagonal y3-shadow-md-inner">
-      {/* <h1 className="text-center">About</h1> */}
-      <Heading
-        level="h1"
-        variant="tangerine"
-        className="px-10 pt-10 text-center text-white text-no-stroke"
-      >
-        About Chingu
-      </Heading>
-
-      {/* START Project section */}
+    <div className="pt-16 bg-gradient-watermelon-diagonal y3-shadow-md-inner">
       <section className="relative px-10 pb-10 xl:pb-20" id="project">
-        <img
-          className="w-1/2 mb-6 mx-auto"
-          src={ChinguRectangle}
-          alt="Chingu logo"
-        />
-
-        <div className="pb-10 text-slate-100">
-          <img
-            className="float-right"
-            src={Yumi_1}
-            alt="Yumi standing, wearing apron and holding fruit basket"
-          />
-          <p className="mb-4">
-            We developed a unique web app with a distinctive brand and a
-            whimsical, animated design. YumYumYes! is intended to make recipe
-            browsing fun! Colorful mascots Yumi and Chef Carrots welcome
-            visitors to our pages, and delightful visual motifs including text
-            gradients, 3d colored balls, dashed lines and gentle curves are
-            intended to make the app feel more alive and engaging.
-          </p>
-
-          <>
+        <div className="pb-10 text-slate-100 sm:flex justify-center items-center gap-12">
+          <div className="max-w-[40rem]">
+            <Heading level="h2" variant="tangerine">
+              About YumYumYes!
+            </Heading>
+            <p className="mb-4">
+              YumYumYes! is intended to make recipe browsing fun!
+            </p>
+            <p className="mb-4">
+              We developed a unique web app with a distinctive brand and a
+              whimsical, animated design. Colorful mascots Yumi and Chef Carrots
+              welcome visitors to our pages, and delightful visual motifs
+              including text gradients, 3d colored balls, dashed lines and
+              gentle curves are intended to make the app feel more alive and
+              engaging.
+            </p>
             <p className="mb-4">
               YumYumYes! allows users to search for recipes by ingredient and
               filter by useful tags such as difficulty, occasion, etc. The app
@@ -58,8 +42,10 @@ const About = () => {
               care to make it intuitive for all users, and accessible to users
               with different abilities.
             </p>
-          </>
-          <span className="clear-both"></span>
+          </div>
+          <div className="flex items-center justify-center">
+            <YumiWithBasket className="block w-36 lg:w-64" />
+          </div>
         </div>
 
         {/* Display top of wave between sections */}
@@ -68,11 +54,14 @@ const About = () => {
       {/* END Project section */}
 
       {/* START Team section */}
-      <section className="relative pt-6 bg-slate-100" id="team">
+      <section
+        className="relative bg-slate-100 border-banana border-8 pt-16"
+        id="team"
+      >
         <Heading
           level="h2"
           variant="tangerine"
-          className="text-right px-10 pt-24 sm:pt-48 sm:text-center lg:pt-36 lg:text-right xl:pt-40"
+          className="px-10 text-right pt-16 sm:pt-36 sm:text-center md:pt-24 lg:pt-36 lg:text-right xl:pt-40"
         >
           Meet the YumYumTeam!
         </Heading>
@@ -81,10 +70,10 @@ const About = () => {
           These are the exceptional team members that made YumYumYes! possible.
         </p>
 
-        <div className="grid p-10 gap-x-20 md:grid-cols-2 md:gap-16 lg:mt-8 xl:grid-cols-3">
+        <div className="grid p-10 pb-0 md:pb-10 gap-x-20 md:grid-cols-2 md:gap-16 lg:mt-8 xl:grid-cols-3">
           {team.map(({ name, role, summary, image, socials }, index) => (
             <article
-              className="relative group py-14 md:py-0 first:pt-0 md:pt-0"
+              className="relative group py-14 md:py-0 first:pt-0 md:pt-0 overflow-visible"
               key={name}
             >
               <Heading level="h3" variant="watermelon">
@@ -132,7 +121,7 @@ const About = () => {
                 // Display top of wave
                 // but don't display top of wave after last team member
                 index !== team.length - 1 && (
-                  <SvgComponent className="absolute -bottom-1 left-0 md:hidden fill-[#FFC945]" />
+                  <SvgComponent className="absolute -bottom-1 left-0 mx-[-2.5rem] md:hidden fill-[#FFC945]" />
                 )
               }
 
@@ -140,7 +129,7 @@ const About = () => {
                 // Display bottom of wave
                 // but don't display bottom of wave before first team member
                 index !== 0 && (
-                  <SvgComponent className="absolute -top-1 left-0 rotate-180 md:hidden fill-[#FFC945]" />
+                  <SvgComponent className="absolute -top-1 left-0 mx-[-2.5rem] rotate-180 md:hidden fill-[#FFC945]" />
                 )
               }
             </article>
@@ -148,19 +137,48 @@ const About = () => {
         </div>
 
         {/* Display bottom of wave in between sections */}
-        <div className="absolute -top-1 left-0 w-full">
-          <div className="bg-[#FFC945] h-[100px]"></div>
+        <div className="absolute -top-2 left-0 w-full">
+          <div className="bg-[#FFC945] h-[70px]"></div>
           <SvgComponent className="-mt-1 rotate-180 fill-[#FFC945]" />
         </div>
 
         {/* Display Yumi_2 image between sections */}
         <img
-          className="absolute -top-1 left-6 w-1/3 max-w-[200px] lg:max-w-[300px]"
+          className="absolute top-[-1rem] md:top-[-2rem] left-6 w-1/3 max-w-[200px] lg:max-w-[300px]"
           src={Yumi_2}
           alt="Yumi wearing blue apron holding brown salad bowl"
         />
+        <SvgComponent className="fill-banana -mb-1 bg-[#f2f5f9]" />
       </section>
       {/* END Team section */}
+      <section className="chingu-section bg-gradient-sky-diagonal group">
+        <SvgComponent className="fill-banana rotate-180 mt-[-1px]" />
+        <div className="wrapper max-w-[45rem] m-auto p-8 pb-24">
+          <Heading level="h2" variant="lava">
+            About Chingu
+          </Heading>
+          <div className="sm:flex gap-16">
+            <p>
+              {`Chingu is a community of developers who are passionate about
+            learning, helping others, and collaborating on projects. It is a
+            remote, self-organizing, project-based learning platform. Chingu
+            helps you to build your portfolio and network while collaborating on
+            real-world projects with remote team members. "Chingus" are
+            motivated learners who are self-directed and take responsibility for
+            their own learning.`}
+            </p>
+            <div className="flex justify-center my-8">
+              <div className="w-40 h-40 bg-white flex items-center rotate-3 border-4 shadow-xl border-tangerine-300 rounded-xl transition duration-300 origin-bottom group-hover:scale-125 group-hover:rotate-6">
+                <img
+                  className="w-full"
+                  src={ChinguRectangle}
+                  alt="Chingu logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
