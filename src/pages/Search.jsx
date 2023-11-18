@@ -24,11 +24,7 @@ const Search = () => {
 
   return (
     <div className="flex flex-col items-center flex-shrink-0 w-full">
-      <Heading
-        level="h1"
-        variant="watermelon"
-        className="z-10 pt-5 text-center"
-      >
+      <Heading level="h1" variant="watermelon" className="pt-5 text-center">
         YumYum Time!!
       </Heading>
       <SvgComponent className="w-full fill-sky-300 -mb-1" />
