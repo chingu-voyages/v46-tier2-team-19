@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.33](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.32...v0.0.33) (2023-11-18)
+
+
+### Bug Fixes
+
+* **header.jsx:** add z-index to nav element ([fbe40d5](https://github.com/chingu-voyages/v46-tier2-team-19/commit/fbe40d547d054dbbdba40f3f17c38124ed631be1)), closes [#115](https://github.com/chingu-voyages/v46-tier2-team-19/issues/115)
+* **intro card:** hide plant corner detail on mobile ([1044c8d](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1044c8d6582c7ee921228be97e40877f88912f45))
+* **recipe difficulty card:** hide card when no data available ([ed6c084](https://github.com/chingu-voyages/v46-tier2-team-19/commit/ed6c084c1644eece8da2559833696c9fdc83d480))
+* **search page:** layout fixes ([3a3138a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/3a3138a3d6a1eaecaaf65c1f1553350eb926f042))
+* **search.jsx:** move colored balls code above heading for proper stacking order ([1873016](https://github.com/chingu-voyages/v46-tier2-team-19/commit/1873016c121350dff05acd8d5200d248cdddde93)), closes [#115](https://github.com/chingu-voyages/v46-tier2-team-19/issues/115)
+* **search.jsx:** remove z-index from heading ([9372547](https://github.com/chingu-voyages/v46-tier2-team-19/commit/9372547e9b437401a7e589c3a30b73a912ab0f1a)), closes [#115](https://github.com/chingu-voyages/v46-tier2-team-19/issues/115)
+* **tags:** change tags link to properly format ([a92259a](https://github.com/chingu-voyages/v46-tier2-team-19/commit/a92259ae8bcd5cb8b188bcbd05b6947e439827b8))
+* **tips:** pad control dots and round out avatar images ([b5f2ea4](https://github.com/chingu-voyages/v46-tier2-team-19/commit/b5f2ea4d3bfdee97b385887c50cc02dbec234a73))
+
 ### [0.0.32](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.31...v0.0.32) (2023-11-13)
 
 ### [0.0.31](https://github.com/chingu-voyages/v46-tier2-team-19/compare/v0.0.30...v0.0.31) (2023-11-12)
