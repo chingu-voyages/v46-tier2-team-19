@@ -18,8 +18,8 @@ export const Tags = ({ tags }) => {
         return (
           <span key={tag.name}>
             <Link
-              to={`/search?q=${tag.name}`}
-              className="text-watermelon font-bold decoration-tangerine decoration-2 underline-offset-2 hover:underline"
+              to={`/search?q=${tag.display_name}`}
+              className="font-bold text-watermelon decoration-tangerine decoration-2 underline-offset-2 hover:underline"
               key={tag.name + String(Math.random())}
             >
               {tag.display_name}

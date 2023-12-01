@@ -14,7 +14,7 @@ export const Header = () => {
           <img src={Logo} alt={name} />
         </Link>
       </aside>
-      <nav>
+      <nav className="z-10">
         <div className="hidden space-x-4 lg:flex gap-x-7 bg-sky-300 text-white rounded-full px-16 py-3">
           {navLinks.map((navLink, index) => (
             <Link

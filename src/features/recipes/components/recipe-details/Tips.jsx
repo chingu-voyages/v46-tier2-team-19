@@ -26,7 +26,7 @@ export const Tips = ({ recipeId }) => {
       showIndicators={true}
       dynamicHeight={false}
       stopOnHover={true}
-      className="bg-transparent mx-[-2.25rem] [&_.carousel-slider]:overflow-visible [&_.control-dots]:bottom-[-2rem]"
+      className="bg-transparent mx-[-2.25rem] [&_.carousel-slider]:overflow-visible [&_.control-dots]:bottom-[-2rem] [&_.control-dots]:px-6"
     >
       {tips.map((tip) => (
         <div key={tip.tip_id}>
@@ -58,7 +58,7 @@ const TipCard = ({
   return (
     <div className="flex flex-col w-full p-5 cursor-pointer">
       <div className="flex items-center gap-2">
-        <div>
+        <div className="w-6">
           <img
             src={author_avatar_url}
             className="object-cover w-6 h-6 rounded-full"
